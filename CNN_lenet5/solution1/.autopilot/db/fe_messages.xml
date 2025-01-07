@@ -1,0 +1,150 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="Lenet_HW" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=Lenet_HW" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Lenet_HW" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Layer1_Neurons_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Lenet_HW" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Layer1_Weights_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Lenet_HW" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Layer2_Weights_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Lenet_HW" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Layer3_Weights_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Lenet_HW" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Layer4_Neurons_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer2" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Layer1_Neurons_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer2" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Layer1_Weights_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer2" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=Layer2_Neurons_CPU bundle=OUTPUT" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=Layer2_Neurons_CPU bundle=INPUT" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Layer2_Weights_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=Layer3_Neurons_CPU bundle=OUTPUT" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:101:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer4" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=Layer3_Neurons_CPU bundle=INPUT" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:102:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer4" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Layer3_Weights_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:103:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer4" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Layer4_Neurons_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HW_CNN.cpp:116:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer4" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="HW_CNN.cpp:81:34" msg_body="Loop 'VITIS_LOOP_81_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_81_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="HW_CNN.cpp:82:38" msg_body="Loop 'VITIS_LOOP_82_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_82_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="HW_CNN.cpp:48:34" msg_body="Loop 'VITIS_LOOP_48_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_48_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="HW_CNN.cpp:49:38" msg_body="Loop 'VITIS_LOOP_49_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_49_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="HW_CNN.cpp:66:0" msg_body="Unrolling loop 'VITIS_LOOP_81_4' (HW_CNN.cpp:81:34) in function 'calculateLayer3' completely with a factor of 5">
+        <args Factor="5" LoopLoc="HW_CNN.cpp:81:34" LoopName="VITIS_LOOP_81_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="HW_CNN.cpp:66:0" msg_body="Unrolling loop 'VITIS_LOOP_82_5' (HW_CNN.cpp:82:38) in function 'calculateLayer3' completely with a factor of 5">
+        <args Factor="5" LoopLoc="HW_CNN.cpp:82:38" LoopName="VITIS_LOOP_82_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="HW_CNN.cpp:33:0" msg_body="Unrolling loop 'VITIS_LOOP_48_4' (HW_CNN.cpp:48:34) in function 'calculateLayer2' completely with a factor of 5">
+        <args Factor="5" LoopLoc="HW_CNN.cpp:48:34" LoopName="VITIS_LOOP_48_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="HW_CNN.cpp:33:0" msg_body="Unrolling loop 'VITIS_LOOP_49_5' (HW_CNN.cpp:49:38) in function 'calculateLayer2' completely with a factor of 5">
+        <args Factor="5" LoopLoc="HW_CNN.cpp:49:38" LoopName="VITIS_LOOP_49_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::data() const (.34.44.53.64)' into 'fp_struct&lt;double&gt;::to_double() const (.31.41.50.61)'">
+        <args Callee="fp_struct&lt;double&gt;::data() const (.34.44.53.64)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 475 Column 0" Caller="fp_struct&lt;double&gt;::to_double() const (.31.41.50.61)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 494 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_double() const (.31.41.50.61)' into 'fp_struct&lt;double&gt;::to_ieee() const'">
+        <args Callee="fp_struct&lt;double&gt;::to_double() const (.31.41.50.61)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 494 Column 0" Caller="fp_struct&lt;double&gt;::to_ieee() const" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 509 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double generic_copysign&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 456 Column 0" Caller="double generic_copysign&lt;double&gt;(double, double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h} Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_ieee() const' into 'double generic_copysign&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::to_ieee() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 509 Column 0" Caller="double generic_copysign&lt;double&gt;(double, double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h} Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0" msg_body="Inlining function 'double generic_copysign&lt;double&gt;(double, double)' into 'double generic_fabs&lt;double&gt;(double)'">
+        <args Callee="double generic_copysign&lt;double&gt;(double, double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h} Line 10 Column 0" Caller="double generic_fabs&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h} Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_ieee() const' into 'double generic_nan&lt;double&gt;(char const*)'">
+        <args Callee="fp_struct&lt;double&gt;::to_ieee() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 509 Column 0" Caller="double generic_nan&lt;double&gt;(char const*)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h} Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_isnan&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 456 Column 0" Caller="int generic_isnan&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h} Line 16 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_isinf&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 456 Column 0" Caller="int generic_isinf&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h} Line 16 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 456 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'int generic_isnan&lt;double&gt;(double)' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
+        <args Callee="int generic_isnan&lt;double&gt;(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h} Line 16 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'int generic_isinf&lt;double&gt;(double)' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
+        <args Callee="int generic_isinf&lt;double&gt;(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h} Line 16 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_ieee() const' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::to_ieee() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 509 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::expv() const' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::expv() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 485 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'exp_reduce_::exp_traits&lt;double&gt;::exp_Z1P_m_1(ap_ufixed&lt;51, -8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
+        <args Callee="exp_reduce_::exp_traits&lt;double&gt;::exp_Z1P_m_1(ap_ufixed&lt;51, -8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 90 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:7:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'exp_reduce_::expm1(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 456 Column 0" Caller="exp_reduce_::expm1(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp} Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double explog_based::generic_tanh&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 456 Column 0" Caller="double explog_based::generic_tanh&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h} Line 28 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0" msg_body="Inlining function 'double generic_fabs&lt;double&gt;(double)' into 'double explog_based::generic_tanh&lt;double&gt;(double)'">
+        <args Callee="double generic_fabs&lt;double&gt;(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h} Line 12 Column 0" Caller="double explog_based::generic_tanh&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h} Line 28 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0" msg_body="Inlining function 'double generic_nan&lt;double&gt;(char const*)' into 'double explog_based::generic_tanh&lt;double&gt;(double)'">
+        <args Callee="double generic_nan&lt;double&gt;(char const*)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h} Line 10 Column 0" Caller="double explog_based::generic_tanh&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h} Line 28 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0" msg_body="Inlining function 'exp_reduce_::expm1(double)' into 'double explog_based::generic_tanh&lt;double&gt;(double)'">
+        <args Callee="exp_reduce_::expm1(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp} Line 7 Column 0" Caller="double explog_based::generic_tanh&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h} Line 28 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="HW_CNN.cpp:33:0" msg_body="Inlining function 'tanh' into 'calculateLayer2(hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;, float*)'">
+        <args Callee="tanh" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp} Line 6 Column 0" Caller="calculateLayer2(hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;, float*)" Caller-DebugLoc="File HW_CNN.cpp Line 33 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="HW_CNN.cpp:66:0" msg_body="Inlining function 'tanh' into 'calculateLayer3(float*, hls::stream&lt;float, 0&gt;&amp;, float*)'">
+        <args Callee="tanh" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp} Line 6 Column 0" Caller="calculateLayer3(float*, hls::stream&lt;float, 0&gt;&amp;, float*)" Caller-DebugLoc="File HW_CNN.cpp Line 66 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="HW_CNN.cpp:99:0" msg_body="Inlining function 'tanh' into 'calculateLayer4(float*, hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)'">
+        <args Callee="tanh" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp} Line 6 Column 0" Caller="calculateLayer4(float*, hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)" Caller-DebugLoc="File HW_CNN.cpp Line 99 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="HW_CNN.cpp:13:0" msg_body="Inlining function 'calculateLayer4(float*, hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)' into 'Lenet_HW(hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)'">
+        <args Callee="calculateLayer4(float*, hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)" Callee-DebugLoc="File HW_CNN.cpp Line 99 Column 0" Caller="Lenet_HW(hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)" Caller-DebugLoc="File HW_CNN.cpp Line 13 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

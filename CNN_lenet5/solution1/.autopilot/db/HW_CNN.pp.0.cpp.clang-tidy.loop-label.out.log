@@ -1,0 +1,80 @@
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3726:5: warning: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+    for(i = 0; i < 6; i++) {
+    ^~~
+    VITIS_LOOP_43_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3726:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3727:9: warning: Added loop label VITIS_LOOP_44_2:   [xilinx-label-all-loops]
+        for(j = 0; j < 13; j++) {
+        ^~~
+        VITIS_LOOP_44_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3727:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3728:13: warning: Added loop label VITIS_LOOP_45_3:   [xilinx-label-all-loops]
+            for(k = 0; k < 13; k++) {
+            ^~~
+            VITIS_LOOP_45_3: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3728:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3731:17: warning: Added loop label VITIS_LOOP_48_4:   [xilinx-label-all-loops]
+                for(m = 0; m < 5; m++) {
+                ^~~
+                VITIS_LOOP_48_4: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3731:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3732:21: warning: Added loop label VITIS_LOOP_49_5:   [xilinx-label-all-loops]
+                    for(n = 0; n < 5; n++) {
+                    ^~~
+                    VITIS_LOOP_49_5: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3732:21: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3734:25: warning: Added loop label VITIS_LOOP_51_6:   [xilinx-label-all-loops]
+                        for(int p = 0; p < 29 * 29 - 1; p++) {
+                        ^~~
+                        VITIS_LOOP_51_6: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3734:25: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3759:5: warning: Added loop label VITIS_LOOP_76_1:   [xilinx-label-all-loops]
+    for(i = 0; i < 50; i++) {
+    ^~~
+    VITIS_LOOP_76_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3759:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3760:9: warning: Added loop label VITIS_LOOP_77_2:   [xilinx-label-all-loops]
+        for(j = 0; j < 5; j++) {
+        ^~~
+        VITIS_LOOP_77_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3760:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3761:13: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+            for(k = 0; k < 5; k++) {
+            ^~~
+            VITIS_LOOP_78_3: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3761:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3764:17: warning: Added loop label VITIS_LOOP_81_4:   [xilinx-label-all-loops]
+                for(m = 0; m < 5; m++) {
+                ^~~
+                VITIS_LOOP_81_4: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3764:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3765:21: warning: Added loop label VITIS_LOOP_82_5:   [xilinx-label-all-loops]
+                    for(n = 0; n < 5; n++) {
+                    ^~~
+                    VITIS_LOOP_82_5: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3765:21: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3767:25: warning: Added loop label VITIS_LOOP_84_6:   [xilinx-label-all-loops]
+                        for(int p = 0; p < 13 * 13 - 1; p++) {
+                        ^~~
+                        VITIS_LOOP_84_6: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3767:25: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3792:5: warning: Added loop label VITIS_LOOP_109_1:   [xilinx-label-all-loops]
+    for(i = 0; i < 100; i++) {
+    ^~~
+    VITIS_LOOP_109_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3792:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3795:9: warning: Added loop label VITIS_LOOP_112_2:   [xilinx-label-all-loops]
+        for(j = 0; j < 50; j++) {
+        ^~~
+        VITIS_LOOP_112_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3795:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3797:13: warning: Added loop label VITIS_LOOP_114_3:   [xilinx-label-all-loops]
+            for(k = 0; k < 5; k++) {
+            ^~~
+            VITIS_LOOP_114_3: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3797:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3798:17: warning: Added loop label VITIS_LOOP_115_4:   [xilinx-label-all-loops]
+                for(m = 0; m < 5; m++) {
+                ^~~
+                VITIS_LOOP_115_4: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\HW_CNN.pp.0.cpp:3798:17: note: FIX-IT applied suggested code changes

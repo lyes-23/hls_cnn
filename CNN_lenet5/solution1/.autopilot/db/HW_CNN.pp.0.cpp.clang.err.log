@@ -1,0 +1,55 @@
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/csynth.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=Lenet_HW_XLX_SEP_ PragmaOptions=name=Lenet_HW_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=Lenet_HW
+        ^
+HW_CNN.cpp:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Lenet_HW_XLX_SEP_ PragmaOptions=mode=axis port=Layer1_Neurons_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis port=Layer1_Neurons_stream
+        ^
+HW_CNN.cpp:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Lenet_HW_XLX_SEP_ PragmaOptions=mode=axis port=Layer1_Weights_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis port=Layer1_Weights_stream
+        ^
+HW_CNN.cpp:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Lenet_HW_XLX_SEP_ PragmaOptions=mode=axis port=Layer2_Weights_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis port=Layer2_Weights_stream
+        ^
+HW_CNN.cpp:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Lenet_HW_XLX_SEP_ PragmaOptions=mode=axis port=Layer3_Weights_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis port=Layer3_Weights_stream
+        ^
+HW_CNN.cpp:19:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Lenet_HW_XLX_SEP_ PragmaOptions=mode=axis port=Layer4_Neurons_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis port=Layer4_Neurons_stream
+        ^
+HW_CNN.cpp:35:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer2_XLX_SEP_ PragmaOptions=mode=axis port=Layer1_Neurons_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis port=Layer1_Neurons_stream
+        ^
+HW_CNN.cpp:36:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer2_XLX_SEP_ PragmaOptions=mode=axis port=Layer1_Weights_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis port=Layer1_Weights_stream
+        ^
+HW_CNN.cpp:37:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer2_XLX_SEP_ PragmaOptions=mode=s_axilite port=Layer2_Neurons_CPU bundle=OUTPUT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=Layer2_Neurons_CPU bundle=OUTPUT
+        ^
+HW_CNN.cpp:46:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer2_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+HW_CNN.cpp:68:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer3_XLX_SEP_ PragmaOptions=mode=s_axilite port=Layer2_Neurons_CPU bundle=INPUT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=Layer2_Neurons_CPU bundle=INPUT
+        ^
+HW_CNN.cpp:69:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer3_XLX_SEP_ PragmaOptions=mode=axis port=Layer2_Weights_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis port=Layer2_Weights_stream
+        ^
+HW_CNN.cpp:70:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer3_XLX_SEP_ PragmaOptions=mode=s_axilite port=Layer3_Neurons_CPU bundle=OUTPUT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=Layer3_Neurons_CPU bundle=OUTPUT
+        ^
+HW_CNN.cpp:79:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer3_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+HW_CNN.cpp:101:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer4_XLX_SEP_ PragmaOptions=mode=s_axilite port=Layer3_Neurons_CPU bundle=INPUT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=Layer3_Neurons_CPU bundle=INPUT
+        ^
+HW_CNN.cpp:102:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer4_XLX_SEP_ PragmaOptions=mode=axis port=Layer3_Weights_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis port=Layer3_Weights_stream
+        ^
+HW_CNN.cpp:103:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer4_XLX_SEP_ PragmaOptions=mode=axis port=Layer4_Neurons_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis port=Layer4_Neurons_stream
+        ^
+HW_CNN.cpp:116:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=calculateLayer4_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+18 warnings generated.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***" projectName="CNN_lenet5" solutionName="solution1" date="2025-01-07T08:46:48.384+0100"/>
+        <logs message="ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***" projectName="CNN_lenet5" solutionName="solution1" date="2025-01-07T08:46:47.979+0100"/>
+        <logs message="ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-07T08:46:47.949+0100"/>
+        <logs message="ERROR: [COSIM 212-321] EXE file generate failed." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-07T08:46:47.604+0100"/>
+        <logs message="ERROR: [COSIM 212-317] C++ compile error." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-07T08:46:47.574+0100"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,142 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 42,838       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |  4,127       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  2,099       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  2,045       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  1,268       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |  1,257       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  1,257       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  1,257       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  1,257       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  1,260       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |  1,257       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  1,257       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  1,257       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  1,257       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |  1,342       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |  1,854       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++---------------------------------+----------------------+-----------------+---------------+--------------+-------------+---------------+
+| Function                        | Location             | Compile/Link    | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++---------------------------------+----------------------+-----------------+---------------+--------------+-------------+---------------+
+| + Lenet_HW                      | HW_CNN.cpp:9         | 42,838          | 1,268         | 1,260        | 1,257       | 1,854         |
+|  + calculateLayer2              | HW_CNN.cpp:31        | 14,283          |  444          |  441         |  441        |  764          |
+|   + tanh                        | tanhdouble.cpp:6     | 14,160          |               |              |             |               |
+|    + generic_tanh<double>       | hls_tanh.h:28        | 14,158          |               |              |             |               |
+|       fp_struct                 | x_hls_utils.h:456    |   312           |               |              |             |               |
+|     + generic_fabs<double>      | hls_fabs.h:12        |   938           |               |              |             |               |
+|      + generic_copysign<double> | hls_copysign.h:10    |   936           |               |              |             |               |
+|         fp_struct               | x_hls_utils.h:456    |   624 (2 calls) |               |              |             |               |
+|       + to_ieee                 | x_hls_utils.h:509    |   294           |               |              |             |               |
+|        + to_double              | x_hls_utils.h:494    |   292           |               |              |             |               |
+|           data                  | x_hls_utils.h:475    |   274           |               |              |             |               |
+|     + generic_nan<double>       | hls_nan.h:10         |   384           |               |              |             |               |
+|        fp_struct                | x_hls_utils.h:454    |     4           |               |              |             |               |
+|      + to_ieee                  | x_hls_utils.h:509    |   294           |               |              |             |               |
+|       + to_double               | x_hls_utils.h:494    |   292           |               |              |             |               |
+|          data                   | x_hls_utils.h:475    |   274           |               |              |             |               |
+|     + expm1                     | hls_exp_double.cpp:7 | 12,250          |               |              |             |               |
+|        fp_struct                | x_hls_utils.h:456    |   312           |               |              |             |               |
+|      + exp_generic<double>      | hls_exp_.h:156       | 11,733          |               |              |             |               |
+|         fp_struct               | x_hls_utils.h:456    |   312           |               |              |             |               |
+|         fp_struct               | x_hls_utils.h:454    |     4           |               |              |             |               |
+|       + generic_isnan<double>   | hls_isnan.h:16       |   383           |               |              |             |               |
+|          fp_struct              | x_hls_utils.h:456    |   312           |               |              |             |               |
+|       + generic_isinf<double>   | hls_isinf.h:16       |   382           |               |              |             |               |
+|          fp_struct              | x_hls_utils.h:456    |   312           |               |              |             |               |
+|       + to_ieee                 | x_hls_utils.h:509    | 2,058 (7 calls) |               |              |             |               |
+|        + to_double              | x_hls_utils.h:494    | 2,044 (7 calls) |               |              |             |               |
+|           data                  | x_hls_utils.h:475    | 1,918 (7 calls) |               |              |             |               |
+|         expv                    | x_hls_utils.h:485    |   109           |               |              |             |               |
+|         exp_Z1P_m_1             | hls_exp_.h:90        | 2,685           |               |              |             |               |
+|   + generic_tanh<double>        | hls_tanh.h:28        |                 |  264          |  261         |  261        |  262          |
+|      exp_generic<double>        | hls_exp_.h:156       |                 |  201          |  198         |  198        |  199          |
+|  + calculateLayer3              | HW_CNN.cpp:64        | 14,280          |  509          |  506         |  506        |  751          |
+|   + tanh                        | tanhdouble.cpp:6     | 14,160          |               |              |             |               |
+|    + generic_tanh<double>       | hls_tanh.h:28        | 14,158          |               |              |             |               |
+|       fp_struct                 | x_hls_utils.h:456    |   312           |               |              |             |               |
+|     + generic_fabs<double>      | hls_fabs.h:12        |   938           |               |              |             |               |
+|      + generic_copysign<double> | hls_copysign.h:10    |   936           |               |              |             |               |
+|         fp_struct               | x_hls_utils.h:456    |   624 (2 calls) |               |              |             |               |
+|       + to_ieee                 | x_hls_utils.h:509    |   294           |               |              |             |               |
+|        + to_double              | x_hls_utils.h:494    |   292           |               |              |             |               |
+|           data                  | x_hls_utils.h:475    |   274           |               |              |             |               |
+|     + generic_nan<double>       | hls_nan.h:10         |   384           |               |              |             |               |
+|        fp_struct                | x_hls_utils.h:454    |     4           |               |              |             |               |
+|      + to_ieee                  | x_hls_utils.h:509    |   294           |               |              |             |               |
+|       + to_double               | x_hls_utils.h:494    |   292           |               |              |             |               |
+|          data                   | x_hls_utils.h:475    |   274           |               |              |             |               |
+|     + expm1                     | hls_exp_double.cpp:7 | 12,250          |               |              |             |               |
+|        fp_struct                | x_hls_utils.h:456    |   312           |               |              |             |               |
+|      + exp_generic<double>      | hls_exp_.h:156       | 11,733          |               |              |             |               |
+|         fp_struct               | x_hls_utils.h:456    |   312           |               |              |             |               |
+|         fp_struct               | x_hls_utils.h:454    |     4           |               |              |             |               |
+|       + generic_isnan<double>   | hls_isnan.h:16       |   383           |               |              |             |               |
+|          fp_struct              | x_hls_utils.h:456    |   312           |               |              |             |               |
+|       + generic_isinf<double>   | hls_isinf.h:16       |   382           |               |              |             |               |
+|          fp_struct              | x_hls_utils.h:456    |   312           |               |              |             |               |
+|       + to_ieee                 | x_hls_utils.h:509    | 2,058 (7 calls) |               |              |             |               |
+|        + to_double              | x_hls_utils.h:494    | 2,044 (7 calls) |               |              |             |               |
+|           data                  | x_hls_utils.h:475    | 1,918 (7 calls) |               |              |             |               |
+|         expv                    | x_hls_utils.h:485    |   109           |               |              |             |               |
+|         exp_Z1P_m_1             | hls_exp_.h:90        | 2,685           |               |              |             |               |
+|   + generic_tanh<double>        | hls_tanh.h:28        |                 |  264          |  261         |  261        |  262          |
+|      exp_generic<double>        | hls_exp_.h:156       |                 |  201          |  198         |  198        |  199          |
+|  + calculateLayer4              | HW_CNN.cpp:97        | 14,247          |               |              |             |               |
+|   + tanh                        | tanhdouble.cpp:6     | 14,160          |               |              |             |               |
+|    + generic_tanh<double>       | hls_tanh.h:28        | 14,158          |               |              |             |               |
+|       fp_struct                 | x_hls_utils.h:456    |   312           |               |              |             |               |
+|     + generic_fabs<double>      | hls_fabs.h:12        |   938           |               |              |             |               |
+|      + generic_copysign<double> | hls_copysign.h:10    |   936           |               |              |             |               |
+|         fp_struct               | x_hls_utils.h:456    |   624 (2 calls) |               |              |             |               |
+|       + to_ieee                 | x_hls_utils.h:509    |   294           |               |              |             |               |
+|        + to_double              | x_hls_utils.h:494    |   292           |               |              |             |               |
+|           data                  | x_hls_utils.h:475    |   274           |               |              |             |               |
+|     + generic_nan<double>       | hls_nan.h:10         |   384           |               |              |             |               |
+|        fp_struct                | x_hls_utils.h:454    |     4           |               |              |             |               |
+|      + to_ieee                  | x_hls_utils.h:509    |   294           |               |              |             |               |
+|       + to_double               | x_hls_utils.h:494    |   292           |               |              |             |               |
+|          data                   | x_hls_utils.h:475    |   274           |               |              |             |               |
+|     + expm1                     | hls_exp_double.cpp:7 | 12,250          |               |              |             |               |
+|        fp_struct                | x_hls_utils.h:456    |   312           |               |              |             |               |
+|      + exp_generic<double>      | hls_exp_.h:156       | 11,733          |               |              |             |               |
+|         fp_struct               | x_hls_utils.h:456    |   312           |               |              |             |               |
+|         fp_struct               | x_hls_utils.h:454    |     4           |               |              |             |               |
+|       + generic_isnan<double>   | hls_isnan.h:16       |   383           |               |              |             |               |
+|          fp_struct              | x_hls_utils.h:456    |   312           |               |              |             |               |
+|       + generic_isinf<double>   | hls_isinf.h:16       |   382           |               |              |             |               |
+|          fp_struct              | x_hls_utils.h:456    |   312           |               |              |             |               |
+|       + to_ieee                 | x_hls_utils.h:509    | 2,058 (7 calls) |               |              |             |               |
+|        + to_double              | x_hls_utils.h:494    | 2,044 (7 calls) |               |              |             |               |
+|           data                  | x_hls_utils.h:475    | 1,918 (7 calls) |               |              |             |               |
+|         expv                    | x_hls_utils.h:485    |   109           |               |              |             |               |
+|         exp_Z1P_m_1             | hls_exp_.h:90        | 2,685           |               |              |             |               |
+|  + generic_tanh<double>         | hls_tanh.h:28        |                 |  264          |  261         |  261        |  262          |
+|     exp_generic<double>         | hls_exp_.h:156       |                 |  201          |  198         |  198        |  199          |
++---------------------------------+----------------------+-----------------+---------------+--------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

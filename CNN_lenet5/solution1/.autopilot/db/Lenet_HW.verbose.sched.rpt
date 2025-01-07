@@ -1,0 +1,490 @@
+
+
+================================================================
+== Vitis HLS Report for 'Lenet_HW'
+================================================================
+* Date:           Mon Dec 30 16:17:42 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        CNN_lenet5
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010i-clg225-1L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  50.00 ns|  35.985 ns|    13.50 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+    +---------+---------+----------+----------+--------+--------+---------+
+    |   187789|   187789|  9.389 ms|  9.389 ms|  187790|  187790|       no|
+    +---------+---------+----------+----------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_109_1  |   128800|   128800|      1288|          -|          -|   100|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 39
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 6 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%phi_mul = alloca i32 1"   --->   Operation 40 'alloca' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [HW_CNN.cpp:106->HW_CNN.cpp:27]   --->   Operation 41 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%somme_52_loc = alloca i64 1"   --->   Operation 42 'alloca' 'somme_52_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%Layer2_Neurons_CPU = alloca i64 1" [HW_CNN.cpp:21]   --->   Operation 43 'alloca' 'Layer2_Neurons_CPU' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%Layer3_Neurons_CPU = alloca i64 1" [HW_CNN.cpp:24]   --->   Operation 44 'alloca' 'Layer3_Neurons_CPU' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (1.58ns)   --->   "%store_ln106 = store i7 0, i7 %i" [HW_CNN.cpp:106->HW_CNN.cpp:27]   --->   Operation 45 'store' 'store_ln106' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 46 [1/1] (1.58ns)   --->   "%store_ln0 = store i11 0, i11 %phi_mul"   --->   Operation 46 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 15.0>
+ST_2 : Operation 47 [2/2] (15.0ns)   --->   "%call_ln22 = call void @calculateLayer2, i32 %Layer1_Neurons_stream, i32 %Layer1_Weights_stream, i32 %Layer2_Neurons_CPU, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [HW_CNN.cpp:22]   --->   Operation 47 'call' 'call_ln22' <Predicate = true> <Delay = 15.0> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 48 [1/2] (0.00ns)   --->   "%call_ln22 = call void @calculateLayer2, i32 %Layer1_Neurons_stream, i32 %Layer1_Weights_stream, i32 %Layer2_Neurons_CPU, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [HW_CNN.cpp:22]   --->   Operation 48 'call' 'call_ln22' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 1.00>
+ST_4 : Operation 49 [2/2] (1.00ns)   --->   "%call_ln25 = call void @calculateLayer3, i32 %Layer2_Neurons_CPU, i32 %Layer2_Weights_stream, i32 %Layer3_Neurons_CPU, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [HW_CNN.cpp:25]   --->   Operation 49 'call' 'call_ln25' <Predicate = true> <Delay = 1.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%spectopmodule_ln9 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [HW_CNN.cpp:9]   --->   Operation 50 'spectopmodule' 'spectopmodule_ln9' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Layer1_Neurons_stream, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Layer1_Neurons_stream"   --->   Operation 52 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Layer1_Weights_stream, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Layer1_Weights_stream"   --->   Operation 54 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Layer2_Weights_stream, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Layer2_Weights_stream"   --->   Operation 56 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Layer3_Weights_stream, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Layer3_Weights_stream"   --->   Operation 58 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Layer4_Neurons_stream, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Layer4_Neurons_stream"   --->   Operation 60 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 61 [1/2] (0.00ns)   --->   "%call_ln25 = call void @calculateLayer3, i32 %Layer2_Neurons_CPU, i32 %Layer2_Weights_stream, i32 %Layer3_Neurons_CPU, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [HW_CNN.cpp:25]   --->   Operation 61 'call' 'call_ln25' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%br_ln109 = br void %VITIS_LOOP_112_2.i" [HW_CNN.cpp:109->HW_CNN.cpp:27]   --->   Operation 62 'br' 'br_ln109' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 3.45>
+ST_6 : Operation 63 [1/1] (0.00ns)   --->   "%phi_mul_load = load i11 %phi_mul"   --->   Operation 63 'load' 'phi_mul_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 64 [1/1] (0.00ns)   --->   "%i_1 = load i7 %i" [HW_CNN.cpp:109->HW_CNN.cpp:27]   --->   Operation 64 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 65 [1/1] (1.63ns)   --->   "%next_mul = add i11 %phi_mul_load, i11 25"   --->   Operation 65 'add' 'next_mul' <Predicate = true> <Delay = 1.63> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 66 [1/1] (1.87ns)   --->   "%icmp_ln109 = icmp_eq  i7 %i_1, i7 100" [HW_CNN.cpp:109->HW_CNN.cpp:27]   --->   Operation 66 'icmp' 'icmp_ln109' <Predicate = true> <Delay = 1.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 67 [1/1] (1.87ns)   --->   "%add_ln109 = add i7 %i_1, i7 1" [HW_CNN.cpp:109->HW_CNN.cpp:27]   --->   Operation 67 'add' 'add_ln109' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln109 = br i1 %icmp_ln109, void %VITIS_LOOP_112_2.i.split, void %_Z15calculateLayer4PfRN3hls6streamIfLi0EEES3_.exit" [HW_CNN.cpp:109->HW_CNN.cpp:27]   --->   Operation 68 'br' 'br_ln109' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 69 [1/1] (1.00ns)   --->   "%Layer3_Weights_stream_read = read i32 @_ssdm_op_Read.axis.volatile.i32P128A, i32 %Layer3_Weights_stream" [HW_CNN.cpp:110->HW_CNN.cpp:27]   --->   Operation 69 'read' 'Layer3_Weights_stream_read' <Predicate = (!icmp_ln109)> <Delay = 1.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 70 [1/1] (1.58ns)   --->   "%store_ln106 = store i7 %add_ln109, i7 %i" [HW_CNN.cpp:106->HW_CNN.cpp:27]   --->   Operation 70 'store' 'store_ln106' <Predicate = (!icmp_ln109)> <Delay = 1.58>
+ST_6 : Operation 71 [1/1] (1.58ns)   --->   "%store_ln0 = store i11 %next_mul, i11 %phi_mul"   --->   Operation 71 'store' 'store_ln0' <Predicate = (!icmp_ln109)> <Delay = 1.58>
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "%ret_ln28 = ret" [HW_CNN.cpp:28]   --->   Operation 72 'ret' 'ret_ln28' <Predicate = (icmp_ln109)> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 7.01>
+ST_7 : Operation 73 [1/1] (0.00ns)   --->   "%somme = bitcast i32 %Layer3_Weights_stream_read" [HW_CNN.cpp:110->HW_CNN.cpp:27]   --->   Operation 73 'bitcast' 'somme' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 74 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 74 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 75 [2/2] (7.01ns)   --->   "%call_ln110 = call void @Lenet_HW_Pipeline_VITIS_LOOP_112_2_VITIS_LOOP_114_3_VITIS_LOOP_115_4, i32 %somme, i11 %phi_mul_load, i32 %Layer3_Neurons_CPU, i32 %Layer3_Weights_stream, i32 %somme_52_loc" [HW_CNN.cpp:110->HW_CNN.cpp:27]   --->   Operation 75 'call' 'call_ln110' <Predicate = true> <Delay = 7.01> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 76 [1/2] (0.00ns)   --->   "%call_ln110 = call void @Lenet_HW_Pipeline_VITIS_LOOP_112_2_VITIS_LOOP_114_3_VITIS_LOOP_115_4, i32 %somme, i11 %phi_mul_load, i32 %Layer3_Neurons_CPU, i32 %Layer3_Weights_stream, i32 %somme_52_loc" [HW_CNN.cpp:110->HW_CNN.cpp:27]   --->   Operation 76 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 18.4>
+ST_9 : Operation 77 [1/1] (0.00ns)   --->   "%somme_52_loc_load = load i32 %somme_52_loc"   --->   Operation 77 'load' 'somme_52_loc_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 78 [1/1] (0.00ns)   --->   "%empty_131 = wait i32 @_ssdm_op_Wait"   --->   Operation 78 'wait' 'empty_131' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 79 [1/1] (18.4ns)   --->   "%conv_i = fpext i32 %somme_52_loc_load" [HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 79 'fpext' 'conv_i' <Predicate = true> <Delay = 18.4> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 0> <II = 1> <Delay = 18.4> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 32.3>
+ST_10 : Operation 80 [2/2] (32.3ns)   --->   "%x_assign = dmul i64 %conv_i, i64 0.666667" [HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 80 'dmul' 'x_assign' <Predicate = true> <Delay = 32.3> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 1> <II = 1> <Delay = 32.3> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 32.3>
+ST_11 : Operation 81 [1/2] (32.3ns)   --->   "%x_assign = dmul i64 %conv_i, i64 0.666667" [HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 81 'dmul' 'x_assign' <Predicate = true> <Delay = 32.3> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 1> <II = 1> <Delay = 32.3> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 31.0>
+ST_12 : Operation 82 [24/24] (31.0ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 82 'call' 'tmp' <Predicate = true> <Delay = 31.0> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 35.1>
+ST_13 : Operation 83 [23/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 83 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 35.1>
+ST_14 : Operation 84 [22/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 84 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 35.1>
+ST_15 : Operation 85 [21/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 85 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 35.1>
+ST_16 : Operation 86 [20/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 86 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 35.1>
+ST_17 : Operation 87 [19/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 87 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 35.1>
+ST_18 : Operation 88 [18/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 88 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 18> <Delay = 35.1>
+ST_19 : Operation 89 [17/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 89 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 19> <Delay = 35.1>
+ST_20 : Operation 90 [16/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 90 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 20> <Delay = 35.1>
+ST_21 : Operation 91 [15/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 91 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 21> <Delay = 35.1>
+ST_22 : Operation 92 [14/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 92 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 23 <SV = 22> <Delay = 35.1>
+ST_23 : Operation 93 [13/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 93 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 23> <Delay = 35.1>
+ST_24 : Operation 94 [12/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 94 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 24> <Delay = 35.1>
+ST_25 : Operation 95 [11/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 95 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 26 <SV = 25> <Delay = 35.1>
+ST_26 : Operation 96 [10/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 96 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 27 <SV = 26> <Delay = 35.1>
+ST_27 : Operation 97 [9/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 97 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 28 <SV = 27> <Delay = 35.1>
+ST_28 : Operation 98 [8/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 98 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 29 <SV = 28> <Delay = 35.1>
+ST_29 : Operation 99 [7/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 99 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 30 <SV = 29> <Delay = 35.1>
+ST_30 : Operation 100 [6/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 100 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 30> <Delay = 35.1>
+ST_31 : Operation 101 [5/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 101 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 31> <Delay = 35.1>
+ST_32 : Operation 102 [4/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 102 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 33 <SV = 32> <Delay = 35.1>
+ST_33 : Operation 103 [3/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 103 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 34 <SV = 33> <Delay = 35.1>
+ST_34 : Operation 104 [2/24] (35.1ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 104 'call' 'tmp' <Predicate = true> <Delay = 35.1> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 35 <SV = 34> <Delay = 34.4>
+ST_35 : Operation 105 [1/24] (34.4ns)   --->   "%tmp = call i64 @generic_tanh<double>, i64 %x_assign, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 105 'call' 'tmp' <Predicate = true> <Delay = 34.4> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 36 <SV = 35> <Delay = 32.3>
+ST_36 : Operation 106 [2/2] (32.3ns)   --->   "%mul23_i = dmul i64 %tmp, i64 1.7159" [HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 106 'dmul' 'mul23_i' <Predicate = true> <Delay = 32.3> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 1> <II = 1> <Delay = 32.3> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 32.3>
+ST_37 : Operation 107 [1/2] (32.3ns)   --->   "%mul23_i = dmul i64 %tmp, i64 1.7159" [HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 107 'dmul' 'mul23_i' <Predicate = true> <Delay = 32.3> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 1> <II = 1> <Delay = 32.3> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 22.6>
+ST_38 : Operation 108 [1/1] (21.6ns)   --->   "%conv24_i = fptrunc i64 %mul23_i" [HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 108 'fptrunc' 'conv24_i' <Predicate = true> <Delay = 21.6> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 0> <II = 1> <Delay = 21.6> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_38 : Operation 109 [1/1] (0.00ns)   --->   "%bitcast_ln125 = bitcast i32 %conv24_i" [HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 109 'bitcast' 'bitcast_ln125' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 110 [2/2] (1.00ns)   --->   "%write_ln125 = write void @_ssdm_op_Write.axis.volatile.i32P128A, i32 %Layer4_Neurons_stream, i32 %bitcast_ln125" [HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 110 'write' 'write_ln125' <Predicate = true> <Delay = 1.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 39 <SV = 38> <Delay = 1.00>
+ST_39 : Operation 111 [1/1] (0.00ns)   --->   "%speclooptripcount_ln106 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 100, i64 100, i64 100" [HW_CNN.cpp:106->HW_CNN.cpp:27]   --->   Operation 111 'speclooptripcount' 'speclooptripcount_ln106' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 112 [1/1] (0.00ns)   --->   "%specloopname_ln109 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [HW_CNN.cpp:109->HW_CNN.cpp:27]   --->   Operation 112 'specloopname' 'specloopname_ln109' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 113 [1/2] (1.00ns)   --->   "%write_ln125 = write void @_ssdm_op_Write.axis.volatile.i32P128A, i32 %Layer4_Neurons_stream, i32 %bitcast_ln125" [HW_CNN.cpp:125->HW_CNN.cpp:27]   --->   Operation 113 'write' 'write_ln125' <Predicate = true> <Delay = 1.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_39 : Operation 114 [1/1] (0.00ns)   --->   "%br_ln109 = br void %VITIS_LOOP_112_2.i" [HW_CNN.cpp:109->HW_CNN.cpp:27]   --->   Operation 114 'br' 'br_ln109' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 50.000ns, clock uncertainty: 13.500ns.
+
+ <State 1>: 1.588ns
+The critical path consists of the following:
+	'alloca' operation 7 bit ('i', HW_CNN.cpp:106->HW_CNN.cpp:27) [10]  (0.000 ns)
+	'store' operation 0 bit ('store_ln106', HW_CNN.cpp:106->HW_CNN.cpp:27) of constant 0 on local variable 'i', HW_CNN.cpp:106->HW_CNN.cpp:27 [27]  (1.588 ns)
+
+ <State 2>: 15.000ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln22', HW_CNN.cpp:22) to 'calculateLayer2' [25]  (15.000 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 1.000ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln25', HW_CNN.cpp:25) to 'calculateLayer3' [26]  (1.000 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 3.458ns
+The critical path consists of the following:
+	'load' operation 7 bit ('i', HW_CNN.cpp:109->HW_CNN.cpp:27) on local variable 'i', HW_CNN.cpp:106->HW_CNN.cpp:27 [32]  (0.000 ns)
+	'add' operation 7 bit ('add_ln109', HW_CNN.cpp:109->HW_CNN.cpp:27) [35]  (1.870 ns)
+	'store' operation 0 bit ('store_ln106', HW_CNN.cpp:106->HW_CNN.cpp:27) of variable 'add_ln109', HW_CNN.cpp:109->HW_CNN.cpp:27 on local variable 'i', HW_CNN.cpp:106->HW_CNN.cpp:27 [53]  (1.588 ns)
+
+ <State 7>: 7.011ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln110', HW_CNN.cpp:110->HW_CNN.cpp:27) to 'Lenet_HW_Pipeline_VITIS_LOOP_112_2_VITIS_LOOP_114_3_VITIS_LOOP_115_4' [43]  (7.011 ns)
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 18.485ns
+The critical path consists of the following:
+	'load' operation 32 bit ('somme_52_loc_load') on local variable 'somme_52_loc' [44]  (0.000 ns)
+	'fpext' operation 64 bit ('conv_i', HW_CNN.cpp:125->HW_CNN.cpp:27) [46]  (18.485 ns)
+
+ <State 10>: 32.353ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('x', HW_CNN.cpp:125->HW_CNN.cpp:27) [47]  (32.353 ns)
+
+ <State 11>: 32.353ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('x', HW_CNN.cpp:125->HW_CNN.cpp:27) [47]  (32.353 ns)
+
+ <State 12>: 31.062ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (31.062 ns)
+
+ <State 13>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 14>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 15>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 16>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 17>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 18>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 19>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 20>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 21>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 22>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 23>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 24>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 25>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 26>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 27>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 28>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 29>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 30>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 31>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 32>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 33>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 34>: 35.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (35.160 ns)
+
+ <State 35>: 34.489ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\tanhdouble.cpp:7->HW_CNN.cpp:125->HW_CNN.cpp:27) to 'generic_tanh<double>' [48]  (34.489 ns)
+
+ <State 36>: 32.353ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul23_i', HW_CNN.cpp:125->HW_CNN.cpp:27) [49]  (32.353 ns)
+
+ <State 37>: 32.353ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul23_i', HW_CNN.cpp:125->HW_CNN.cpp:27) [49]  (32.353 ns)
+
+ <State 38>: 22.675ns
+The critical path consists of the following:
+	'fptrunc' operation 32 bit ('conv24_i', HW_CNN.cpp:125->HW_CNN.cpp:27) [50]  (21.675 ns)
+	axis write operation ('write_ln125', HW_CNN.cpp:125->HW_CNN.cpp:27) on port 'Layer4_Neurons_stream' (HW_CNN.cpp:125->HW_CNN.cpp:27) [52]  (1.000 ns)
+
+ <State 39>: 1.000ns
+The critical path consists of the following:
+	axis write operation ('write_ln125', HW_CNN.cpp:125->HW_CNN.cpp:27) on port 'Layer4_Neurons_stream' (HW_CNN.cpp:125->HW_CNN.cpp:27) [52]  (1.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,95 @@
+{
+    "1": {
+        "name": "generic_tanh<double>",
+        "file": "hls_tanh.h",
+        "fileloc": "28",
+        "instructions": "63",
+        "total_instructions": "209",
+        "calls": "3",
+        "basicblocks": "13"
+    },
+    "2": {
+        "name": "calculateLayer3",
+        "file": "HW_CNN.cpp",
+        "fileloc": "64",
+        "instructions": "323",
+        "total_instructions": "532",
+        "calls": "1",
+        "basicblocks": "4",
+        "loads": {
+            "L": "30"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "exp_generic<double>",
+        "file": "hls_exp_.h",
+        "fileloc": "156",
+        "instructions": "146",
+        "total_instructions": "146",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "4"
+        }
+    },
+    "4": {
+        "name": "Lenet_HW_Pipeline_VITIS_LOOP_112_2_VITIS_LOOP_114_3_VITIS_LOOP_115_4",
+        "file": "HW_CNN.cpp",
+        "fileloc": "27",
+        "instructions": "66",
+        "total_instructions": "66",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "calculateLayer2",
+        "file": "HW_CNN.cpp",
+        "fileloc": "31",
+        "instructions": "250",
+        "total_instructions": "459",
+        "calls": "1",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "Lenet_HW",
+        "file": "HW_CNN.cpp",
+        "fileloc": "9",
+        "instructions": "46",
+        "total_instructions": "1312",
+        "calls": "5 2 4 1",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

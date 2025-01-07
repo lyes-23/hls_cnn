@@ -1,0 +1,68 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "3 2 1",
+    "file": "HW_CNN.cpp",
+    "fileloc": 9,
+    "instructions": 77,
+    "loads": {
+      "L": 3
+    },
+    "name": "Lenet_HW",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 1854
+  },
+  "1": {
+    "basicblocks": 13,
+    "calls": "4",
+    "file": "hls_tanh.h",
+    "fileloc": 28,
+    "instructions": 63,
+    "name": "generic_tanh<double>",
+    "total_instructions": 262
+  },
+  "2": {
+    "basicblocks": 10,
+    "calls": "1",
+    "file": "HW_CNN.cpp",
+    "fileloc": 64,
+    "instructions": 489,
+    "loads": {
+      "L": 76
+    },
+    "name": "calculateLayer3",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 751
+  },
+  "3": {
+    "basicblocks": 10,
+    "calls": "1",
+    "file": "HW_CNN.cpp",
+    "fileloc": 31,
+    "instructions": 502,
+    "loads": {
+      "L": 76
+    },
+    "name": "calculateLayer2",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 764
+  },
+  "4": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "hls_exp_.h",
+    "fileloc": 156,
+    "instructions": 199,
+    "loads": {
+      "G": 4
+    },
+    "name": "exp_generic<double>",
+    "total_instructions": 199
+  }
+}

@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../calculateLayer3.cpp in debug mode
+csim.mk:85: recipe for target 'obj/calculateLayer3.o' failed
+../../../../calculateLayer3.cpp: In function 'void calculateLayer3(float*, float*, float*)':
+../../../../calculateLayer3.cpp:41:81: error: 'SIGMOID' was not declared in this scope
+                 Layer3_Neurons_CPU[i * 5 * 5 + j * 5 + k] = (float)SIGMOID(somme);
+                                                                                 ^
+make: *** [obj/calculateLayer3.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

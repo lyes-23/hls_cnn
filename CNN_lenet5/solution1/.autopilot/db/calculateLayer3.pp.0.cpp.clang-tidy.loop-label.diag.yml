@@ -1,0 +1,85 @@
+---
+MainSourceFile:  'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/.autopilot/db/calculateLayer3.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_19_1:  '
+    FileOffset:      19
+    FilePath:        calculateLayer3.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\calculateLayer3.pp.0.cpp'
+        Offset:          113176
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_19_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_20_2:  '
+    FileOffset:      20
+    FilePath:        calculateLayer3.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\calculateLayer3.pp.0.cpp'
+        Offset:          113211
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_20_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_21_3:  '
+    FileOffset:      21
+    FilePath:        calculateLayer3.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\calculateLayer3.pp.0.cpp'
+        Offset:          113249
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_21_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_4:  '
+    FileOffset:      26
+    FilePath:        calculateLayer3.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\calculateLayer3.pp.0.cpp'
+        Offset:          113334
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_5:  '
+    FileOffset:      27
+    FilePath:        calculateLayer3.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\calculateLayer3.pp.0.cpp'
+        Offset:          113380
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_29_6:  '
+    FileOffset:      29
+    FilePath:        calculateLayer3.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\calculateLayer3.pp.0.cpp'
+        Offset:          113435
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_29_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_36_7:  '
+    FileOffset:      36
+    FilePath:        calculateLayer3.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\calculateLayer3.pp.0.cpp'
+        Offset:          113655
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_36_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_37_8:  '
+    FileOffset:      37
+    FilePath:        calculateLayer3.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\calculateLayer3.pp.0.cpp'
+        Offset:          113701
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_37_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_9:  '
+    FileOffset:      38
+    FilePath:        calculateLayer3.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution1\.autopilot\db\calculateLayer3.pp.0.cpp'
+        Offset:          113751
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_9: '
+...

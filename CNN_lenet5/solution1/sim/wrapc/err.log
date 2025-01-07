@@ -1,0 +1,12 @@
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp: In function 'int main()':
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp:52:125: error: invalid initialization of reference of type 'hls::stream<float, 0>&' from expression of type 'float* [100]'
+     Lenet_HW(Layer1_Neurons_stream, Layer1_Weights_stream, Layer2_Weights_stream, Layer3_Weights_stream, Layer4_Neurons_Csim);
+                                                                                                                             ^
+In file included from C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp:4:0:
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet5.h:11:6: note: in passing argument 5 of 'void Lenet_HW(hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&)'
+ void Lenet_HW(hls::stream<float>& Layer1_Neurons_stream,
+      ^~~~~~~~
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp:60:47: error: cannot convert 'float*' to 'float' in initialization
+         float expected = Layer4_Neurons_Csim[i];
+                                               ^
+make: *** [obj/lenet_hw_tb.cpp_pre.cpp.tb.o] Error 1

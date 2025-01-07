@@ -1,0 +1,69 @@
+Commande ECHO d‚sactiv‚e.
+Commande ECHO d‚sactiv‚e.
+INFO: [HLS 200-10] Running 'C:/Xilinx/2023.2/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'TRETEC' on host 'desktop-fh4mgcp' (Windows NT_amd64 version 6.2) on Tue Jan 07 08:46:29 +0100 2025
+INFO: [HLS 200-10] In directory 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/cosim.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/cosim.tcl
+INFO: [HLS 200-1510] Running: open_project CNN_lenet5 
+INFO: [HLS 200-10] Opening project 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5'.
+INFO: [HLS 200-1510] Running: set_top Lenet_HW 
+INFO: [HLS 200-1510] Running: add_files HW_CNN.cpp 
+INFO: [HLS 200-10] Adding design file 'HW_CNN.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files input_data.h 
+INFO: [HLS 200-10] Adding design file 'input_data.h' to the project
+INFO: [HLS 200-1510] Running: add_files lenet5.h 
+INFO: [HLS 200-10] Adding design file 'lenet5.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb lenet_hw_tb.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'lenet_hw_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 50 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name Lenet_HW Lenet_HW 
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_Lenet_HW_util.cpp
+   Compiling lenet_hw_tb.cpp_pre.cpp.tb.cpp
+cosim.tv.mk:77: recipe for target 'obj/lenet_hw_tb.cpp_pre.cpp.tb.o' failed
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp: In function 'int main()':
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp:52:125: error: invalid initialization of reference of type 'hls::stream<float, 0>&' from expression of type 'float* [100]'
+     Lenet_HW(Layer1_Neurons_stream, Layer1_Weights_stream, Layer2_Weights_stream, Layer3_Weights_stream, Layer4_Neurons_Csim);
+                                                                                                                             ^
+In file included from C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp:4:0:
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet5.h:11:6: note: in passing argument 5 of 'void Lenet_HW(hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&)'
+ void Lenet_HW(hls::stream<float>& Layer1_Neurons_stream,
+      ^~~~~~~~
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp:60:47: error: cannot convert 'float*' to 'float' in initialization
+         float expected = Layer4_Neurons_Csim[i];
+                                               ^
+make: *** [obj/lenet_hw_tb.cpp_pre.cpp.tb.o] Error 1
+ERROR: [COSIM 212-317] C++ compile error.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 15.626 seconds; current allocated memory: 15.387 MB.
+command 'ap_source' returned error code
+    while executing
+"source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/cosim.tcl"
+    invoked from within
+"hls::main C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 20.101 seconds; peak allocated memory: 136.117 MB.
