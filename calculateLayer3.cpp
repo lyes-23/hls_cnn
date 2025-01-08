@@ -1,33 +1,30 @@
 
 #include <math.h>
-#include "hls_stream.h"
-#include "lenet5.h"
+#include "calculateLayer3.h"
 
 void calculateLayer3(
-			float Layer2_Neurons_CPU[6*13*13],
-			float Layer2_Weights_CPU [7800],
-			float Layer3_Neurons_CPU [50*5*5]
+			fixed_p Layer2_Neurons_CPU[6*13*13],
+			fixed_p Layer2_Weights_CPU [7800],
+			fixed_p Layer3_Neurons_CPU [50*5*5]
 		)
 {
 
-#pragma HLS INTERFACE s_axilite port=Layer2_Neurons_CPU
+#pragma HLS array_partition variable=Layer2_Neurons_CPU complete dim=1
 #pragma HLS INTERFACE s_axilite port=Layer2_Weights_CPU
-#pragma HLS INTERFACE s_axilite port=Layer3_Neurons_CPU
+#pragma HLS array_partition variable=Layer3_Neurons_CPU complete dim=1
 
+#pragma HLS DATAFLOW
 
-float somme;
+fixed_p somme;
 int i,j,k,m,n;
 
 calculateLayer3_loop: for( i=0;i<50;i++)
 	row_Loop: for(j=0;j<5;j++)
 
 		col_loop: for(k=0;k<5;k++){
-#pragma HLS PIPELINE II=1
 			somme = Layer2_Weights_CPU[26*6*i];
-
 			kernelRow_Loop: for( m=0;m<5;m++)
 				kernelCol_Loop: for( n=0;n<5;n++){
-#pragma HLS Unroll
 					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)	] * Layer2_Neurons_CPU[13*13*0+13*(2*j+m)+(2*k+n)];
 					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+1] * Layer2_Neurons_CPU[13*13*1+13*(2*j+m)+(2*k+n)];
 					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+2] * Layer2_Neurons_CPU[13*13*2+13*(2*j+m)+(2*k+n)];
@@ -35,7 +32,7 @@ calculateLayer3_loop: for( i=0;i<50;i++)
 					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+4] * Layer2_Neurons_CPU[13*13*4+13*(2*j+m)+(2*k+n)];
 					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+5] * Layer2_Neurons_CPU[13*13*5+13*(2*j+m)+(2*k+n)];
 						}
-					Layer3_Neurons_CPU[5*5*i+5*j+k] = (float) SIGMOID(somme);
+					Layer3_Neurons_CPU[5*5*i+5*j+k] = (float) SIGMOID((float)somme);
 
 					}
 }

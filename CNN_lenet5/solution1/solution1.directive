@@ -1,8 +1,8 @@
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
     <sourceFile name="">
-        <directive functionName="Lenet_HW" label="" functionLabel="">
+        <directive functionName="calculateLayer3" label="" functionLabel="">
             <pragma name="TOP">
-                <option name="name" value="Lenet_HW"/>
+                <option name="name" value="calculateLayer3"/>
             </pragma>
         </directive>
     </sourceFile>

@@ -4614,3 +4614,747 @@ ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation 
 ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
 ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
 INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 15.626 seconds; current allocated memory: 15.387 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 40 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 40ns.
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name Lenet_HW Lenet_HW 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.033 seconds; current allocated memory: 0.508 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.323 seconds; current allocated memory: 123.035 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+ERROR: [HLS 207-813] 'calculateLayer3.h' file not found with <angled> include; use "quotes" instead (calculateLayer3.cpp:3:10)
+ERROR: [HLS 207-813] 'calculateLayer2.h' file not found with <angled> include; use "quotes" instead (./calculateLayer3.h:4:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.571 seconds; current allocated memory: 1.266 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.316 seconds; current allocated memory: 120.781 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+ERROR: [HLS 207-813] 'calculateLayer3.h' file not found with <angled> include; use "quotes" instead (calculateLayer3.cpp:3:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.149 seconds; current allocated memory: 1.016 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.309 seconds; current allocated memory: 121.625 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+ERROR: [HLS 207-2981] no template named 'ap_fixed' (./calculateLayer3.h:6:9)
+ERROR: [HLS 207-3776] use of undeclared identifier 'hls' (calculateLayer3.cpp:36:57)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.11 seconds; current allocated memory: 1.109 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.628 seconds; current allocated memory: 0.320 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.213 seconds; current allocated memory: 0.359 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.097 seconds; current allocated memory: 0.379 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.752 seconds; current allocated memory: 0.395 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.838 seconds; current allocated memory: 0.465 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.826 seconds; current allocated memory: 0.473 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 119.216 seconds; current allocated memory: 7.188 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 30.439 seconds; current allocated memory: 0.320 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.334 seconds; current allocated memory: 120.984 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+ERROR: [HLS 207-3325] use of overloaded operator '+=' is ambiguous (with operand types 'float' and 'typename RType<16, 5, true>::mult' (aka 'ap_fixed<32, 10>')) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, float) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, double) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long double) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __float128) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, int) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long long) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __int128) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned int) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long long) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned __int128) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, float) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, double) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long double) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __float128) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, int) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long long) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __int128) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned int) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long long) (calculateLayer3.cpp:29:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned __int128) (calculateLayer3.cpp:29:12)
+ERROR: [HLS 207-3325] use of overloaded operator '+=' is ambiguous (with operand types 'float' and 'typename RType<16, 5, true>::mult' (aka 'ap_fixed<32, 10>')) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, float) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, double) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long double) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __float128) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, int) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long long) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __int128) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned int) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long long) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned __int128) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, float) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, double) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long double) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __float128) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, int) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long long) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __int128) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned int) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long long) (calculateLayer3.cpp:30:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned __int128) (calculateLayer3.cpp:30:12)
+ERROR: [HLS 207-3325] use of overloaded operator '+=' is ambiguous (with operand types 'float' and 'typename RType<16, 5, true>::mult' (aka 'ap_fixed<32, 10>')) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, float) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, double) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long double) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __float128) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, int) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long long) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __int128) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned int) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long long) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned __int128) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, float) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, double) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long double) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __float128) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, int) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long long) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __int128) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned int) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long long) (calculateLayer3.cpp:31:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned __int128) (calculateLayer3.cpp:31:12)
+ERROR: [HLS 207-3325] use of overloaded operator '+=' is ambiguous (with operand types 'float' and 'typename RType<16, 5, true>::mult' (aka 'ap_fixed<32, 10>')) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, float) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, double) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long double) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __float128) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, int) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long long) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __int128) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned int) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long long) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned __int128) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, float) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, double) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long double) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __float128) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, int) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long long) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __int128) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned int) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long long) (calculateLayer3.cpp:32:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned __int128) (calculateLayer3.cpp:32:12)
+ERROR: [HLS 207-3325] use of overloaded operator '+=' is ambiguous (with operand types 'float' and 'typename RType<16, 5, true>::mult' (aka 'ap_fixed<32, 10>')) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, float) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, double) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long double) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __float128) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, int) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long long) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __int128) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned int) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long long) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned __int128) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, float) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, double) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long double) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __float128) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, int) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long long) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __int128) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned int) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long long) (calculateLayer3.cpp:33:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned __int128) (calculateLayer3.cpp:33:12)
+ERROR: [HLS 207-3325] use of overloaded operator '+=' is ambiguous (with operand types 'float' and 'typename RType<16, 5, true>::mult' (aka 'ap_fixed<32, 10>')) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, float) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, double) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long double) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __float128) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, int) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, long long) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, __int128) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned int) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned long long) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(float &, unsigned __int128) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, float) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, double) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long double) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __float128) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, int) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, long long) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, __int128) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned int) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned long long) (calculateLayer3.cpp:34:12)
+INFO: [HLS 207-4370] built-in candidate operator+=(volatile float &, unsigned __int128) (calculateLayer3.cpp:34:12)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 18.208 seconds; current allocated memory: 3.355 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.302 seconds; current allocated memory: 121.695 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 55.282 seconds; current allocated memory: 127.828 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 17,286 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,330 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,284 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,972 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,695 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,163 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,874 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,874 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,874 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,874 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,874 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,874 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,874 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,874 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10,404 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10,416 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:27:20)
+INFO: [HLS 214-291] Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:28:21)
+INFO: [HLS 214-186] Unrolling loop 'kernelRow_Loop' (calculateLayer3.cpp:27:20) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-186] Unrolling loop 'kernelCol_Loop' (calculateLayer3.cpp:28:21) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.39.49.58.69)' into 'fp_struct<double>::to_double() const (.36.46.55.66)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.36.46.55.66)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_fabs<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'exp_reduce_::expm1(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_fabs<double>(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::expm1(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'hls::tanh(double)' into 'calculateLayer3(ap_fixed<16, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to 'Layer2_Neurons_CPU': Complete partitioning on dimension 1. (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to 'Layer3_Neurons_CPU': Complete partitioning on dimension 1. (calculateLayer3.cpp:10:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2042.06 seconds; current allocated memory: 128.938 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 128.938 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 41 seconds. CPU system time: 0 seconds. Elapsed time: 97.631 seconds; current allocated memory: 128.938 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] calculateLayer3.cpp:36: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 16 seconds. CPU system time: 0 seconds. Elapsed time: 38.599 seconds; current allocated memory: 130.199 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158:9) to (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:339:3) in function 'exp_reduce_::exp_generic<double>'... converting 10 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (calculateLayer3.cpp:24:9) to (calculateLayer3.cpp:36:38) in function 'calculateLayer3'... converting 16 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 175 seconds. CPU system time: 1 seconds. Elapsed time: 981.899 seconds; current allocated memory: 191.305 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'row_Loop'(calculateLayer3.cpp:21:12) and 'col_loop'(calculateLayer3.cpp:23:13) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'calculateLayer3_loop'(calculateLayer3.cpp:20:23) and 'row_Loop'(calculateLayer3.cpp:21:12) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'row_Loop' (calculateLayer3.cpp:21:12) in function 'calculateLayer3'.
+INFO: [XFORM 203-541] Flattening a loop nest 'calculateLayer3_loop' (calculateLayer3.cpp:20:23) in function 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 227 seconds. CPU system time: 2 seconds. Elapsed time: 281.418 seconds; current allocated memory: 341.957 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'calculateLayer3' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<double>' to 'generic_tanh_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln243) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'exp_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, function 'exp_generic<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 30 seconds. CPU system time: 0 seconds. Elapsed time: 36.947 seconds; current allocated memory: 342.652 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.387 seconds; current allocated memory: 345.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'generic_tanh<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 39, function 'generic_tanh<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.424 seconds; current allocated memory: 345.480 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.223 seconds; current allocated memory: 345.496 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln29_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 22.836 seconds; current allocated memory: 0.273 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 19.489 seconds; current allocated memory: 0.281 MB.

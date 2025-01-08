@@ -1,59 +1,20 @@
 {
   "0": {
-    "basicblocks": 13,
-    "calls": "3 2 1",
-    "file": "HW_CNN.cpp",
-    "fileloc": 9,
-    "instructions": 77,
+    "basicblocks": 1276,
+    "calls": "2",
+    "file": "calculateLayer3.cpp",
+    "fileloc": 5,
+    "instructions": 10154,
     "loads": {
-      "L": 3
-    },
-    "name": "Lenet_HW",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 1854
-  },
-  "1": {
-    "basicblocks": 13,
-    "calls": "4",
-    "file": "hls_tanh.h",
-    "fileloc": 28,
-    "instructions": 63,
-    "name": "generic_tanh<double>",
-    "total_instructions": 262
-  },
-  "2": {
-    "basicblocks": 10,
-    "calls": "1",
-    "file": "HW_CNN.cpp",
-    "fileloc": 64,
-    "instructions": 489,
-    "loads": {
-      "L": 76
+      "T": 1165
     },
     "name": "calculateLayer3",
     "stores": {
-      "L": 26
+      "T": 1250
     },
-    "total_instructions": 751
+    "total_instructions": 10416
   },
-  "3": {
-    "basicblocks": 10,
-    "calls": "1",
-    "file": "HW_CNN.cpp",
-    "fileloc": 31,
-    "instructions": 502,
-    "loads": {
-      "L": 76
-    },
-    "name": "calculateLayer2",
-    "stores": {
-      "L": 26
-    },
-    "total_instructions": 764
-  },
-  "4": {
+  "1": {
     "basicblocks": 11,
     "calls": "",
     "file": "hls_exp_.h",
@@ -64,5 +25,14 @@
     },
     "name": "exp_generic<double>",
     "total_instructions": 199
+  },
+  "2": {
+    "basicblocks": 13,
+    "calls": "1",
+    "file": "hls_tanh.h",
+    "fileloc": 28,
+    "instructions": 63,
+    "name": "generic_tanh<double>",
+    "total_instructions": 262
   }
 }

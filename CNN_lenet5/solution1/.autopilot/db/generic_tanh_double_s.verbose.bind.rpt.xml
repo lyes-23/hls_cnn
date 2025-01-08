@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'generic_tanh_double_s'" level="0">
-<item name = "Date">Mon Dec 30 16:17:39 2024
+<item name = "Date">Wed Jan  8 16:47:46 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_lenet5</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">50.00 ns, 35.160 ns, 13.50 ns</column>
+<column name="ap_clk">30.00 ns, 21.177 ns, 8.10 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">23, 23, 1.150 us, 1.150 us, 1, 1, yes</column>
+<column name="">38, 38, 1.140 us, 1.140 us, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_exp_generic_double_s_fu_89">exp_generic_double_s, 5, 5, 0.250 us, 0.250 us, 1, 1, yes</column>
+<column name="grp_exp_generic_double_s_fu_89">exp_generic_double_s, 7, 7, 0.210 us, 0.210 us, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

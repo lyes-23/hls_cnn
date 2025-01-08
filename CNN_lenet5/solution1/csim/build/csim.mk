@@ -19,7 +19,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../lenet_hw_tb.cpp ../../../../HW_CNN.cpp
+HLS_SOURCES = ../../../../calculateLayer3_tb.cpp ../../../../calculateLayer3.cpp
 
 override TARGET := csim.exe
 
@@ -75,14 +75,14 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/lenet_hw_tb.o: ../../../../lenet_hw_tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../lenet_hw_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/calculateLayer3_tb.o: ../../../../calculateLayer3_tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../calculateLayer3_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/lenet_hw_tb.d
+-include $(ObjDir)/calculateLayer3_tb.d
 
-$(ObjDir)/HW_CNN.o: ../../../../HW_CNN.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../HW_CNN.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/calculateLayer3.o: ../../../../calculateLayer3.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../calculateLayer3.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/HW_CNN.d
+-include $(ObjDir)/calculateLayer3.d

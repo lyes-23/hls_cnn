@@ -42,24 +42,29 @@
 			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/.tcls</location>
 		</link>
 		<link>
-			<name>source/HW_CNN.cpp</name>
-			<type>1</type>
-			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/HW_CNN.cpp</location>
-		</link>
-		<link>
-			<name>source/calculateLayer2.cpp</name>
-			<type>1</type>
-			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer2.cpp</location>
-		</link>
-		<link>
 			<name>source/calculateLayer2.h</name>
 			<type>1</type>
 			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer2.h</location>
 		</link>
 		<link>
-			<name>testbench/lenet_hw_tb.cpp</name>
+			<name>source/calculateLayer3.cpp</name>
 			<type>1</type>
-			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp</location>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer3.cpp</location>
+		</link>
+		<link>
+			<name>source/calculateLayer3.h</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer3.h</location>
+		</link>
+		<link>
+			<name>testbench/calculateLayer3_tb.cpp</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer3_tb.cpp</location>
+		</link>
+		<link>
+			<name>testbench/input_data.h</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/input_data.h</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

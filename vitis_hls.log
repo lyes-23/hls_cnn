@@ -1,69 +1,576 @@
 Commande ECHO d‚sactiv‚e.
 Commande ECHO d‚sactiv‚e.
 INFO: [HLS 200-10] Running 'C:/Xilinx/2023.2/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'TRETEC' on host 'desktop-fh4mgcp' (Windows NT_amd64 version 6.2) on Tue Jan 07 08:46:29 +0100 2025
+INFO: [HLS 200-10] For user 'TRETEC' on host 'desktop-fh4mgcp' (Windows NT_amd64 version 6.2) on Wed Jan 08 16:56:01 +0100 2025
 INFO: [HLS 200-10] In directory 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls'
 INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
-Sourcing Tcl script 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/cosim.tcl'
-INFO: [HLS 200-1510] Running: source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/cosim.tcl
+Sourcing Tcl script 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/csim.tcl
 INFO: [HLS 200-1510] Running: open_project CNN_lenet5 
 INFO: [HLS 200-10] Opening project 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5'.
-INFO: [HLS 200-1510] Running: set_top Lenet_HW 
-INFO: [HLS 200-1510] Running: add_files HW_CNN.cpp 
-INFO: [HLS 200-10] Adding design file 'HW_CNN.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files input_data.h 
-INFO: [HLS 200-10] Adding design file 'input_data.h' to the project
-INFO: [HLS 200-1510] Running: add_files lenet5.h 
-INFO: [HLS 200-10] Adding design file 'lenet5.h' to the project
-INFO: [HLS 200-1510] Running: add_files -tb lenet_hw_tb.cpp -cflags -Wno-unknown-pragmas 
-INFO: [HLS 200-10] Adding test bench file 'lenet_hw_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: set_top calculateLayer3 
+INFO: [HLS 200-1510] Running: add_files calculateLayer2.h 
+INFO: [HLS 200-10] Adding design file 'calculateLayer2.h' to the project
+INFO: [HLS 200-1510] Running: add_files calculateLayer3.cpp 
+INFO: [HLS 200-10] Adding design file 'calculateLayer3.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files calculateLayer3.h 
+INFO: [HLS 200-10] Adding design file 'calculateLayer3.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb calculateLayer3_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'calculateLayer3_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb input_data.h 
+INFO: [HLS 200-10] Adding test bench file 'input_data.h' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
 INFO: [HLS 200-10] Opening solution 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1'.
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
 INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
 INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
 INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
-INFO: [HLS 200-1510] Running: create_clock -period 50 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
 INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
 INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution1/directives.tcl
-INFO: [HLS 200-1510] Running: set_directive_top -name Lenet_HW Lenet_HW 
-INFO: [HLS 200-1510] Running: cosim_design 
-INFO: [COSIM 212-47] Using XSIM for RTL simulation.
-INFO: [COSIM 212-14] Instrumenting C test bench ...
-   Build using "C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
-   Compiling apatb_Lenet_HW_util.cpp
-   Compiling lenet_hw_tb.cpp_pre.cpp.tb.cpp
-cosim.tv.mk:77: recipe for target 'obj/lenet_hw_tb.cpp_pre.cpp.tb.o' failed
-C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp: In function 'int main()':
-C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp:52:125: error: invalid initialization of reference of type 'hls::stream<float, 0>&' from expression of type 'float* [100]'
-     Lenet_HW(Layer1_Neurons_stream, Layer1_Weights_stream, Layer2_Weights_stream, Layer3_Weights_stream, Layer4_Neurons_Csim);
-                                                                                                                             ^
-In file included from C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp:4:0:
-C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet5.h:11:6: note: in passing argument 5 of 'void Lenet_HW(hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&)'
- void Lenet_HW(hls::stream<float>& Layer1_Neurons_stream,
-      ^~~~~~~~
-C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/lenet_hw_tb.cpp:60:47: error: cannot convert 'float*' to 'float' in initialization
-         float expected = Layer4_Neurons_Csim[i];
-                                               ^
-make: *** [obj/lenet_hw_tb.cpp_pre.cpp.tb.o] Error 1
-ERROR: [COSIM 212-317] C++ compile error.
-ERROR: [COSIM 212-321] EXE file generate failed.
-ERROR: [COSIM 212-321] EXE file generate failed.
-ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
-ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
-ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 15.626 seconds; current allocated memory: 15.387 MB.
-command 'ap_source' returned error code
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../calculateLayer3_tb.cpp in debug mode
+csim.mk:79: recipe for target 'obj/calculateLayer3_tb.o' failed
+In file included from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/floating_point_v7_1_bitacc_cmodel.h:150:0,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/hls_fpo.h:140,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/hls_half_fpo.h:19,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/hls_half.h:26,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/hls_math.h:15,
+                 from ../../../../calculateLayer2.h:5,
+                 from ../../../../calculateLayer3.h:4,
+                 from ../../../../calculateLayer3_tb.cpp:2:
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/gmp.h:58:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/hls_fpo.h:140:0,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/hls_half_fpo.h:19,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/hls_half.h:26,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/hls_math.h:15,
+                 from ../../../../calculateLayer2.h:5,
+                 from ../../../../calculateLayer3.h:4,
+                 from ../../../../calculateLayer3_tb.cpp:2:
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/floating_point_v7_1_bitacc_cmodel.h:142:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+../../../../calculateLayer3_tb.cpp: In function 'int main(int, char**)':
+../../../../calculateLayer3_tb.cpp:57:81: error: ambiguous overload for 'operator*' (operand types are 'fixed_p {aka ap_fixed<16, 5, (ap_q_mode)5u, (ap_o_mode)3u, 0>}' and 'float')
+                             somme += Layer1_Weights_CPU[26 * i + 5 * m + n + 1] *
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+                                      Layer1_Neurons_CPU[29 * (m + 2 * j) + n + 2 * k];
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../calculateLayer3_tb.cpp:57:81: note: candidate: operator*(long double, float) <built-in>
+../../../../calculateLayer3_tb.cpp:57:81: note: candidate: operator*(double, float) <built-in>
+../../../../calculateLayer3_tb.cpp:57:81: note: candidate: operator*(float, float) <built-in>
+../../../../calculateLayer3_tb.cpp:57:81: note: candidate: operator*(int, float) <built-in>
+../../../../calculateLayer3_tb.cpp:57:81: note: candidate: operator*(unsigned int, float) <built-in>
+../../../../calculateLayer3_tb.cpp:57:81: note: candidate: operator*(long int, float) <built-in>
+../../../../calculateLayer3_tb.cpp:57:81: note: candidate: operator*(long unsigned int, float) <built-in>
+../../../../calculateLayer3_tb.cpp:57:81: note: candidate: operator*(ap_ulong {aka long long unsigned int}, float) <built-in>
+../../../../calculateLayer3_tb.cpp:57:81: note: candidate: operator*(ap_slong {aka long long int}, float) <built-in>
+In file included from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/ap_fixed.h:10:0,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/hls_hotbm_apfixed.h:16,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/hls_math.h:1039,
+                 from ../../../../calculateLayer2.h:5,
+                 from ../../../../calculateLayer3.h:4,
+                 from ../../../../calculateLayer3_tb.cpp:2:
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, false>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, ap_ulong) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, false>::mult = ap_fixed<80, 69, (ap_q_mode)5u, (ap_o_mode)3u, 0>; ap_ulong = long long unsigned int]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2383:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(ap_ulong, _AP_SIZE_ap_slong, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, true>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, ap_slong) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, true>::mult = ap_fixed<80, 69, (ap_q_mode)5u, (ap_o_mode)3u, 0>; ap_slong = long long int]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2382:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(ap_slong, _AP_SIZE_ap_slong, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, false>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, long unsigned int) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, false>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2381:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned long, _AP_SIZE_long, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, true>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, long int) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, true>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2380:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(long, _AP_SIZE_long, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, false>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, unsigned int) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, false>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2379:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned int, _AP_SIZE_int, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, true>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, int) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, true>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2378:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(int, _AP_SIZE_int, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, false>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, short unsigned int) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, false>::mult = ap_fixed<32, 21, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2377:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned short, _AP_SIZE_short, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, true>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, short int) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, true>::mult = ap_fixed<32, 21, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2376:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(short, _AP_SIZE_short, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, false>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, unsigned char) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, false>::mult = ap_fixed<24, 13, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2375:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned char, 8, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, true>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, signed char) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, true>::mult = ap_fixed<24, 13, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2374:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(signed char, 8, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, CHAR_IS_SIGNED>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, char) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, CHAR_IS_SIGNED>::mult = ap_fixed<24, 13, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2373:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(char, 8, CHAR_IS_SIGNED)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2293:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<1, 1, false>::mult operator*(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, bool) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<1, 1, false>::mult = ap_fixed<17, 6, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2372:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(bool, 1, false)
+ ^~~~~~~~~~~~~~~~~~
+In file included from ../../../../calculateLayer3_tb.cpp:2:0:
+../../../../calculateLayer3.h:11:50: error: ambiguous overload for 'operator*' (operand types are 'double' and 'fixed_p {aka ap_fixed<16, 5, (ap_q_mode)5u, (ap_o_mode)3u, 0>}')
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:62:64: note: in expansion of macro 'SIGMOID'
+                 Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                                                                ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, long double) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:62:64: note: in expansion of macro 'SIGMOID'
+                 Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                                                                ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, double) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:62:64: note: in expansion of macro 'SIGMOID'
+                 Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                                                                ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, float) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:62:64: note: in expansion of macro 'SIGMOID'
+                 Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                                                                ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, int) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:62:64: note: in expansion of macro 'SIGMOID'
+                 Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                                                                ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, unsigned int) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:62:64: note: in expansion of macro 'SIGMOID'
+                 Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                                                                ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, long int) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:62:64: note: in expansion of macro 'SIGMOID'
+                 Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                                                                ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, long unsigned int) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:62:64: note: in expansion of macro 'SIGMOID'
+                 Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                                                                ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, ap_ulong {aka long long unsigned int}) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:62:64: note: in expansion of macro 'SIGMOID'
+                 Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                                                                ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, ap_slong {aka long long int}) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:62:64: note: in expansion of macro 'SIGMOID'
+                 Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                                                                ^~~~~~~
+In file included from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/ap_fixed.h:10:0,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/hls_hotbm_apfixed.h:16,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/hls_math.h:1039,
+                 from ../../../../calculateLayer2.h:5,
+                 from ../../../../calculateLayer3.h:4,
+                 from ../../../../calculateLayer3_tb.cpp:2:
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, false>::mult operator*(ap_ulong, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, false>::mult = ap_fixed<80, 69, (ap_q_mode)5u, (ap_o_mode)3u, 0>; ap_ulong = long long unsigned int]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2383:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(ap_ulong, _AP_SIZE_ap_slong, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, true>::mult operator*(ap_slong, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, true>::mult = ap_fixed<80, 69, (ap_q_mode)5u, (ap_o_mode)3u, 0>; ap_slong = long long int]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2382:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(ap_slong, _AP_SIZE_ap_slong, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, false>::mult operator*(long unsigned int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, false>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2381:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned long, _AP_SIZE_long, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, true>::mult operator*(long int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, true>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2380:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(long, _AP_SIZE_long, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, false>::mult operator*(unsigned int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, false>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2379:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned int, _AP_SIZE_int, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, true>::mult operator*(int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, true>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2378:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(int, _AP_SIZE_int, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, false>::mult operator*(short unsigned int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, false>::mult = ap_fixed<32, 21, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2377:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned short, _AP_SIZE_short, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, true>::mult operator*(short int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, true>::mult = ap_fixed<32, 21, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2376:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(short, _AP_SIZE_short, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, false>::mult operator*(unsigned char, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, false>::mult = ap_fixed<24, 13, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2375:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned char, 8, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, true>::mult operator*(signed char, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, true>::mult = ap_fixed<24, 13, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2374:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(signed char, 8, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, CHAR_IS_SIGNED>::mult operator*(char, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, CHAR_IS_SIGNED>::mult = ap_fixed<24, 13, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2373:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(char, 8, CHAR_IS_SIGNED)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<1, 1, false>::mult operator*(bool, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<1, 1, false>::mult = ap_fixed<17, 6, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2372:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(bool, 1, false)
+ ^~~~~~~~~~~~~~~~~~
+In file included from ../../../../calculateLayer3_tb.cpp:2:0:
+../../../../calculateLayer3.h:11:50: error: ambiguous overload for 'operator*' (operand types are 'double' and 'fixed_p {aka ap_fixed<16, 5, (ap_q_mode)5u, (ap_o_mode)3u, 0>}')
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:81:49: note: in expansion of macro 'SIGMOID'
+          expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+                                                 ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, long double) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:81:49: note: in expansion of macro 'SIGMOID'
+          expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+                                                 ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, double) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:81:49: note: in expansion of macro 'SIGMOID'
+          expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+                                                 ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, float) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:81:49: note: in expansion of macro 'SIGMOID'
+          expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+                                                 ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, int) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:81:49: note: in expansion of macro 'SIGMOID'
+          expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+                                                 ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, unsigned int) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:81:49: note: in expansion of macro 'SIGMOID'
+          expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+                                                 ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, long int) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:81:49: note: in expansion of macro 'SIGMOID'
+          expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+                                                 ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, long unsigned int) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:81:49: note: in expansion of macro 'SIGMOID'
+          expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+                                                 ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, ap_ulong {aka long long unsigned int}) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:81:49: note: in expansion of macro 'SIGMOID'
+          expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+                                                 ^~~~~~~
+../../../../calculateLayer3.h:11:50: note: candidate: operator*(double, ap_slong {aka long long int}) <built-in>
+ #define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
+                                                   
+../../../../calculateLayer3_tb.cpp:81:49: note: in expansion of macro 'SIGMOID'
+          expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+                                                 ^~~~~~~
+In file included from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/ap_fixed.h:10:0,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/hls_hotbm_apfixed.h:16,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/hls_math.h:1039,
+                 from ../../../../calculateLayer2.h:5,
+                 from ../../../../calculateLayer3.h:4,
+                 from ../../../../calculateLayer3_tb.cpp:2:
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, false>::mult operator*(ap_ulong, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, false>::mult = ap_fixed<80, 69, (ap_q_mode)5u, (ap_o_mode)3u, 0>; ap_ulong = long long unsigned int]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2383:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(ap_ulong, _AP_SIZE_ap_slong, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, true>::mult operator*(ap_slong, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_ap_slong, _AP_SIZE_ap_slong, true>::mult = ap_fixed<80, 69, (ap_q_mode)5u, (ap_o_mode)3u, 0>; ap_slong = long long int]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2382:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(ap_slong, _AP_SIZE_ap_slong, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, false>::mult operator*(long unsigned int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, false>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2381:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned long, _AP_SIZE_long, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, true>::mult operator*(long int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_long, _AP_SIZE_long, true>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2380:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(long, _AP_SIZE_long, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, false>::mult operator*(unsigned int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, false>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2379:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned int, _AP_SIZE_int, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, true>::mult operator*(int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_int, _AP_SIZE_int, true>::mult = ap_fixed<48, 37, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2378:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(int, _AP_SIZE_int, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, false>::mult operator*(short unsigned int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, false>::mult = ap_fixed<32, 21, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2377:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned short, _AP_SIZE_short, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, true>::mult operator*(short int, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_SIZE_short, _AP_SIZE_short, true>::mult = ap_fixed<32, 21, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2376:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(short, _AP_SIZE_short, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, false>::mult operator*(unsigned char, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, false>::mult = ap_fixed<24, 13, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2375:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(unsigned char, 8, false)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, true>::mult operator*(signed char, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, true>::mult = ap_fixed<24, 13, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2374:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(signed char, 8, true)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, CHAR_IS_SIGNED>::mult operator*(char, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, CHAR_IS_SIGNED>::mult = ap_fixed<24, 13, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2373:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(char, 8, CHAR_IS_SIGNED)
+ ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2302:3: note: candidate: typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<1, 1, false>::mult operator*(bool, const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&) [with int _AP_W = 16; int _AP_I = 5; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<1, 1, false>::mult = ap_fixed<17, 6, (ap_q_mode)5u, (ap_o_mode)3u, 0>]
+   operator BIN_OP(                                                          \
+   ^
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2347:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+   AF_BIN_OP_WITH_INT(*, C_TYPE, (BITS), (SIGN), mult)     \
+   ^~~~~~~~~~~~~~~~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h:2372:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+ ALL_AF_OP_WITH_INT(bool, 1, false)
+ ^~~~~~~~~~~~~~~~~~
+../../../../calculateLayer3_tb.cpp:95:63: error: call of overloaded 'fabs(ap_fixed_base<16, 5, true, (ap_q_mode)5u, (ap_o_mode)3u, 0>::RType<16, 5, true>::minus)' is ambiguous
+            if (fabs(Layer3_Neurons_CPU[i] - expected_output[i]) > (0.05f)) {
+                                                               ^
+In file included from C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:45:0,
+                 from C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:37,
+                 from ../../../../calculateLayer2.h:4,
+                 from ../../../../calculateLayer3.h:4,
+                 from ../../../../calculateLayer3_tb.cpp:2:
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/math.h:205:25: note: candidate: double fabs(double)
+   extern double __cdecl fabs (double _X);
+                         ^~~~
+In file included from C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:37:0,
+                 from ../../../../calculateLayer2.h:4,
+                 from ../../../../calculateLayer3.h:4,
+                 from ../../../../calculateLayer3_tb.cpp:2:
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:268:3: note: candidate: constexpr long double std::fabs(long double)
+   fabs(long double __x)
+   ^~~~
+C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:264:3: note: candidate: constexpr float std::fabs(float)
+   fabs(float __x)
+   ^~~~
+make: *** [obj/calculateLayer3_tb.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 19.489 seconds; current allocated memory: 0.281 MB.
+4
     while executing
-"source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/cosim.tcl"
+"source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/csim.tcl"
     invoked from within
-"hls::main C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/cosim.tcl"
+"hls::main C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/csim.tcl"
     ("uplevel" body line 1)
     invoked from within
 "uplevel 1 hls::main {*}$newargs"
     (procedure "hls_proc" line 16)
     invoked from within
 "hls_proc [info nameofexecutable] $argv"
-INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 20.101 seconds; peak allocated memory: 136.117 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 22.795 seconds; peak allocated memory: 127.031 MB.

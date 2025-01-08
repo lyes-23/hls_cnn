@@ -3,21 +3,22 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <simLog>
-        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***" projectName="CNN_lenet5" solutionName="solution1" date="2025-01-07T08:46:48.384+0100"/>
-        <logs message="ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***" projectName="CNN_lenet5" solutionName="solution1" date="2025-01-07T08:46:47.979+0100"/>
-        <logs message="ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-07T08:46:47.949+0100"/>
-        <logs message="ERROR: [COSIM 212-321] EXE file generate failed." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-07T08:46:47.604+0100"/>
-        <logs message="ERROR: [COSIM 212-317] C++ compile error." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-07T08:46:47.574+0100"/>
-      </simLog>
+      <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-08T16:56:23.382+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-08T16:55:11.788+0100"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog/>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'generic_tanh&lt;double>' to 'generic_tanh_double_s'." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-08T16:47:44.420+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'exp_generic&lt;double>' to 'exp_generic_double_s'." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-08T16:47:08.797+0100" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] calculateLayer3.cpp:36: variable-indexed range selection may cause suboptimal QoR." projectName="CNN_lenet5" solutionName="solution1" date="2025-01-08T16:26:13.036+0100" type="Warning"/>
+      </synLog>
       <simLog/>
       <mgLog/>
       <packageLog/>

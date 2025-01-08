@@ -13,8 +13,8 @@ void calculateLayer2(
 
 #pragma HLS INTERFACE mode=s_axilite port=Layer1_Neurons_CPU
 #pragma HLS INTERFACE mode=s_axilite port=Layer1_Weights_CPU
-#pragma HLS INTERFACE mode=s_axilite port=Layer2_Neurons_CPU
-#pragma HLS INTERFACE mode=s_axilite port=return bundle= CTRL_bus
+#pragma HLS array_partition variable=Layer2_Neurons_CPU complete dim=1
+//#pragma HLS INTERFACE mode=s_axilite port=return bundle= CTRL_bus
 
 	fixed_p somme;
     int i, j, k, m, n;
