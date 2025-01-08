@@ -1,18 +1,18 @@
 {
   "0": {
-    "basicblocks": 1276,
-    "calls": "2",
+    "basicblocks": 379,
+    "calls": "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2",
     "file": "calculateLayer3.cpp",
     "fileloc": 5,
-    "instructions": 10154,
+    "instructions": 32820,
     "loads": {
       "T": 1165
     },
     "name": "calculateLayer3",
     "stores": {
-      "T": 1250
+      "T": 25
     },
-    "total_instructions": 10416
+    "total_instructions": 39370
   },
   "1": {
     "basicblocks": 11,

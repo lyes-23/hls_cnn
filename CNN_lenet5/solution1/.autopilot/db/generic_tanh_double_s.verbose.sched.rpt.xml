@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'generic_tanh_double_s'" level="0">
-<item name = "Date">Wed Jan  8 16:47:46 2025
+<item name = "Date">Wed Jan  8 19:42:59 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_lenet5</item>

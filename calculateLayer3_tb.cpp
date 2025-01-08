@@ -8,7 +8,7 @@
 int main(int argc, char **argv) {
 
 
-    float Layer1_Neurons_CPU[29 * 29] = {
+    fixed_p Layer1_Neurons_CPU[29 * 29] = {
     		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
     		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
     		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -59,7 +59,7 @@ int main(int argc, char **argv) {
                         }
                     }
                 }
-                Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID(somme);
+                Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = SIGMOID((float)somme);
             }
         }
     }
@@ -78,7 +78,7 @@ int main(int argc, char **argv) {
     					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+4] * Layer2_Neurons_CPU[13*13*4+13*(2*j+m)+(2*k+n)];
     					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+5] * Layer2_Neurons_CPU[13*13*5+13*(2*j+m)+(2*k+n)];
     						}
-    					expected_output[5*5*i+5*j+k] = (float) SIGMOID(somme);
+    					expected_output[5*5*i+5*j+k] = (float) SIGMOID((float)somme);
 
     					}
 
@@ -92,7 +92,7 @@ int main(int argc, char **argv) {
     int error_count = 0;
    #ifdef HW_COSIM
        for (int i = 0; i < 6 * 13 * 13; i++) {
-           if (fabs(Layer3_Neurons_CPU[i] - expected_output[i]) > (0.05f)) {
+           if (fabs((float)Layer3_Neurons_CPU[i] - (float)expected_output[i]) > (0.05f)) {
                error_count++;
                printf("Mismatch at index %d: Expected %f, Got %f\n", i, expected_output[i], Layer3_Neurons_CPU[i]);
            }

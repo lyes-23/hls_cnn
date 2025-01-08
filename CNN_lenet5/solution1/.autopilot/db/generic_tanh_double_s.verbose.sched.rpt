@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'generic_tanh_double_s'
 ================================================================
-* Date:           Wed Jan  8 16:47:46 2025
+* Date:           Wed Jan  8 19:42:59 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN_lenet5
@@ -339,8 +339,7 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'dsub' operation 64 bit ('x', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:55) [30]  (14.773 ns)
 	'select' operation 64 bit ('x', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:54) [32]  (1.481 ns)
-	'icmp' operation 1 bit ('icmp_ln9_1', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:9->C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61) [37]  (1.639 ns)
-	'and' operation 1 bit ('and_ln10', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:10->C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61) [44]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln10', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:10->C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61) [43]  (1.639 ns)
 	'and' operation 1 bit ('and_ln10_1', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:10->C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61) [45]  (0.978 ns)
 	multiplexor before 'phi' operation 64 bit ('x') with incoming values : ('x', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:54) ('sub_i', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:11->C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61) [52]  (1.588 ns)
 

@@ -1,7 +1,27 @@
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: calculateLayer3.cpp, Line: 27, Column: 20 }
+DebugLoc:        { File: calculateLayer3.cpp, Line: 23, Column: 12 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        row_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 25, Column: 13 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        col_loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 28, Column: 20 }
 Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
 Args:            
   - String:          'Loop '''
@@ -11,7 +31,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: calculateLayer3.cpp, Line: 28, Column: 21 }
+DebugLoc:        { File: calculateLayer3.cpp, Line: 29, Column: 21 }
 Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
 Args:            
   - String:          'Loop '''
@@ -25,9 +45,41 @@ DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
 Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
 Args:            
   - String:          'Unrolling loop '''
+  - LoopName:        row_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:23:12'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        col_loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:25:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
   - LoopName:        kernelRow_Loop
   - String:          ''' ('
-  - LoopLoc:         'calculateLayer3.cpp:27:20'
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
   - String:          ') '
   - String:          'in function '''
   - String:          calculateLayer3
@@ -43,7 +95,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        kernelCol_Loop
   - String:          ''' ('
-  - LoopLoc:         'calculateLayer3.cpp:28:21'
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
   - String:          ') '
   - String:          'in function '''
   - String:          calculateLayer3
@@ -59,7 +111,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        kernelCol_Loop
   - String:          ''' ('
-  - LoopLoc:         'calculateLayer3.cpp:28:21'
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
   - String:          ') '
   - String:          'in function '''
   - String:          calculateLayer3
@@ -75,7 +127,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        kernelCol_Loop
   - String:          ''' ('
-  - LoopLoc:         'calculateLayer3.cpp:28:21'
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
   - String:          ') '
   - String:          'in function '''
   - String:          calculateLayer3
@@ -91,7 +143,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        kernelCol_Loop
   - String:          ''' ('
-  - LoopLoc:         'calculateLayer3.cpp:28:21'
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
   - String:          ') '
   - String:          'in function '''
   - String:          calculateLayer3
@@ -107,7 +159,2375 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        kernelCol_Loop
   - String:          ''' ('
-  - LoopLoc:         'calculateLayer3.cpp:28:21'
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        col_loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:25:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        col_loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:25:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        col_loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:25:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        col_loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:25:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:28:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculateLayer3
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
+Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'calculateLayer3.cpp:29:21'
   - String:          ') '
   - String:          'in function '''
   - String:          calculateLayer3
@@ -451,40 +2871,4 @@ Args:
   - Caller:          'calculateLayer3(ap_fixed<16, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
     DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
   - String:          ''''
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
-Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          Layer2_Neurons_CPU
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: calculateLayer3.cpp, Line: 10, Column: 0 }
-Function:        _Z15calculateLayer3P8ap_fixedILi16ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          Layer3_Neurons_CPU
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
 ...

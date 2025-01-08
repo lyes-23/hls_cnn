@@ -1,23 +1,23 @@
 {
   "0": {
-    "basicblocks": 16,
-    "calls": "14",
+    "basicblocks": 228,
+    "calls": "13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13",
     "file": "calculateLayer3.cpp",
     "fileloc": 5,
-    "instructions": 2692,
+    "instructions": 42508,
     "loads": {
-      "L": 1,
-      "T": 301
+      "L": 25,
+      "T": 6465
     },
     "name": "calculateLayer3",
     "stores": {
-      "T": 1
+      "T": 25
     },
-    "total_instructions": 3284
+    "total_instructions": 57308
   },
   "1": {
     "basicblocks": 1,
-    "calls": "2",
+    "calls": "4",
     "file": "x_hls_utils.h",
     "fileloc": 509,
     "instructions": 2,
@@ -25,136 +25,6 @@
     "total_instructions": 15
   },
   "10": {
-    "basicblocks": 1,
-    "calls": "8",
-    "file": "hls_fabs.h",
-    "fileloc": 12,
-    "instructions": 2,
-    "name": "generic_fabs<double>",
-    "total_instructions": 33
-  },
-  "11": {
-    "basicblocks": 20,
-    "calls": "13 6 9 1 1 1 5 7 1 1 1 1",
-    "file": "hls_exp_.h",
-    "fileloc": 156,
-    "instructions": 162,
-    "loads": {
-      "G": 1,
-      "L": 3
-    },
-    "name": "exp_generic<double>",
-    "stores": {
-      "L": 11
-    },
-    "total_instructions": 390
-  },
-  "12": {
-    "basicblocks": 4,
-    "calls": "13 11",
-    "file": "hls_exp_double.cpp",
-    "fileloc": 7,
-    "instructions": 24,
-    "loads": {
-      "L": 2
-    },
-    "name": "expm1",
-    "total_instructions": 423
-  },
-  "13": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 456,
-    "instructions": 9,
-    "name": "fp_struct",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 9
-  },
-  "14": {
-    "basicblocks": 1,
-    "calls": "3",
-    "file": "tanhdouble.cpp",
-    "fileloc": 6,
-    "instructions": 2,
-    "name": "tanh",
-    "total_instructions": 531
-  },
-  "15": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 475,
-    "instructions": 8,
-    "loads": {
-      "L": 3
-    },
-    "name": "data",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 8
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "15",
-    "file": "x_hls_utils.h",
-    "fileloc": 494,
-    "instructions": 5,
-    "loads": {
-      "L": 1
-    },
-    "name": "to_double",
-    "total_instructions": 13
-  },
-  "3": {
-    "basicblocks": 11,
-    "calls": "13 10 4 12",
-    "file": "hls_tanh.h",
-    "fileloc": 28,
-    "instructions": 47,
-    "loads": {
-      "L": 4
-    },
-    "name": "generic_tanh<double>",
-    "total_instructions": 529
-  },
-  "4": {
-    "basicblocks": 1,
-    "calls": "1",
-    "file": "hls_nan.h",
-    "fileloc": 10,
-    "instructions": 2,
-    "name": "generic_nan<double>",
-    "total_instructions": 17
-  },
-  "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 485,
-    "instructions": 6,
-    "loads": {
-      "L": 1
-    },
-    "name": "expv",
-    "total_instructions": 6
-  },
-  "6": {
-    "basicblocks": 3,
-    "calls": "13",
-    "file": "hls_isnan.h",
-    "fileloc": 16,
-    "instructions": 14,
-    "loads": {
-      "L": 2
-    },
-    "name": "generic_isnan<double>",
-    "total_instructions": 23
-  },
-  "7": {
     "basicblocks": 1,
     "calls": "",
     "file": "hls_exp_.h",
@@ -170,9 +40,73 @@
     },
     "total_instructions": 65
   },
-  "8": {
+  "11": {
+    "basicblocks": 3,
+    "calls": "3",
+    "file": "hls_isnan.h",
+    "fileloc": 16,
+    "instructions": 14,
+    "loads": {
+      "L": 2
+    },
+    "name": "generic_isnan<double>",
+    "total_instructions": 23
+  },
+  "12": {
+    "basicblocks": 20,
+    "calls": "3 11 7 1 1 1 6 10 1 1 1 1",
+    "file": "hls_exp_.h",
+    "fileloc": 156,
+    "instructions": 162,
+    "loads": {
+      "G": 1,
+      "L": 3
+    },
+    "name": "exp_generic<double>",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 390
+  },
+  "13": {
     "basicblocks": 1,
-    "calls": "13 1",
+    "calls": "15",
+    "file": "tanhdouble.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "tanh",
+    "total_instructions": 531
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 475,
+    "instructions": 8,
+    "loads": {
+      "L": 3
+    },
+    "name": "data",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 8
+  },
+  "15": {
+    "basicblocks": 11,
+    "calls": "3 8 5 9",
+    "file": "hls_tanh.h",
+    "fileloc": 28,
+    "instructions": 47,
+    "loads": {
+      "L": 4
+    },
+    "name": "generic_tanh<double>",
+    "total_instructions": 529
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "3 1",
     "file": "hls_copysign.h",
     "fileloc": 10,
     "instructions": 7,
@@ -182,9 +116,54 @@
     },
     "total_instructions": 31
   },
-  "9": {
+  "3": {
     "basicblocks": 1,
-    "calls": "13",
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 456,
+    "instructions": 9,
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 9
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "14",
+    "file": "x_hls_utils.h",
+    "fileloc": 494,
+    "instructions": 5,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_double",
+    "total_instructions": 13
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "hls_nan.h",
+    "fileloc": 10,
+    "instructions": 2,
+    "name": "generic_nan<double>",
+    "total_instructions": 17
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 485,
+    "instructions": 6,
+    "loads": {
+      "L": 1
+    },
+    "name": "expv",
+    "total_instructions": 6
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "3",
     "file": "hls_isinf.h",
     "fileloc": 16,
     "instructions": 11,
@@ -193,5 +172,26 @@
     },
     "name": "generic_isinf<double>",
     "total_instructions": 20
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "hls_fabs.h",
+    "fileloc": 12,
+    "instructions": 2,
+    "name": "generic_fabs<double>",
+    "total_instructions": 33
+  },
+  "9": {
+    "basicblocks": 4,
+    "calls": "3 12",
+    "file": "hls_exp_double.cpp",
+    "fileloc": 7,
+    "instructions": 24,
+    "loads": {
+      "L": 2
+    },
+    "name": "expm1",
+    "total_instructions": 423
   }
 }

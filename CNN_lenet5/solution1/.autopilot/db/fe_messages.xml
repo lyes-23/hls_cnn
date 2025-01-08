@@ -609,28 +609,43 @@
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=calculateLayer3" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="calculateLayer3.cpp:12:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Layer2_Neurons_CPU complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=Layer2_Neurons_CPU" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="calculateLayer3.cpp:13:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=Layer2_Weights_CPU" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="calculateLayer3.cpp:14:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Layer3_Neurons_CPU complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=Layer3_Neurons_CPU" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="calculateLayer3.cpp:24:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="calculateLayer3.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="calculateLayer3.cpp:27:20" msg_body="Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="calculateLayer3.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculateLayer3" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="calculateLayer3.cpp:23:12" msg_body="Loop 'row_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="row_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="calculateLayer3.cpp:25:13" msg_body="Loop 'col_loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="col_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="calculateLayer3.cpp:28:20" msg_body="Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="kernelRow_Loop"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="calculateLayer3.cpp:28:21" msg_body="Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="calculateLayer3.cpp:29:21" msg_body="Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="kernelCol_Loop"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="calculateLayer3.cpp:10:0" msg_body="Unrolling loop 'kernelRow_Loop' (calculateLayer3.cpp:27:20) in function 'calculateLayer3' completely with a factor of 5">
-        <args Factor="5" LoopLoc="calculateLayer3.cpp:27:20" LoopName="kernelRow_Loop"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="calculateLayer3.cpp:10:0" msg_body="Unrolling loop 'row_Loop' (calculateLayer3.cpp:23:12) in function 'calculateLayer3' completely with a factor of 5">
+        <args Factor="5" LoopLoc="calculateLayer3.cpp:23:12" LoopName="row_Loop"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="calculateLayer3.cpp:10:0" msg_body="Unrolling loop 'kernelCol_Loop' (calculateLayer3.cpp:28:21) in function 'calculateLayer3' completely with a factor of 5">
-        <args Factor="5" LoopLoc="calculateLayer3.cpp:28:21" LoopName="kernelCol_Loop"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="calculateLayer3.cpp:10:0" msg_body="Unrolling loop 'col_loop' (calculateLayer3.cpp:25:13) in function 'calculateLayer3' completely with a factor of 5">
+        <args Factor="5" LoopLoc="calculateLayer3.cpp:25:13" LoopName="col_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="calculateLayer3.cpp:10:0" msg_body="Unrolling loop 'kernelRow_Loop' (calculateLayer3.cpp:28:20) in function 'calculateLayer3' completely with a factor of 5">
+        <args Factor="5" LoopLoc="calculateLayer3.cpp:28:20" LoopName="kernelRow_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="calculateLayer3.cpp:10:0" msg_body="Unrolling loop 'kernelCol_Loop' (calculateLayer3.cpp:29:21) in function 'calculateLayer3' completely with a factor of 5">
+        <args Factor="5" LoopLoc="calculateLayer3.cpp:29:21" LoopName="kernelCol_Loop"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::data() const (.39.49.58.69)' into 'fp_struct&lt;double&gt;::to_double() const (.36.46.55.66)'">
         <args Callee="fp_struct&lt;double&gt;::data() const (.39.49.58.69)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 475 Column 0" Caller="fp_struct&lt;double&gt;::to_double() const (.36.46.55.66)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 494 Column 0"/>
@@ -691,12 +706,6 @@
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="calculateLayer3.cpp:10:0" msg_body="Inlining function 'hls::tanh(double)' into 'calculateLayer3(ap_fixed&lt;16, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
         <args Callee="hls::tanh(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp} Line 6 Column 0" Caller="calculateLayer3(ap_fixed&lt;16, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File calculateLayer3.cpp Line 10 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="calculateLayer3.cpp:10:0" msg_body="Applying array_partition to 'Layer2_Neurons_CPU': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="Layer2_Neurons_CPU"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="calculateLayer3.cpp:10:0" msg_body="Applying array_partition to 'Layer3_Neurons_CPU': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="Layer3_Neurons_CPU"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

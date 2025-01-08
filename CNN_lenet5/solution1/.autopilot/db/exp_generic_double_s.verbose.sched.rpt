@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'exp_generic_double_s'
 ================================================================
-* Date:           Wed Jan  8 16:47:45 2025
+* Date:           Wed Jan  8 19:42:59 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN_lenet5
@@ -265,7 +265,7 @@ The critical path consists of the following:
 	wire read operation ('x', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:156) on port 'x' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:156) [6]  (0.000 ns)
 	'sub' operation 54 bit ('e_frac', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:224) [25]  (3.236 ns)
 	'select' operation 54 bit ('select_ln224', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:224) [26]  (0.948 ns)
-	'ashr' operation 71 bit ('ashr_ln229', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:229) [35]  (4.600 ns)
+	'shl' operation 71 bit ('shl_ln229', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:229) [36]  (4.600 ns)
 	'select' operation 71 bit ('m_fix', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:229) [37]  (1.290 ns)
 	'ashr' operation 64 bit ('ashr_ln230', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:230) [41]  (4.595 ns)
 	'select' operation 64 bit ('select_ln230', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:230) [120]  (0.000 ns)
@@ -316,11 +316,10 @@ The critical path consists of the following:
 	'select' operation 13 bit ('r_exp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:303) [116]  (0.700 ns)
 	'icmp' operation 1 bit ('icmp_ln309_1', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [119]  (1.650 ns)
 	'or' operation 1 bit ('or_ln309', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [123]  (0.978 ns)
-	'xor' operation 1 bit ('xor_ln309_1', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [142]  (0.000 ns)
-	'and' operation 1 bit ('and_ln309_3', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [143]  (0.000 ns)
-	'or' operation 1 bit ('or_ln309_3', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [146]  (0.000 ns)
-	'and' operation 1 bit ('and_ln309_4', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [147]  (0.000 ns)
-	'and' operation 1 bit ('and_ln309_5', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [148]  (0.978 ns)
+	'and' operation 1 bit ('and_ln309', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [135]  (0.000 ns)
+	'or' operation 1 bit ('or_ln309_1', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [138]  (0.000 ns)
+	'and' operation 1 bit ('and_ln309_2', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [140]  (0.978 ns)
+	'select' operation 64 bit ('select_ln309', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [141]  (0.000 ns)
 	'select' operation 64 bit ('select_ln309_1', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:309) [149]  (1.481 ns)
 
 

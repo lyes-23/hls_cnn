@@ -9,11 +9,11 @@ set_top calculateLayer3
 add_files calculateLayer2.h
 add_files calculateLayer3.cpp
 add_files calculateLayer3.h
-add_files -tb calculateLayer3_tb.cpp
-add_files -tb input_data.h
+add_files -tb calculateLayer3_tb.cpp -cflags "-Wno-unknown-pragmas"
+add_files -tb input_data.h -cflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xc7z010i-clg225-1L}
-create_clock -period 30 -name default
+create_clock -period 50 -name default
 config_cosim -tool xsim
 source "./CNN_lenet5/solution1/directives.tcl"
 csim_design
