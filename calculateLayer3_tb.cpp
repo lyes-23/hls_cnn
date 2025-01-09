@@ -8,7 +8,7 @@
 int main(int argc, char **argv) {
 
 
-    fixed_p Layer1_Neurons_CPU[29 * 29] = {
+    float Layer1_Neurons_CPU[29 * 29] = {
     		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
     		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
     		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -39,12 +39,12 @@ int main(int argc, char **argv) {
     		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
     		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 };
 
-    fixed_p Layer1_Weights_CPU[26 * 6] ;
-    fixed_p Layer2_Neurons_CPU[6 * 13 * 13];
-    fixed_p Layer2_Weights_CPU[7800] ;
-    fixed_p Layer3_Neurons_CPU[50 * 5 * 5];
-    fixed_p expected_output[50 *5*5];
-    fixed_p somme;
+    float Layer1_Weights_CPU[26 * 6] ;
+    float Layer2_Neurons_CPU[6 * 13 * 13];
+    float Layer2_Weights_CPU[7800] ;
+    float Layer3_Neurons_CPU[50 * 5 * 5];
+    float expected_output[50 *5*5];
+    float somme;
 
 
     for (int i = 0; i < 6; i++) {

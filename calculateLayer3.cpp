@@ -9,26 +9,28 @@ void calculateLayer3(
 		)
 {
 
-#pragma HLS INTERFACE axis port=Layer2_Neurons_CPU
-#pragma HLS INTERFACE axis port=Layer2_Weights_CPU
-#pragma HLS INTERFACE axis port=Layer3_Neurons_CPU
+#pragma HLS INTERFACE mode=s_axilite port=Layer2_Neurons_CPU
+#pragma HLS INTERFACE mode=s_axilite port=Layer2_Weights_CPU
+#pragma HLS INTERFACE mode=s_axilite port=Layer3_Neurons_CPU
+#pragma HLS INTERFACE mode=s_axilite port=return bundle= CTRL_bus
 
-#pragma HLS ARRAY_PARTITION variable=Layer2_Weights_CPU type=complete
 
 
 
 float somme;
 int i,j,k,m,n;
 
-calculateLayer3_loop: for( i=0;i<50;i++)
 
+calculateLayer3_loop: for( i=0;i<50;i++)
+#pragma HLS PIPELINE II=2
 	row_Loop: for(j=0;j<5;j++)
+#pragma HLS PIPELINE II=1
 		col_loop: for(k=0;k<5;k++){
-#pragma HLS PIPELINE II=5
+#pragma HLS PIPELINE II=1
 			somme = Layer2_Weights_CPU[26*6*i];
 			kernelRow_Loop: for( m=0;m<5;m++)
-				kernelCol_Loop: for( n=0;n<5;n++){
-#pragma HLS UNROLL factor=2
+
+kernelCol_Loop: for( n=0;n<5;n++){
 					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)	] * Layer2_Neurons_CPU[13*13*0+13*(2*j+m)+(2*k+n)];
 					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+1] * Layer2_Neurons_CPU[13*13*1+13*(2*j+m)+(2*k+n)];
 					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+2] * Layer2_Neurons_CPU[13*13*2+13*(2*j+m)+(2*k+n)];
@@ -36,7 +38,6 @@ calculateLayer3_loop: for( i=0;i<50;i++)
 					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+4] * Layer2_Neurons_CPU[13*13*4+13*(2*j+m)+(2*k+n)];
 					somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+5] * Layer2_Neurons_CPU[13*13*5+13*(2*j+m)+(2*k+n)];
 						}
-
 					Layer3_Neurons_CPU[5*5*i+5*j+k] = (float) SIGMOID(somme);
 
 					}
