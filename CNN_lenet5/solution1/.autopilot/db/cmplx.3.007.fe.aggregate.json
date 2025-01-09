@@ -1,20 +1,29 @@
 {
   "0": {
-    "basicblocks": 378,
-    "calls": "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2",
+    "basicblocks": 58,
+    "calls": "1",
     "file": "calculateLayer3.cpp",
     "fileloc": 5,
-    "instructions": 32808,
+    "instructions": 24076,
     "loads": {
-      "T": 1165
+      "T": 7700
     },
     "name": "calculateLayer3",
     "stores": {
-      "T": 25
+      "T": 1
     },
-    "total_instructions": 39333
+    "total_instructions": 24337
   },
   "1": {
+    "basicblocks": 13,
+    "calls": "2",
+    "file": "hls_tanh.h",
+    "fileloc": 28,
+    "instructions": 63,
+    "name": "generic_tanh<double>",
+    "total_instructions": 261
+  },
+  "2": {
     "basicblocks": 11,
     "calls": "",
     "file": "hls_exp_.h",
@@ -25,14 +34,5 @@
     },
     "name": "exp_generic<double>",
     "total_instructions": 198
-  },
-  "2": {
-    "basicblocks": 13,
-    "calls": "1",
-    "file": "hls_tanh.h",
-    "fileloc": 28,
-    "instructions": 63,
-    "name": "generic_tanh<double>",
-    "total_instructions": 261
   }
 }
