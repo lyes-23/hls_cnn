@@ -1,0 +1,1097 @@
+INFO-FLOW: Workspace C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5 opened at Thu Jan 16 14:18:08 +0100 2025
+Execute     ap_set_clock -name default -period 20 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/2023.2/Vitis_HLS/2023.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/2023.2/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 1.654 sec.
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.22 sec.
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.617 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.361 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -trace_level=port 
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+Execute     config_cosim -trace_level=port 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.758 sec.
+Execute   set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+Execute     create_platform xc7z020-clg484-1 -board  
+Command     create_platform done; 0.215 sec.
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.187 sec.
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.257 sec.
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.581 sec.
+Execute   create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+Execute   config_cosim -tool xsim -trace_level port 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./CNN_lenet5/solution5/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution5/directives.tcl
+Execute     set_directive_top -name calculateLayer4 calculateLayer4 
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer4 calculateLayer4 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.478 seconds; current allocated memory: 121.477 MB.
+Execute       set_directive_top calculateLayer4 -name=calculateLayer4 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling calculateLayer3.cpp as C++
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang calculateLayer3.cpp -foptimization-record-file=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=20 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/autopilot -I C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/2023.2/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.cpp.clang.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 1.6 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/2023.2/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/clang.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/.systemc_flag -fix-errors C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 10.559 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/all.directive.json -fix-errors C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 9.388 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 9.4 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 17.085 sec.
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=20 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/autopilot -I C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.bc {-hls-platform-db-name=C:/Xilinx/2023.2/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp.clang.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.pp.0.cpp.clang.err.log
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer4.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling calculateLayer4.cpp as C++
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang calculateLayer4.cpp -foptimization-record-file=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=20 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/autopilot -I C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/2023.2/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.cpp.clang.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.7 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/2023.2/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/clang.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/.systemc_flag -fix-errors C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 8.179 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/all.directive.json -fix-errors C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 8.646 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 8.6 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp.clang-tidy.loop-label.err.log
+Command       clang_tidy done; 15.005 sec.
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=20 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/autopilot -I C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.bc {-hls-platform-db-name=C:/Xilinx/2023.2/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp.clang.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.pp.0.cpp.clang.err.log
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 123.939 seconds; current allocated memory: 130.746 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.g.bc" "C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.g.bc"  
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer3.g.bc C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.g.bc -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.0.bc > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.472 sec.
+Execute       run_link_or_opt -opt -out C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.1.lower.bc -args C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.1.lower.bc > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.403 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/lib/libhlsm_39.bc C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/lib/libhlsm_39.bc C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/lib/libhlsmc++_39.bc -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command       run_link_or_opt done; 5.509 sec.
+Execute       run_link_or_opt -opt -out C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=calculateLayer4 -reflow-float-conversion 
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=calculateLayer4 -reflow-float-conversion -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 2.324 sec.
+Execute       run_link_or_opt -out C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/lib/libfloatconversion_39.bc -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.264 sec.
+Execute       run_link_or_opt -opt -out C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.5.gdce.bc -args C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=calculateLayer4 
+INFO-FLOW: run_clang exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=calculateLayer4 -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.5.gdce.bc > C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.27 sec.
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=calculateLayer4 -mllvm -hls-db-dir -mllvm C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -assume-maxi-align=1 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=20 -x ir C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.5.gdce.bc -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=C:/Xilinx/2023.2/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 2> C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 14,238 Compile/Link C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 14,238 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,523 Unroll/Inline (step 1) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 1,523 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 833 Unroll/Inline (step 2) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 833 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 743 Unroll/Inline (step 3) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 743 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 459 Unroll/Inline (step 4) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 459 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 459 Array/Struct (step 1) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 459 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 459 Array/Struct (step 2) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 459 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 459 Array/Struct (step 3) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 459 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 459 Array/Struct (step 4) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 459 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 459 Array/Struct (step 5) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 459 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 459 Performance (step 1) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 459 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 459 Performance (step 2) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 459 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 459 Performance (step 3) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 459 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 459 Performance (step 4) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 459 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 517 HW Transforms (step 1) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 517 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 523 HW Transforms (step 2) C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 523 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-199] Ignoring dependence pragma on local scalar variable 'somme'. (calculateLayer4.cpp:29:9)
+INFO: [HLS 214-291] Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer4.cpp:25:20)
+INFO: [HLS 214-291] Loop 'kernelCol_loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer4.cpp:28:18)
+INFO: [HLS 214-186] Unrolling loop 'kernelRow_Loop' (calculateLayer4.cpp:25:20) in function 'calculateLayer4' completely with a factor of 5 (calculateLayer4.cpp:10:0)
+INFO: [HLS 214-186] Unrolling loop 'kernelCol_loop' (calculateLayer4.cpp:28:18) in function 'calculateLayer4' completely with a factor of 5 (calculateLayer4.cpp:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.34.44.53.64)' into 'fp_struct<double>::to_double() const (.31.41.50.61)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.31.41.50.61)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_fabs<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'exp_reduce_::expm1(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_fabs<double>(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::expm1(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'hls::tanh(double)' into 'calculateLayer4(float*, float*, float*)' (calculateLayer4.cpp:10:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< calculateLayer4_loop> at calculateLayer4.cpp:21:23 
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 16.941 seconds; current allocated memory: 132.125 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 132.133 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top calculateLayer4 -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.0.bc -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.225 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.33 seconds; current allocated memory: 140.957 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.1.bc -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.109 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.2.prechk.bc -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 147.238 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.g.1.bc to C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.o.1.bc -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.o.1.tmp.bc -f 
+Command         transform done; 0.287 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.o.1.tmp.bc -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158:9) to (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:339:3) in function 'exp_reduce_::exp_generic<double>'... converting 10 basic blocks.
+Command         transform done; 0.168 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.466 seconds; current allocated memory: 174.523 MB.
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dce -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric -cdfg-build C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.o.2.bc -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Execute           auto_get_db
+Command         transform done; 0.341 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.343 seconds; current allocated memory: 198.469 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 1.359 sec.
+Command     elaborate done; 142.372 sec.
+Execute     ap_eval exec zip -j C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command     ap_eval done; 0.329 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'calculateLayer4' ...
+Execute       ap_set_top_model calculateLayer4 
+WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<double>' to 'generic_tanh_double_s'.
+Execute       get_model_list calculateLayer4 -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model calculateLayer4 
+Execute       preproc_iomode -model calculateLayer4_Pipeline_calculateLayer4_loop 
+Execute       preproc_iomode -model generic_tanh<double> 
+Execute       preproc_iomode -model exp_generic<double> 
+Execute       get_model_list calculateLayer4 -filter all-wo-channel 
+INFO-FLOW: Model list for configure: exp_generic<double> generic_tanh<double> calculateLayer4_Pipeline_calculateLayer4_loop calculateLayer4
+INFO-FLOW: Configuring Module : exp_generic<double> ...
+Execute       set_default_model exp_generic<double> 
+Execute       apply_spec_resource_limit exp_generic<double> 
+INFO-FLOW: Configuring Module : generic_tanh<double> ...
+Execute       set_default_model generic_tanh<double> 
+Execute       apply_spec_resource_limit generic_tanh<double> 
+INFO-FLOW: Configuring Module : calculateLayer4_Pipeline_calculateLayer4_loop ...
+Execute       set_default_model calculateLayer4_Pipeline_calculateLayer4_loop 
+Execute       apply_spec_resource_limit calculateLayer4_Pipeline_calculateLayer4_loop 
+INFO-FLOW: Configuring Module : calculateLayer4 ...
+Execute       set_default_model calculateLayer4 
+Execute       apply_spec_resource_limit calculateLayer4 
+INFO-FLOW: Model list for preprocess: exp_generic<double> generic_tanh<double> calculateLayer4_Pipeline_calculateLayer4_loop calculateLayer4
+INFO-FLOW: Preprocessing Module: exp_generic<double> ...
+Execute       set_default_model exp_generic<double> 
+Execute       cdfg_preprocess -model exp_generic<double> 
+Execute       rtl_gen_preprocess exp_generic<double> 
+INFO-FLOW: Preprocessing Module: generic_tanh<double> ...
+Execute       set_default_model generic_tanh<double> 
+Execute       cdfg_preprocess -model generic_tanh<double> 
+Execute       rtl_gen_preprocess generic_tanh<double> 
+INFO-FLOW: Preprocessing Module: calculateLayer4_Pipeline_calculateLayer4_loop ...
+Execute       set_default_model calculateLayer4_Pipeline_calculateLayer4_loop 
+Execute       cdfg_preprocess -model calculateLayer4_Pipeline_calculateLayer4_loop 
+Execute       rtl_gen_preprocess calculateLayer4_Pipeline_calculateLayer4_loop 
+INFO-FLOW: Preprocessing Module: calculateLayer4 ...
+Execute       set_default_model calculateLayer4 
+Execute       cdfg_preprocess -model calculateLayer4 
+Execute       rtl_gen_preprocess calculateLayer4 
+INFO-FLOW: Model list for synthesis: exp_generic<double> generic_tanh<double> calculateLayer4_Pipeline_calculateLayer4_loop calculateLayer4
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model exp_generic<double> 
+Execute       schedule -model exp_generic<double> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln243) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'exp_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 12, function 'exp_generic<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.597 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.157 seconds; current allocated memory: 204.215 MB.
+Execute       syn_report -verbosereport -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.sched.adb -f 
+INFO-FLOW: Finish scheduling exp_generic<double>.
+Execute       set_default_model exp_generic<double> 
+Execute       bind -model exp_generic<double> 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.13 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.249 seconds; current allocated memory: 205.723 MB.
+Execute       syn_report -verbosereport -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.bind.adb -f 
+INFO-FLOW: Finish binding exp_generic<double>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model generic_tanh<double> 
+Execute       schedule -model generic_tanh<double> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'generic_tanh<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 55, function 'generic_tanh<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.231 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.416 seconds; current allocated memory: 206.543 MB.
+Execute       syn_report -verbosereport -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.sched.adb -f 
+INFO-FLOW: Finish scheduling generic_tanh<double>.
+Execute       set_default_model generic_tanh<double> 
+Execute       bind -model generic_tanh<double> 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.121 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 206.820 MB.
+Execute       syn_report -verbosereport -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.bind.adb -f 
+INFO-FLOW: Finish binding generic_tanh<double>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer4_Pipeline_calculateLayer4_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model calculateLayer4_Pipeline_calculateLayer4_loop 
+Execute       schedule -model calculateLayer4_Pipeline_calculateLayer4_loop 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'calculateLayer4_loop'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer4_Pipeline_calculateLayer4_loop' (loop 'calculateLayer4_loop'): Unable to schedule 'load' operation 32 bit ('Layer3_Weights_CPU_load_1', calculateLayer4.cpp:30) on array 'Layer3_Weights_CPU' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'Layer3_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer4_Pipeline_calculateLayer4_loop' (loop 'calculateLayer4_loop'): Unable to schedule 'load' operation 32 bit ('Layer3_Weights_CPU_load') on array 'Layer3_Weights_CPU' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'Layer3_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer4_Pipeline_calculateLayer4_loop' (loop 'calculateLayer4_loop'): Unable to schedule 'load' operation 32 bit ('Layer3_Weights_CPU_load_2', calculateLayer4.cpp:30) on array 'Layer3_Weights_CPU' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'Layer3_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer4_Pipeline_calculateLayer4_loop' (loop 'calculateLayer4_loop'): Unable to schedule 'load' operation 32 bit ('Layer3_Weights_CPU_load_3', calculateLayer4.cpp:30) on array 'Layer3_Weights_CPU' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'Layer3_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer4_Pipeline_calculateLayer4_loop' (loop 'calculateLayer4_loop'): Unable to schedule 'load' operation 32 bit ('Layer3_Weights_CPU_load_18', calculateLayer4.cpp:30) on array 'Layer3_Weights_CPU' due to limited memory ports (II = 19). Please consider using a memory core with more ports or partitioning the array 'Layer3_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer4_Pipeline_calculateLayer4_loop' (loop 'calculateLayer4_loop'): Unable to schedule 'load' operation 32 bit ('Layer3_Weights_CPU_load_22', calculateLayer4.cpp:30) on array 'Layer3_Weights_CPU' due to limited memory ports (II = 23). Please consider using a memory core with more ports or partitioning the array 'Layer3_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer4_Pipeline_calculateLayer4_loop' (loop 'calculateLayer4_loop'): Unable to schedule 'load' operation 32 bit ('Layer3_Weights_CPU_load_24', calculateLayer4.cpp:30) on array 'Layer3_Weights_CPU' due to limited memory ports (II = 25). Please consider using a memory core with more ports or partitioning the array 'Layer3_Weights_CPU'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 26, Depth = 172, loop 'calculateLayer4_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.191 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.355 seconds; current allocated memory: 209.559 MB.
+Execute       syn_report -verbosereport -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Command       syn_report done; 0.136 sec.
+Execute       db_write -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.sched.adb -f 
+Command       db_write done; 0.108 sec.
+INFO-FLOW: Finish scheduling calculateLayer4_Pipeline_calculateLayer4_loop.
+Execute       set_default_model calculateLayer4_Pipeline_calculateLayer4_loop 
+Execute       bind -model calculateLayer4_Pipeline_calculateLayer4_loop 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.178 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.425 seconds; current allocated memory: 210.477 MB.
+Execute       syn_report -verbosereport -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Command       syn_report done; 0.107 sec.
+Execute       db_write -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.bind.adb -f 
+Command       db_write done; 0.175 sec.
+INFO-FLOW: Finish binding calculateLayer4_Pipeline_calculateLayer4_loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model calculateLayer4 
+Execute       schedule -model calculateLayer4 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.12 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.484 seconds; current allocated memory: 211.078 MB.
+Execute       syn_report -verbosereport -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.sched.adb -f 
+INFO-FLOW: Finish scheduling calculateLayer4.
+Execute       set_default_model calculateLayer4 
+Execute       bind -model calculateLayer4 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.191 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 211.426 MB.
+Execute       syn_report -verbosereport -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.bind.adb -f 
+INFO-FLOW: Finish binding calculateLayer4.
+Execute       get_model_list calculateLayer4 -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess exp_generic<double> 
+Execute       rtl_gen_preprocess generic_tanh<double> 
+Execute       rtl_gen_preprocess calculateLayer4_Pipeline_calculateLayer4_loop 
+Execute       rtl_gen_preprocess calculateLayer4 
+INFO-FLOW: Model list for RTL generation: exp_generic<double> generic_tanh<double> calculateLayer4_Pipeline_calculateLayer4_loop calculateLayer4
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model exp_generic<double> -top_prefix calculateLayer4_ -sub_prefix calculateLayer4_ -mg_file C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'exp_generic_double_s' pipeline 'exp_generic<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_43ns_36ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_49ns_44ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer4_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer4_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer4_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' using auto ROMs.
+Command       create_rtl_model done; 0.742 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.991 seconds; current allocated memory: 215.469 MB.
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute       gen_rtl exp_generic<double> -style xilinx -f -lang vhdl -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/vhdl/calculateLayer4_exp_generic_double_s 
+Execute       gen_rtl exp_generic<double> -style xilinx -f -lang vlog -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/verilog/calculateLayer4_exp_generic_double_s 
+Execute       syn_report -csynth -model exp_generic<double> -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/exp_generic_double_s_csynth.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -rtlxml -model exp_generic<double> -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/exp_generic_double_s_csynth.xml 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -verbosereport -model exp_generic<double> -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.verbose.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -model exp_generic<double> -f -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.adb 
+Execute       db_write -model exp_generic<double> -bindview -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info exp_generic<double> -p C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model generic_tanh<double> -top_prefix calculateLayer4_ -sub_prefix calculateLayer4_ -mg_file C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'generic_tanh_double_s' pipeline 'generic_tanh<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_5_full_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_22_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_double_s'.
+Command       create_rtl_model done; 0.538 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.874 seconds; current allocated memory: 221.344 MB.
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute       gen_rtl generic_tanh<double> -style xilinx -f -lang vhdl -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/vhdl/calculateLayer4_generic_tanh_double_s 
+Execute       gen_rtl generic_tanh<double> -style xilinx -f -lang vlog -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/verilog/calculateLayer4_generic_tanh_double_s 
+Execute       syn_report -csynth -model generic_tanh<double> -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/generic_tanh_double_s_csynth.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -rtlxml -model generic_tanh<double> -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/generic_tanh_double_s_csynth.xml 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -verbosereport -model generic_tanh<double> -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.verbose.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -model generic_tanh<double> -f -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.adb 
+Execute       db_write -model generic_tanh<double> -bindview -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info generic_tanh<double> -p C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer4_Pipeline_calculateLayer4_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model calculateLayer4_Pipeline_calculateLayer4_loop -top_prefix calculateLayer4_ -sub_prefix calculateLayer4_ -mg_file C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'calculateLayer4_Pipeline_calculateLayer4_loop' pipeline 'calculateLayer4_loop' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] RTL name 'dmul_64ns_64ns_64_4_max_dsp_1' is changed to 'dmul_64ns_64ns_64_4_max_dsp_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer4_Pipeline_calculateLayer4_loop'.
+Command       create_rtl_model done; 0.631 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.408 seconds; current allocated memory: 225.445 MB.
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute       gen_rtl calculateLayer4_Pipeline_calculateLayer4_loop -style xilinx -f -lang vhdl -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/vhdl/calculateLayer4_calculateLayer4_Pipeline_calculateLayer4_loop 
+Execute       gen_rtl calculateLayer4_Pipeline_calculateLayer4_loop -style xilinx -f -lang vlog -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/verilog/calculateLayer4_calculateLayer4_Pipeline_calculateLayer4_loop 
+Execute       syn_report -csynth -model calculateLayer4_Pipeline_calculateLayer4_loop -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/calculateLayer4_Pipeline_calculateLayer4_loop_csynth.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -rtlxml -model calculateLayer4_Pipeline_calculateLayer4_loop -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/calculateLayer4_Pipeline_calculateLayer4_loop_csynth.xml 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -verbosereport -model calculateLayer4_Pipeline_calculateLayer4_loop -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.verbose.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -model calculateLayer4_Pipeline_calculateLayer4_loop -f -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.adb 
+Command       db_write done; 0.145 sec.
+Execute       db_write -model calculateLayer4_Pipeline_calculateLayer4_loop -bindview -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info calculateLayer4_Pipeline_calculateLayer4_loop -p C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model calculateLayer4 -top_prefix  -sub_prefix calculateLayer4_ -mg_file C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer4/Layer3_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer4/Layer3_Weights_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer4/Layer4_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'calculateLayer4' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL_bus.
+INFO: [RTGEN 206-100] Bundling port 'Layer4_Neurons_CPU', 'Layer3_Neurons_CPU' and 'Layer3_Weights_CPU' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer4'.
+Command       create_rtl_model done; 0.293 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.64 seconds; current allocated memory: 230.746 MB.
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute       gen_rtl calculateLayer4 -istop -style xilinx -f -lang vhdl -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/vhdl/calculateLayer4 
+Execute       gen_rtl calculateLayer4 -istop -style xilinx -f -lang vlog -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/verilog/calculateLayer4 
+Execute       syn_report -csynth -model calculateLayer4 -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/calculateLayer4_csynth.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -rtlxml -model calculateLayer4 -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/calculateLayer4_csynth.xml 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -verbosereport -model calculateLayer4 -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.verbose.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -model calculateLayer4 -f -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.adb 
+Execute       db_write -model calculateLayer4 -bindview -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info calculateLayer4 -p C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4 
+Execute       export_constraint_db -f -tool general -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.constraint.tcl 
+Execute       syn_report -designview -model calculateLayer4 -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.design.xml 
+Command       syn_report done; 0.119 sec.
+Execute       syn_report -csynthDesign -model calculateLayer4 -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth.rpt -MHOut C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -wcfg -model calculateLayer4 -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model calculateLayer4 -o C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.protoinst 
+Execute       sc_get_clocks calculateLayer4 
+Execute       sc_get_portdomain calculateLayer4 
+INFO-FLOW: Model list for RTL component generation: exp_generic<double> generic_tanh<double> calculateLayer4_Pipeline_calculateLayer4_loop calculateLayer4
+INFO-FLOW: Handling components in module [exp_generic_double_s] ... 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.compgen.tcl 
+INFO-FLOW: Found component calculateLayer4_mul_13s_71s_71_1_1.
+INFO-FLOW: Append model calculateLayer4_mul_13s_71s_71_1_1
+INFO-FLOW: Found component calculateLayer4_mul_43ns_36ns_79_1_1.
+INFO-FLOW: Append model calculateLayer4_mul_43ns_36ns_79_1_1
+INFO-FLOW: Found component calculateLayer4_mul_49ns_44ns_93_1_1.
+INFO-FLOW: Append model calculateLayer4_mul_49ns_44ns_93_1_1
+INFO-FLOW: Found component calculateLayer4_mul_50ns_50ns_100_1_1.
+INFO-FLOW: Append model calculateLayer4_mul_50ns_50ns_100_1_1
+INFO-FLOW: Found component calculateLayer4_mac_muladd_16s_15ns_19s_31_4_1.
+INFO-FLOW: Append model calculateLayer4_mac_muladd_16s_15ns_19s_31_4_1
+INFO-FLOW: Found component calculateLayer4_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb.
+INFO-FLOW: Append model calculateLayer4_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb
+INFO-FLOW: Found component calculateLayer4_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud.
+INFO-FLOW: Append model calculateLayer4_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud
+INFO-FLOW: Found component calculateLayer4_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe.
+INFO-FLOW: Append model calculateLayer4_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe
+INFO-FLOW: Handling components in module [generic_tanh_double_s] ... 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.compgen.tcl 
+INFO-FLOW: Found component calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1.
+INFO-FLOW: Append model calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1
+INFO-FLOW: Found component calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1.
+INFO-FLOW: Append model calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1
+INFO-FLOW: Found component calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1.
+INFO-FLOW: Append model calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1
+INFO-FLOW: Found component calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1.
+INFO-FLOW: Append model calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1
+INFO-FLOW: Found component calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1.
+INFO-FLOW: Append model calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1
+INFO-FLOW: Handling components in module [calculateLayer4_Pipeline_calculateLayer4_loop] ... 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.compgen.tcl 
+INFO-FLOW: Found component calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1.
+INFO-FLOW: Append model calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1
+INFO-FLOW: Found component calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1.
+INFO-FLOW: Append model calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1
+INFO-FLOW: Found component calculateLayer4_fptrunc_64ns_32_2_no_dsp_1.
+INFO-FLOW: Append model calculateLayer4_fptrunc_64ns_32_2_no_dsp_1
+INFO-FLOW: Found component calculateLayer4_fpext_32ns_64_2_no_dsp_1.
+INFO-FLOW: Append model calculateLayer4_fpext_32ns_64_2_no_dsp_1
+INFO-FLOW: Found component calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x.
+INFO-FLOW: Append model calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x
+INFO-FLOW: Found component calculateLayer4_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model calculateLayer4_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [calculateLayer4] ... 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.tcl 
+INFO-FLOW: Found component calculateLayer4_CTRL_bus_s_axi.
+INFO-FLOW: Append model calculateLayer4_CTRL_bus_s_axi
+INFO-FLOW: Found component calculateLayer4_control_s_axi.
+INFO-FLOW: Append model calculateLayer4_control_s_axi
+INFO-FLOW: Append model exp_generic_double_s
+INFO-FLOW: Append model generic_tanh_double_s
+INFO-FLOW: Append model calculateLayer4_Pipeline_calculateLayer4_loop
+INFO-FLOW: Append model calculateLayer4
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: calculateLayer4_mul_13s_71s_71_1_1 calculateLayer4_mul_43ns_36ns_79_1_1 calculateLayer4_mul_49ns_44ns_93_1_1 calculateLayer4_mul_50ns_50ns_100_1_1 calculateLayer4_mac_muladd_16s_15ns_19s_31_4_1 calculateLayer4_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb calculateLayer4_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud calculateLayer4_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1 calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1 calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1 calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1 calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1 calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1 calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1 calculateLayer4_fptrunc_64ns_32_2_no_dsp_1 calculateLayer4_fpext_32ns_64_2_no_dsp_1 calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x calculateLayer4_flow_control_loop_pipe_sequential_init calculateLayer4_CTRL_bus_s_axi calculateLayer4_control_s_axi exp_generic_double_s generic_tanh_double_s calculateLayer4_Pipeline_calculateLayer4_loop calculateLayer4
+INFO-FLOW: Generating C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model calculateLayer4_mul_13s_71s_71_1_1
+INFO-FLOW: To file: write model calculateLayer4_mul_43ns_36ns_79_1_1
+INFO-FLOW: To file: write model calculateLayer4_mul_49ns_44ns_93_1_1
+INFO-FLOW: To file: write model calculateLayer4_mul_50ns_50ns_100_1_1
+INFO-FLOW: To file: write model calculateLayer4_mac_muladd_16s_15ns_19s_31_4_1
+INFO-FLOW: To file: write model calculateLayer4_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb
+INFO-FLOW: To file: write model calculateLayer4_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud
+INFO-FLOW: To file: write model calculateLayer4_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe
+INFO-FLOW: To file: write model calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1
+INFO-FLOW: To file: write model calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1
+INFO-FLOW: To file: write model calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1
+INFO-FLOW: To file: write model calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1
+INFO-FLOW: To file: write model calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1
+INFO-FLOW: To file: write model calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1
+INFO-FLOW: To file: write model calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1
+INFO-FLOW: To file: write model calculateLayer4_fptrunc_64ns_32_2_no_dsp_1
+INFO-FLOW: To file: write model calculateLayer4_fpext_32ns_64_2_no_dsp_1
+INFO-FLOW: To file: write model calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x
+INFO-FLOW: To file: write model calculateLayer4_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model calculateLayer4_CTRL_bus_s_axi
+INFO-FLOW: To file: write model calculateLayer4_control_s_axi
+INFO-FLOW: To file: write model exp_generic_double_s
+INFO-FLOW: To file: write model generic_tanh_double_s
+INFO-FLOW: To file: write model calculateLayer4_Pipeline_calculateLayer4_loop
+INFO-FLOW: To file: write model calculateLayer4
+INFO-FLOW: Generating C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.192 sec.
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.27 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=20.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/vhdl' dstVlogDir='C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/vlog' tclDir='C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db' modelList='calculateLayer4_mul_13s_71s_71_1_1
+calculateLayer4_mul_43ns_36ns_79_1_1
+calculateLayer4_mul_49ns_44ns_93_1_1
+calculateLayer4_mul_50ns_50ns_100_1_1
+calculateLayer4_mac_muladd_16s_15ns_19s_31_4_1
+calculateLayer4_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb
+calculateLayer4_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud
+calculateLayer4_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe
+calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1
+calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1
+calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1
+calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1
+calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1
+calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1
+calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1
+calculateLayer4_fptrunc_64ns_32_2_no_dsp_1
+calculateLayer4_fpext_32ns_64_2_no_dsp_1
+calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x
+calculateLayer4_flow_control_loop_pipe_sequential_init
+calculateLayer4_CTRL_bus_s_axi
+calculateLayer4_control_s_axi
+exp_generic_double_s
+generic_tanh_double_s
+calculateLayer4_Pipeline_calculateLayer4_loop
+calculateLayer4
+' expOnly='0'
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Command       ap_source done; 0.18 sec.
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.compgen.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.compgen.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.tcl 
+Execute         source ./CTRL_bus.slave.tcl 
+Execute         source ./control.slave.tcl 
+Execute         source ./CTRL_bus.slave.tcl 
+Command       ap_source done; 0.36 sec.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.551 seconds; current allocated memory: 234.902 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='calculateLayer4_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: No bind nodes found for module_name calculateLayer4
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.9 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='calculateLayer4_mul_13s_71s_71_1_1
+calculateLayer4_mul_43ns_36ns_79_1_1
+calculateLayer4_mul_49ns_44ns_93_1_1
+calculateLayer4_mul_50ns_50ns_100_1_1
+calculateLayer4_mac_muladd_16s_15ns_19s_31_4_1
+calculateLayer4_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb
+calculateLayer4_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud
+calculateLayer4_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe
+calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1
+calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1
+calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1
+calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1
+calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1
+calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1
+calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1
+calculateLayer4_fptrunc_64ns_32_2_no_dsp_1
+calculateLayer4_fpext_32ns_64_2_no_dsp_1
+calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x
+calculateLayer4_flow_control_loop_pipe_sequential_init
+calculateLayer4_CTRL_bus_s_axi
+calculateLayer4_control_s_axi
+exp_generic_double_s
+generic_tanh_double_s
+calculateLayer4_Pipeline_calculateLayer4_loop
+calculateLayer4
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/top-io-be.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.tbgen.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.tbgen.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.tbgen.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.constraint.tcl 
+Execute       sc_get_clocks calculateLayer4 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1_ip.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1_ip.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1_ip.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_ip.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x_ip.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1_ip.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_fpext_32ns_64_2_no_dsp_1_ip.tcl 
+Execute       source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_fptrunc_64ns_32_2_no_dsp_1_ip.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME CTRL_bus_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME CTRL_bus DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }} {BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME control_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME control DSP 0 BRAM 262 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} report_dict {TOPINST calculateLayer4 MODULE2INSTS {calculateLayer4 calculateLayer4 calculateLayer4_Pipeline_calculateLayer4_loop grp_calculateLayer4_Pipeline_calculateLayer4_loop_fu_334 generic_tanh_double_s grp_generic_tanh_double_s_fu_544 exp_generic_double_s grp_exp_generic_double_s_fu_89} INST2MODULE {calculateLayer4 calculateLayer4 grp_calculateLayer4_Pipeline_calculateLayer4_loop_fu_334 calculateLayer4_Pipeline_calculateLayer4_loop grp_generic_tanh_double_s_fu_544 generic_tanh_double_s grp_exp_generic_double_s_fu_89 exp_generic_double_s} INSTDATA {calculateLayer4 {DEPTH 1 CHILDREN grp_calculateLayer4_Pipeline_calculateLayer4_loop_fu_334} grp_calculateLayer4_Pipeline_calculateLayer4_loop_fu_334 {DEPTH 2 CHILDREN grp_generic_tanh_double_s_fu_544} grp_generic_tanh_double_s_fu_544 {DEPTH 3 CHILDREN grp_exp_generic_double_s_fu_89} grp_exp_generic_double_s_fu_89 {DEPTH 4 CHILDREN {}}} MODULEDATA {exp_generic_double_s {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME m_exp_fu_312_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:486} VARIABLE m_exp LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME e_frac_1_fu_330_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:224} VARIABLE e_frac_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln229_fu_364_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:229} VARIABLE sub_ln229 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15ns_19s_31_4_1_U5 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:243} VARIABLE mul_ln243 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15ns_19s_31_4_1_U5 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:243} VARIABLE add_ln243 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln243_1_fu_521_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:243} VARIABLE add_ln243_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_13s_71s_71_1_1_U1 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:249} VARIABLE mul_ln249 LOOP {} BUNDLEDNAME {} DSP 4 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME m_diff_fu_564_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:255} VARIABLE m_diff LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME exp_Z4_m_1_fu_640_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:115} VARIABLE exp_Z4_m_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_43ns_36ns_79_1_1_U2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:123} VARIABLE mul_ln123 LOOP {} BUNDLEDNAME {} DSP 6 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln130_fu_677_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:130} VARIABLE add_ln130 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME exp_Z2P_m_1_fu_692_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:130} VARIABLE exp_Z2P_m_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_49ns_44ns_93_1_1_U3 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:142} VARIABLE mul_ln142 LOOP {} BUNDLEDNAME {} DSP 9 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln145_fu_758_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:145} VARIABLE add_ln145 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME exp_Z1P_m_1_l_fu_767_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:145} VARIABLE exp_Z1P_m_1_l LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln297_fu_849_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:297} VARIABLE add_ln297 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_50ns_50ns_100_1_1_U4 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:297} VARIABLE mul_ln297 LOOP {} BUNDLEDNAME {} DSP 9 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln297_1_fu_865_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:297} VARIABLE add_ln297_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME r_exp_1_fu_879_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:305} VARIABLE r_exp_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME out_exp_fu_937_p2 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:336} VARIABLE out_exp LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_U SOURCE {} VARIABLE table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 STORAGESUBTYPE {} STORAGESIZE {58 256 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_2p PRAGMA {} RTLNAME table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U SOURCE {} VARIABLE table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE {} STORAGESIZE {26 256 1} STORAGEUSAGE rom_2p DISPNAME {bind_storage rom_2p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U SOURCE {} VARIABLE table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 STORAGESUBTYPE {} STORAGESIZE {42 256 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p}}} AREA {DSP 29 BRAM 5 URAM 0}} generic_tanh_double_s {BINDINFO {{BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE dsub PRAGMA {} RTLNAME dsub_64ns_64ns_64_5_full_dsp_1_U16 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:55} VARIABLE x LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dsub}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE dadd PRAGMA {} RTLNAME dadd_64ns_64ns_64_5_full_dsp_1_U17 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:58} VARIABLE x_1 LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dadd}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE dadd PRAGMA {} RTLNAME dadd_64ns_64ns_64_5_full_dsp_1_U18 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:11} VARIABLE sub_i LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dadd}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE dadd PRAGMA {} RTLNAME dadd_64ns_64ns_64_5_full_dsp_1_U19 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:71} VARIABLE add2 LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 21 OPTYPE ddiv PRAGMA {} RTLNAME ddiv_64ns_64ns_64_22_no_dsp_1_U22 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:71} VARIABLE div LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op ddiv}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE dsub PRAGMA {} RTLNAME dsub_64ns_64ns_64_5_full_dsp_1_U20 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:71} VARIABLE resultf_2 LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dsub}} {BINDTYPE op ID {} IMPL fabric LATENCY 21 OPTYPE ddiv PRAGMA {} RTLNAME ddiv_64ns_64ns_64_22_no_dsp_1_U22 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:66} VARIABLE resultf_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op ddiv}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE dadd PRAGMA {} RTLNAME dadd_64ns_64ns_64_5_full_dsp_1_U15 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:49} VARIABLE add LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dadd}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 3 OPTYPE dmul PRAGMA {} RTLNAME dmul_64ns_64ns_64_4_max_dsp_1_U21 SOURCE {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:49} VARIABLE resultf LOOP {} BUNDLEDNAME {} DSP 11 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dmul}}} AREA {DSP 58 BRAM 5 URAM 0}} calculateLayer4_Pipeline_calculateLayer4_loop {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln21_fu_630_p2 SOURCE calculateLayer4.cpp:21 VARIABLE add_ln21 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME next_mul_fu_639_p2 SOURCE {} VARIABLE next_mul LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_fu_645_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_1_fu_675_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_1 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_113_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_114_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_2_fu_685_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_2 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_222_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_223_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_3_fu_704_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_3 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_331_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_332_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_4_fu_719_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_4 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_440_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_441_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_5_fu_734_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_5 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_1_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_1_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_6_fu_749_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_6 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_1_1_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_1_1_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_7_fu_764_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_7 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_1_2_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_1_2_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_8_fu_779_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_8 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_1_3_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_1_3_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_9_fu_794_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_9 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_1_4_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_1_4_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_10_fu_809_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_10 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_2_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_2_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_11_fu_824_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_11 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_2_1_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_2_1_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_12_fu_839_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_12 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_2_2_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_2_2_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_13_fu_854_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_13 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_2_3_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_2_3_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_14_fu_869_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_14 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_2_4_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_2_4_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_15_fu_884_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_15 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_3_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_3_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_16_fu_899_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_16 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_3_1_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_3_1_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_17_fu_914_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_17 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_3_2_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_3_2_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_18_fu_929_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_18 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_3_3_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_3_3_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_19_fu_944_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_19 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_3_4_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_3_4_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_20_fu_959_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_20 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_4_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_4_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_21_fu_974_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_21 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_4_1_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_4_1_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_22_fu_989_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_22 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_4_2_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_4_2_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_23_fu_1004_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_23 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_4_3_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_4_3_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_24_fu_1019_p2 SOURCE calculateLayer4.cpp:30 VARIABLE add_ln30_24 LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U31 SOURCE calculateLayer4.cpp:30 VARIABLE mul24_4_4_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U30 SOURCE calculateLayer4.cpp:30 VARIABLE add25_4_4_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 3 OPTYPE dmul PRAGMA {} RTLNAME dmul_64ns_64ns_64_4_max_dsp_1_x_U34 SOURCE calculateLayer4.cpp:31 VARIABLE x_assign LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 11 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dmul}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 3 OPTYPE dmul PRAGMA {} RTLNAME dmul_64ns_64ns_64_4_max_dsp_1_x_U34 SOURCE calculateLayer4.cpp:31 VARIABLE mul30_le LOOP calculateLayer4_loop BUNDLEDNAME {} DSP 11 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dmul}}} AREA {DSP 74 BRAM 5 URAM 0}} calculateLayer4 {AREA {DSP 74 BRAM 267 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0.8 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 3.655 seconds; current allocated memory: 245.754 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for calculateLayer4.
+INFO: [VLOG 209-307] Generating Verilog RTL for calculateLayer4.
+Execute       syn_report -model calculateLayer4 -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 71.53 MHz
+Command     autosyn done; 17.808 sec.
+Command   csynth_design done; 160.921 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10 seconds. CPU system time: 5 seconds. Elapsed time: 160.921 seconds; current allocated memory: 124.691 MB.
+Command ap_source done; 164.759 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5 opened at Thu Jan 16 14:32:21 +0100 2025
+Execute     ap_set_clock -name default -period 20 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/2023.2/Vitis_HLS/2023.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/2023.2/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 1.406 sec.
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.172 sec.
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.225 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.684 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -trace_level=port 
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+Execute     config_cosim -trace_level=port 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.942 sec.
+Execute   set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+Execute     create_platform xc7z020-clg484-1 -board  
+Command     create_platform done; 0.173 sec.
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.173 sec.
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.226 sec.
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.455 sec.
+Execute   create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+Execute   config_cosim -tool xsim -trace_level port 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./CNN_lenet5/solution5/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution5/directives.tcl
+Execute     set_directive_top -name calculateLayer4 calculateLayer4 
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer4 calculateLayer4 
+Execute   export_design -rtl verilog -format ip_catalog 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.163 sec.
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.217 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=20.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=calculateLayer4 xml_exists=0
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to calculateLayer4
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=25 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='calculateLayer4_mul_13s_71s_71_1_1
+calculateLayer4_mul_43ns_36ns_79_1_1
+calculateLayer4_mul_49ns_44ns_93_1_1
+calculateLayer4_mul_50ns_50ns_100_1_1
+calculateLayer4_mac_muladd_16s_15ns_19s_31_4_1
+calculateLayer4_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb
+calculateLayer4_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud
+calculateLayer4_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe
+calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1
+calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1
+calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1
+calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1
+calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1
+calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1
+calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1
+calculateLayer4_fptrunc_64ns_32_2_no_dsp_1
+calculateLayer4_fpext_32ns_64_2_no_dsp_1
+calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x
+calculateLayer4_flow_control_loop_pipe_sequential_init
+calculateLayer4_CTRL_bus_s_axi
+calculateLayer4_control_s_axi
+exp_generic_double_s
+generic_tanh_double_s
+calculateLayer4_Pipeline_calculateLayer4_loop
+calculateLayer4
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/top-io-be.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/exp_generic_double_s.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/generic_tanh_double_s.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4_Pipeline_calculateLayer4_loop.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.constraint.tcl 
+Execute     sc_get_clocks calculateLayer4 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1_ip.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1_ip.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1_ip.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_ip.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x_ip.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1_ip.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_fpext_32ns_64_2_no_dsp_1_ip.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/misc/calculateLayer4_fptrunc_64ns_32_2_no_dsp_1_ip.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to calculateLayer4
+INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_0 C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/driver
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.compgen.dataonly.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=calculateLayer4
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.constraint.tcl 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/calculateLayer4.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.154 sec.
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/2023.2/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.207 sec.
+INFO-FLOW: DBG:PUTS:     IP package: exec C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/ip/pack.bat
+Execute     send_msg_by_id INFO @200-802@%s CNN_lenet5/solution5/impl/export.zip 
+INFO: [HLS 200-802] Generated output file CNN_lenet5/solution5/impl/export.zip
+Command   export_design done; 120.164 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 120.164 seconds; current allocated memory: 8.102 MB.
+Command ap_source done; 122.835 sec.
+Execute cleanup_all 

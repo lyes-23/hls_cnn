@@ -1,0 +1,255 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="calculateLayer3" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="Layer2_Neurons_CPU" src_type="float*" src_isptr="1" src_bitwidth="32" src_size_or_depth="1014">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Neurons_CPU" hw_bitwidth="32" hw_size_or_depth="1014" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="1" access_type="r" src_name="Layer2_Weights_CPU" src_type="float*" src_isptr="1" src_bitwidth="32" src_size_or_depth="7800">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_0" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_1" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_2" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_3" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_4" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_5" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_6" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_7" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_8" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_9" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_10" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_11" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_12" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_13" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_14" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_15" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_16" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_17" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_18" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_19" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_20" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_21" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_22" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_23" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_24" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_25" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_26" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_27" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_28" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_29" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_30" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_31" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_32" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_33" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_34" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_35" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_36" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_37" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_38" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_39" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_40" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_41" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_42" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_43" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_44" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_45" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_46" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_47" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_48" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_49" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_50" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_51" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_52" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_53" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_54" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_55" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_56" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_57" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_58" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_59" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_60" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_61" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_62" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_63" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_64" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_65" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_66" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_67" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_68" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_69" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_70" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_71" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_72" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_73" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_74" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_75" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_76" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer2_Weights_CPU_77" hw_bitwidth="32" hw_size_or_depth="100" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="2" access_type="w" src_name="Layer3_Neurons_CPU" src_type="float*" src_isptr="1" src_bitwidth="32" src_size_or_depth="1250">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="Layer3_Neurons_CPU" hw_bitwidth="32" hw_size_or_depth="1250" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+    </args>
+    <return src_type="void" src_bitwidth="0" offset="0x0">
+      <hw hw_usage="data" hw_interface="" hw_name="" hw_bitwidth="0" hw_kernel_support="true"/>
+    </return>
+  </kernel>
+</root>

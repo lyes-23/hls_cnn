@@ -1,0 +1,1245 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 120.848 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 35.512 seconds; current allocated memory: 126.551 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 14,354 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,080 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,107 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,800 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,541 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,541 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,541 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,541 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,541 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,056 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,055 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,055 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,055 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,055 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,451 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,428 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:29:20)
+INFO: [HLS 214-291] Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:31:18)
+INFO: [HLS 214-186] Unrolling loop 'kernelRow_Loop' (calculateLayer3.cpp:29:20) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-186] Unrolling loop 'kernelCol_Loop' (calculateLayer3.cpp:31:18) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.34.44.53.64)' into 'fp_struct<double>::to_double() const (.31.41.50.61)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.31.41.50.61)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_fabs<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'exp_reduce_::expm1(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_fabs<double>(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::expm1(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'hls::tanh(double)' into 'calculateLayer3(float*, float*, float*)' (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-115] Multiple burst writes of length 1250 and bit width 32 in loop 'calculateLayer3_loop'(calculateLayer3.cpp:24:23) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:24:23)
+INFO: [HLS 214-115] Multiple burst reads of length 151 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:33:57)
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:34:58)
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:35:58)
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:36:58)
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:37:58)
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:38:58)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 17.246 seconds; current allocated memory: 130.457 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 130.488 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.164 seconds; current allocated memory: 141.359 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.158 seconds; current allocated memory: 147.531 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158:9) to (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:339:3) in function 'exp_reduce_::exp_generic<double>'... converting 10 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.543 seconds; current allocated memory: 178.102 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'row_Loop'(calculateLayer3.cpp:25:12) and 'col_loop'(calculateLayer3.cpp:26:13) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'calculateLayer3_loop'(calculateLayer3.cpp:24:23) and 'row_Loop'(calculateLayer3.cpp:25:12) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'row_Loop' (calculateLayer3.cpp:25:12) in function 'calculateLayer3'.
+INFO: [XFORM 203-541] Flattening a loop nest 'calculateLayer3_loop' (calculateLayer3.cpp:24:23) in function 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.692 seconds; current allocated memory: 200.418 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'calculateLayer3' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<double>' to 'generic_tanh_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln243) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'exp_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 10, Final II = 1, Depth = 8, function 'exp_generic<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.507 seconds; current allocated memory: 218.363 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.173 seconds; current allocated memory: 219.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'generic_tanh<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 10, Final II = 10, Depth = 40, function 'generic_tanh<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.246 seconds; current allocated memory: 220.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 221.059 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'calculateLayer3_loop_row_Loop_col_loop'.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to enforce a carried dependence constraint (II = 10, distance = 1, offset = 1) between bus read operation ('gmem_addr_1_read_150', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24) and bus read operation ('gmem_addr_1_read', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24).
+WARNING: [HLS 200-875] II = 11 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 12 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 13 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 14 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 15 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 16 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 17 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 18 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 19 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to enforce a carried dependence constraint (II = 20, distance = 1, offset = 1) between bus read operation ('gmem_addr_1_read_150', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24) and bus read operation ('gmem_addr_1_read', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24).
+WARNING: [HLS 200-875] II = 21 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 22 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 23 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 24 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 25 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 26 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 27 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 28 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 29 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to enforce a carried dependence constraint (II = 30, distance = 1, offset = 1) between bus read operation ('gmem_addr_1_read_150', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24) and bus read operation ('gmem_addr_1_read', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24).
+WARNING: [HLS 200-875] II = 31 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 32 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 33 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 34 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 35 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 36 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 37 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 38 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 39 is infeasible due to multiple pipeline iteration latency = 40 and incompatible II = 10 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to enforce a carried dependence constraint (II = 40, distance = 1, offset = 1) between bus read operation ('gmem_addr_1_read_150', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24) and bus read operation ('gmem_addr_1_read', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24).
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to enforce a carried dependence constraint (II = 148, distance = 1, offset = 1) between bus read operation ('gmem_addr_1_read_150', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24) and bus read operation ('gmem_addr_1_read', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24).
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_12_read_1', calculateLayer3.cpp:37) on port 'gmem' (calculateLayer3.cpp:37) due to limited memory ports (II = 202). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_17_read_3', calculateLayer3.cpp:36) on port 'gmem' (calculateLayer3.cpp:36) due to limited memory ports (II = 229). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_20_read_2', calculateLayer3.cpp:33) on port 'gmem' (calculateLayer3.cpp:33) due to limited memory ports (II = 243). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_21_read_4', calculateLayer3.cpp:34) on port 'gmem' (calculateLayer3.cpp:34) due to limited memory ports (II = 250). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_22_read_2', calculateLayer3.cpp:35) on port 'gmem' (calculateLayer3.cpp:35) due to limited memory ports (II = 253). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_22_read_4', calculateLayer3.cpp:35) on port 'gmem' (calculateLayer3.cpp:35) due to limited memory ports (II = 255). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_23_read', calculateLayer3.cpp:36) on port 'gmem' (calculateLayer3.cpp:36) due to limited memory ports (II = 256). Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive for loop 'calculateLayer3_loop_row_Loop_col_loop': unable to pipeline.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 61 seconds. CPU system time: 1 seconds. Elapsed time: 77.292 seconds; current allocated memory: 274.754 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.989 seconds; current allocated memory: 274.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'exp_generic_double_s' pipeline 'exp_generic<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_43ns_36ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_49ns_44ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.65 seconds; current allocated memory: 274.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'generic_tanh_double_s' pipeline 'generic_tanh<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_14_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.114 seconds; current allocated memory: 274.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Neurons_CPU' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Weights_CPU' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer3_Neurons_CPU' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'calculateLayer3' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'Layer2_Neurons_CPU', 'Layer2_Weights_CPU', 'Layer3_Neurons_CPU' to AXI-Lite port CTRL_bus.
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_6ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_11ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 6.065 seconds; current allocated memory: 280.496 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 6.832 seconds; current allocated memory: 337.453 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.15 seconds; current allocated memory: 343.102 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for calculateLayer3.
+INFO: [VLOG 209-307] Generating Verilog RTL for calculateLayer3.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 45.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 75 seconds. CPU system time: 4 seconds. Elapsed time: 155.923 seconds; current allocated memory: 222.289 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.261 seconds; current allocated memory: 121.223 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 42.594 seconds; current allocated memory: 127.359 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 14,354 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,080 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,107 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,800 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,541 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,541 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,541 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,541 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,541 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,056 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,055 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,055 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,055 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,055 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,451 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,428 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:29:20)
+INFO: [HLS 214-291] Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:31:21)
+INFO: [HLS 214-186] Unrolling loop 'kernelRow_Loop' (calculateLayer3.cpp:29:20) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-186] Unrolling loop 'kernelCol_Loop' (calculateLayer3.cpp:31:21) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.34.44.53.64)' into 'fp_struct<double>::to_double() const (.31.41.50.61)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.31.41.50.61)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_fabs<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'exp_reduce_::expm1(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_fabs<double>(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::expm1(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'hls::tanh(double)' into 'calculateLayer3(float*, float*, float*)' (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-115] Multiple burst writes of length 1250 and bit width 32 in loop 'calculateLayer3_loop'(calculateLayer3.cpp:24:23) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:24:23)
+INFO: [HLS 214-115] Multiple burst reads of length 151 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:33:53)
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:34:58)
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:35:58)
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:36:58)
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:37:58)
+INFO: [HLS 214-115] Multiple burst reads of length 5 and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (calculateLayer3.cpp:38:58)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 17.136 seconds; current allocated memory: 131.246 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 131.246 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 142.082 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.165 seconds; current allocated memory: 147.910 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158:9) to (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:339:3) in function 'exp_reduce_::exp_generic<double>'... converting 10 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.48 seconds; current allocated memory: 178.449 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'row_Loop'(calculateLayer3.cpp:25:12) and 'col_loop'(calculateLayer3.cpp:26:13) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'calculateLayer3_loop'(calculateLayer3.cpp:24:23) and 'row_Loop'(calculateLayer3.cpp:25:12) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'row_Loop' (calculateLayer3.cpp:25:12) in function 'calculateLayer3'.
+INFO: [XFORM 203-541] Flattening a loop nest 'calculateLayer3_loop' (calculateLayer3.cpp:24:23) in function 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.667 seconds; current allocated memory: 201.254 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'calculateLayer3' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<double>' to 'generic_tanh_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln243) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'exp_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, function 'exp_generic<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.373 seconds; current allocated memory: 218.805 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 220.680 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'generic_tanh<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 39, function 'generic_tanh<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.236 seconds; current allocated memory: 221.426 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 221.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'calculateLayer3_loop_row_Loop_col_loop'.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read operation ('gmem_addr_1_read_150', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24) and bus read operation ('gmem_addr_1_read', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24).
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus read operation ('gmem_addr_1_read_150', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24) and bus read operation ('gmem_addr_1_read', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24).
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus read operation ('gmem_addr_1_read_150', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24) and bus read operation ('gmem_addr_1_read', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24).
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus read operation ('gmem_addr_1_read_150', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24) and bus read operation ('gmem_addr_1_read', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24).
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between bus read operation ('gmem_addr_1_read_150', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24) and bus read operation ('gmem_addr_1_read', calculateLayer3.cpp:24) on port 'gmem' (calculateLayer3.cpp:24).
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_10_read_2', calculateLayer3.cpp:35) on port 'gmem' (calculateLayer3.cpp:35) due to limited memory ports (II = 193). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_16_read_4', calculateLayer3.cpp:35) on port 'gmem' (calculateLayer3.cpp:35) due to limited memory ports (II = 225). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_20_read', calculateLayer3.cpp:33) on port 'gmem' (calculateLayer3.cpp:33) due to limited memory ports (II = 241). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_21_read_3', calculateLayer3.cpp:34) on port 'gmem' (calculateLayer3.cpp:34) due to limited memory ports (II = 249). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_22_read_2', calculateLayer3.cpp:35) on port 'gmem' (calculateLayer3.cpp:35) due to limited memory ports (II = 253). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_22_read_4', calculateLayer3.cpp:35) on port 'gmem' (calculateLayer3.cpp:35) due to limited memory ports (II = 255). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule bus read operation ('gmem_addr_23_read', calculateLayer3.cpp:36) on port 'gmem' (calculateLayer3.cpp:36) due to limited memory ports (II = 256). Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive for loop 'calculateLayer3_loop_row_Loop_col_loop': unable to pipeline.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 48 seconds. CPU system time: 0 seconds. Elapsed time: 56.692 seconds; current allocated memory: 274.352 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.889 seconds; current allocated memory: 274.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'exp_generic_double_s' pipeline 'exp_generic<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_43ns_36ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_49ns_44ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.699 seconds; current allocated memory: 274.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'generic_tanh_double_s' pipeline 'generic_tanh<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_4_full_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_14_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.254 seconds; current allocated memory: 274.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Neurons_CPU' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Weights_CPU' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer3_Neurons_CPU' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'calculateLayer3' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'Layer2_Neurons_CPU', 'Layer2_Weights_CPU', 'Layer3_Neurons_CPU' to AXI-Lite port CTRL_bus.
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_6ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_11ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 5.548 seconds; current allocated memory: 281.738 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 6.555 seconds; current allocated memory: 338.949 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 3.205 seconds; current allocated memory: 344.547 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for calculateLayer3.
+INFO: [VLOG 209-307] Generating Verilog RTL for calculateLayer3.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 45.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 63 seconds. CPU system time: 4 seconds. Elapsed time: 141.433 seconds; current allocated memory: 223.508 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.228 seconds; current allocated memory: 121.547 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 37.266 seconds; current allocated memory: 127.910 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 14,354 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,080 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,107 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,797 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,846 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,854 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:29:20)
+INFO: [HLS 214-291] Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:31:21)
+INFO: [HLS 214-186] Unrolling loop 'kernelRow_Loop' (calculateLayer3.cpp:29:20) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-186] Unrolling loop 'kernelCol_Loop' (calculateLayer3.cpp:31:21) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.34.44.53.64)' into 'fp_struct<double>::to_double() const (.31.41.50.61)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.31.41.50.61)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_fabs<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'exp_reduce_::expm1(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_fabs<double>(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::expm1(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'hls::tanh(double)' into 'calculateLayer3(float*, float*, float*)' (calculateLayer3.cpp:10:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 15.254 seconds; current allocated memory: 129.551 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 129.551 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.267 seconds; current allocated memory: 141.387 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 147.328 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158:9) to (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:339:3) in function 'exp_reduce_::exp_generic<double>'... converting 10 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'calculateLayer3' (calculateLayer3.cpp:5:53)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.027 seconds; current allocated memory: 180.758 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'row_Loop'(calculateLayer3.cpp:25:12) and 'col_loop'(calculateLayer3.cpp:26:13) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'calculateLayer3_loop'(calculateLayer3.cpp:24:23) and 'row_Loop'(calculateLayer3.cpp:25:12) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'row_Loop' (calculateLayer3.cpp:25:12) in function 'calculateLayer3'.
+INFO: [XFORM 203-541] Flattening a loop nest 'calculateLayer3_loop' (calculateLayer3.cpp:24:23) in function 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.703 seconds; current allocated memory: 203.836 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'calculateLayer3' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<double>' to 'generic_tanh_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln243) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'exp_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, function 'exp_generic<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.658 seconds; current allocated memory: 209.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.177 seconds; current allocated memory: 210.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'generic_tanh<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 39, function 'generic_tanh<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.305 seconds; current allocated memory: 211.105 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.157 seconds; current allocated memory: 211.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln40_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'calculateLayer3_loop_row_Loop_col_loop'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_1', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_2', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_3', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_129', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 130). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_144', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 145). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_148', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 149). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_149', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 150). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 151, Depth = 504, loop 'calculateLayer3_loop_row_Loop_col_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 18 seconds. CPU system time: 0 seconds. Elapsed time: 21.559 seconds; current allocated memory: 229.609 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.759 seconds; current allocated memory: 230.984 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'exp_generic_double_s' pipeline 'exp_generic<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_43ns_36ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_49ns_44ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.155 seconds; current allocated memory: 234.367 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'generic_tanh_double_s' pipeline 'generic_tanh<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_4_full_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_14_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.113 seconds; current allocated memory: 238.898 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Weights_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer3_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'calculateLayer3' to 's_axilite & ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'calculateLayer3' pipeline 'calculateLayer3_loop_row_Loop_col_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL_bus.
+INFO: [RTGEN 206-100] Bundling port 'Layer2_Neurons_CPU', 'Layer3_Neurons_CPU' and 'Layer2_Weights_CPU' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] RTL name 'dmul_64ns_64ns_64_4_max_dsp_1' is changed to 'dmul_64ns_64ns_64_4_max_dsp_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_5ns_3ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_6ns_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_9ns_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.977 seconds; current allocated memory: 259.031 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 4 seconds. Elapsed time: 7.848 seconds; current allocated memory: 294.289 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.341 seconds; current allocated memory: 308.523 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for calculateLayer3.
+INFO: [VLOG 209-307] Generating Verilog RTL for calculateLayer3.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 45.96 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 27 seconds. CPU system time: 5 seconds. Elapsed time: 94.247 seconds; current allocated memory: 187.027 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.213 seconds; current allocated memory: 121.375 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 33.797 seconds; current allocated memory: 127.551 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 14,354 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,690 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 897 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 827 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 568 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 568 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 568 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 568 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 568 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 569 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 568 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 568 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 568 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 568 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 636 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 647 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:30:18)
+INFO: [HLS 214-186] Unrolling loop 'kernelCol_Loop' (calculateLayer3.cpp:30:18) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.34.44.53.64)' into 'fp_struct<double>::to_double() const (.31.41.50.61)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.31.41.50.61)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_fabs<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'exp_reduce_::expm1(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_fabs<double>(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::expm1(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'hls::tanh(double)' into 'calculateLayer3(float*, float*, float*)' (calculateLayer3.cpp:10:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.978 seconds; current allocated memory: 129.062 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.009 seconds; current allocated memory: 129.078 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.156 seconds; current allocated memory: 138.422 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.156 seconds; current allocated memory: 144.363 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158:9) to (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:339:3) in function 'exp_reduce_::exp_generic<double>'... converting 10 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'calculateLayer3' (calculateLayer3.cpp:5:20)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.411 seconds; current allocated memory: 172.598 MB.
+INFO: [HLS 200-2060] Failed to convert nested loops 'col_loop'(calculateLayer3.cpp:26:13) and 'kernelRow_Loop'(calculateLayer3.cpp:28:20) in function 'calculateLayer3' into perfectly nested loops.
+WARNING: [HLS 200-960] Cannot flatten loop 'col_loop' (calculateLayer3.cpp:26:13) in function 'calculateLayer3' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'row_Loop' (calculateLayer3.cpp:25:12) in function 'calculateLayer3'.
+INFO: [XFORM 203-541] Flattening a loop nest 'calculateLayer3_loop' (calculateLayer3.cpp:24:23) in function 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.397 seconds; current allocated memory: 197.984 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'calculateLayer3' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<double>' to 'generic_tanh_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer3_Pipeline_kernelRow_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'kernelRow_Loop'.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3_Pipeline_kernelRow_Loop' (loop 'kernelRow_Loop'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('somme_write_ln20', calculateLayer3.cpp:20) of variable 'somme', calculateLayer3.cpp:37 on local variable 'somme', calculateLayer3.cpp:20 and 'load' operation 32 bit ('somme_load', calculateLayer3.cpp:32) on local variable 'somme', calculateLayer3.cpp:20.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3_Pipeline_kernelRow_Loop' (loop 'kernelRow_Loop'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('somme_write_ln20', calculateLayer3.cpp:20) of variable 'somme', calculateLayer3.cpp:37 on local variable 'somme', calculateLayer3.cpp:20 and 'load' operation 32 bit ('somme_load', calculateLayer3.cpp:32) on local variable 'somme', calculateLayer3.cpp:20.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3_Pipeline_kernelRow_Loop' (loop 'kernelRow_Loop'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation 0 bit ('somme_write_ln20', calculateLayer3.cpp:20) of variable 'somme', calculateLayer3.cpp:37 on local variable 'somme', calculateLayer3.cpp:20 and 'load' operation 32 bit ('somme_load', calculateLayer3.cpp:32) on local variable 'somme', calculateLayer3.cpp:20.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3_Pipeline_kernelRow_Loop' (loop 'kernelRow_Loop'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 0) between 'store' operation 0 bit ('somme_write_ln20', calculateLayer3.cpp:20) of variable 'somme', calculateLayer3.cpp:37 on local variable 'somme', calculateLayer3.cpp:20 and 'load' operation 32 bit ('somme_load', calculateLayer3.cpp:32) on local variable 'somme', calculateLayer3.cpp:20.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3_Pipeline_kernelRow_Loop' (loop 'kernelRow_Loop'): Unable to enforce a carried dependence constraint (II = 36, distance = 1, offset = 0) between 'store' operation 0 bit ('somme_write_ln20', calculateLayer3.cpp:20) of variable 'somme', calculateLayer3.cpp:37 on local variable 'somme', calculateLayer3.cpp:20 and 'load' operation 32 bit ('somme_load', calculateLayer3.cpp:32) on local variable 'somme', calculateLayer3.cpp:20.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3_Pipeline_kernelRow_Loop' (loop 'kernelRow_Loop'): Unable to enforce a carried dependence constraint (II = 52, distance = 1, offset = 0) between 'store' operation 0 bit ('somme_write_ln20', calculateLayer3.cpp:20) of variable 'somme', calculateLayer3.cpp:37 on local variable 'somme', calculateLayer3.cpp:20 and 'load' operation 32 bit ('somme_load', calculateLayer3.cpp:32) on local variable 'somme', calculateLayer3.cpp:20.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3_Pipeline_kernelRow_Loop' (loop 'kernelRow_Loop'): Unable to enforce a carried dependence constraint (II = 56, distance = 1, offset = 0) between 'store' operation 0 bit ('somme_write_ln20', calculateLayer3.cpp:20) of variable 'somme', calculateLayer3.cpp:37 on local variable 'somme', calculateLayer3.cpp:20 and 'load' operation 32 bit ('somme_load', calculateLayer3.cpp:32) on local variable 'somme', calculateLayer3.cpp:20.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3_Pipeline_kernelRow_Loop' (loop 'kernelRow_Loop'): Unable to enforce a carried dependence constraint (II = 58, distance = 1, offset = 0) between 'store' operation 0 bit ('somme_write_ln20', calculateLayer3.cpp:20) of variable 'somme', calculateLayer3.cpp:37 on local variable 'somme', calculateLayer3.cpp:20 and 'load' operation 32 bit ('somme_load', calculateLayer3.cpp:32) on local variable 'somme', calculateLayer3.cpp:20.
+WARNING: [HLS 200-880] The II Violation in module 'calculateLayer3_Pipeline_kernelRow_Loop' (loop 'kernelRow_Loop'): Unable to enforce a carried dependence constraint (II = 59, distance = 1, offset = 0) between 'store' operation 0 bit ('somme_write_ln20', calculateLayer3.cpp:20) of variable 'somme', calculateLayer3.cpp:37 on local variable 'somme', calculateLayer3.cpp:20 and 'load' operation 32 bit ('somme_load', calculateLayer3.cpp:32) on local variable 'somme', calculateLayer3.cpp:20.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 60, Depth = 63, loop 'kernelRow_Loop'
+WARNING: [HLS 200-871] Estimated clock period (37.630 ns) exceeds the target (target clock period: 30.000 ns, clock uncertainty: 8.100 ns, effective delay budget: 21.900 ns).
+WARNING: [HLS 200-1016] The critical path in module 'calculateLayer3_Pipeline_kernelRow_Loop' consists of the following:
+	'fadd' operation 32 bit ('somme', calculateLayer3.cpp:32) [102]  (18.815 ns)
+	'fadd' operation 32 bit ('somme', calculateLayer3.cpp:33) [114]  (18.815 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.241 seconds; current allocated memory: 206.293 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.342 seconds; current allocated memory: 207.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln243) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'exp_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, function 'exp_generic<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.613 seconds; current allocated memory: 208.926 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 209.441 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.214 seconds; current allocated memory: 209.883 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 210.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln39_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.232 seconds; current allocated memory: 210.910 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 211.168 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer3_Pipeline_kernelRow_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'calculateLayer3_Pipeline_kernelRow_Loop' pipeline 'kernelRow_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_5ns_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer3_Pipeline_kernelRow_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.43 seconds; current allocated memory: 216.867 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'exp_generic_double_s' pipeline 'exp_generic<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_43ns_36ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_49ns_44ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.077 seconds; current allocated memory: 225.324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_14_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.046 seconds; current allocated memory: 229.547 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Weights_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer3_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'calculateLayer3' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL_bus.
+INFO: [RTGEN 206-100] Bundling port 'Layer2_Neurons_CPU', 'Layer3_Neurons_CPU' and 'Layer2_Weights_CPU' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_5ns_3ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_9ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.814 seconds; current allocated memory: 232.121 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.768 seconds; current allocated memory: 236.906 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.114 seconds; current allocated memory: 247.895 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for calculateLayer3.
+INFO: [VLOG 209-307] Generating Verilog RTL for calculateLayer3.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 26.57 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6 seconds. CPU system time: 2 seconds. Elapsed time: 56.739 seconds; current allocated memory: 127.020 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.252 seconds; current allocated memory: 121.359 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 34.343 seconds; current allocated memory: 127.594 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 14,354 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,080 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,107 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,797 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,846 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,854 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:29:20)
+INFO: [HLS 214-291] Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:32:17)
+INFO: [HLS 214-186] Unrolling loop 'kernelRow_Loop' (calculateLayer3.cpp:29:20) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-186] Unrolling loop 'kernelCol_Loop' (calculateLayer3.cpp:32:17) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.34.44.53.64)' into 'fp_struct<double>::to_double() const (.31.41.50.61)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.31.41.50.61)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_fabs<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'exp_reduce_::expm1(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_fabs<double>(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::expm1(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'hls::tanh(double)' into 'calculateLayer3(float*, float*, float*)' (calculateLayer3.cpp:10:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 15.123 seconds; current allocated memory: 129.027 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 129.027 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.297 seconds; current allocated memory: 140.852 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 146.305 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158:9) to (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:339:3) in function 'exp_reduce_::exp_generic<double>'... converting 10 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'calculateLayer3' (calculateLayer3.cpp:5:57)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.918 seconds; current allocated memory: 180.254 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'row_Loop'(calculateLayer3.cpp:25:12) and 'col_loop'(calculateLayer3.cpp:26:13) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'calculateLayer3_loop'(calculateLayer3.cpp:24:23) and 'row_Loop'(calculateLayer3.cpp:25:12) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'row_Loop' (calculateLayer3.cpp:25:12) in function 'calculateLayer3'.
+INFO: [XFORM 203-541] Flattening a loop nest 'calculateLayer3_loop' (calculateLayer3.cpp:24:23) in function 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.646 seconds; current allocated memory: 203.312 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'calculateLayer3' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<double>' to 'generic_tanh_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln243) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'exp_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 8, Final II = 1, Depth = 8, function 'exp_generic<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.606 seconds; current allocated memory: 208.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.174 seconds; current allocated memory: 210.391 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'generic_tanh<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 41, function 'generic_tanh<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.276 seconds; current allocated memory: 211.316 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.163 seconds; current allocated memory: 211.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln40_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'calculateLayer3_loop_row_Loop_col_loop'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_7', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 8). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-875] II = 9 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 10 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 11 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 12 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 13 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 14 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 15 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_15', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 16). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-875] II = 17 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 18 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 19 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 20 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 21 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 22 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 23 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_23', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 24). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-875] II = 25 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 26 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 27 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 28 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 29 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 30 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 31 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_31', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 32). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-875] II = 33 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 34 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 35 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 36 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 37 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 38 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 39 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:40) to 'generic_tanh<double>'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_147', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 148). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_148', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 149). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_149', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 150). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 8, Final II = 151, Depth = 506, loop 'calculateLayer3_loop_row_Loop_col_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 20 seconds. CPU system time: 0 seconds. Elapsed time: 25.158 seconds; current allocated memory: 229.262 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.574 seconds; current allocated memory: 230.984 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'exp_generic_double_s' pipeline 'exp_generic<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_43ns_36ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_49ns_44ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.204 seconds; current allocated memory: 234.348 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'generic_tanh_double_s' pipeline 'generic_tanh<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_14_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.244 seconds; current allocated memory: 238.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Weights_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer3_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'calculateLayer3' to 's_axilite & ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'calculateLayer3' pipeline 'calculateLayer3_loop_row_Loop_col_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL_bus.
+INFO: [RTGEN 206-100] Bundling port 'Layer2_Neurons_CPU', 'Layer3_Neurons_CPU' and 'Layer2_Weights_CPU' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] RTL name 'dmul_64ns_64ns_64_4_max_dsp_1' is changed to 'dmul_64ns_64ns_64_4_max_dsp_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_5ns_3ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_6ns_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_9ns_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.209 seconds; current allocated memory: 258.230 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 4 seconds. Elapsed time: 7.823 seconds; current allocated memory: 293.598 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.326 seconds; current allocated memory: 307.688 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for calculateLayer3.
+INFO: [VLOG 209-307] Generating Verilog RTL for calculateLayer3.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 45.96 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 28 seconds. CPU system time: 5 seconds. Elapsed time: 94.762 seconds; current allocated memory: 186.367 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port 
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer3 calculateLayer3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.205 seconds; current allocated memory: 120.832 MB.
+INFO: [HLS 200-10] Analyzing design file 'calculateLayer3.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 36.309 seconds; current allocated memory: 126.723 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 14,372 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,080 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,107 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,797 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,846 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,854 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-199] Ignoring dependence pragma on local scalar variable 'somme'. (calculateLayer3.cpp:33:9)
+INFO: [HLS 214-291] Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:29:20)
+INFO: [HLS 214-291] Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma (calculateLayer3.cpp:32:17)
+INFO: [HLS 214-186] Unrolling loop 'kernelRow_Loop' (calculateLayer3.cpp:29:20) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-186] Unrolling loop 'kernelCol_Loop' (calculateLayer3.cpp:32:17) in function 'calculateLayer3' completely with a factor of 5 (calculateLayer3.cpp:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.34.44.53.64)' into 'fp_struct<double>::to_double() const (.31.41.50.61)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.31.41.50.61)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_fabs<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'exp_reduce_::expm1(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_double.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_fabs<double>(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::expm1(double)' into 'double explog_based::generic_tanh<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'hls::tanh(double)' into 'calculateLayer3(float*, float*, float*)' (calculateLayer3.cpp:10:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 15.042 seconds; current allocated memory: 128.309 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.009 seconds; current allocated memory: 128.309 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.286 seconds; current allocated memory: 140.047 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.228 seconds; current allocated memory: 146.074 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158:9) to (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:339:3) in function 'exp_reduce_::exp_generic<double>'... converting 10 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'calculateLayer3' (calculateLayer3.cpp:5:53)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.883 seconds; current allocated memory: 179.461 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'row_Loop'(calculateLayer3.cpp:25:12) and 'col_loop'(calculateLayer3.cpp:26:13) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'calculateLayer3_loop'(calculateLayer3.cpp:24:23) and 'row_Loop'(calculateLayer3.cpp:25:12) in function 'calculateLayer3' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'row_Loop' (calculateLayer3.cpp:25:12) in function 'calculateLayer3'.
+INFO: [XFORM 203-541] Flattening a loop nest 'calculateLayer3_loop' (calculateLayer3.cpp:24:23) in function 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.71 seconds; current allocated memory: 202.988 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'calculateLayer3' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<double>' to 'generic_tanh_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln243) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'exp_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 8, Final II = 1, Depth = 8, function 'exp_generic<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.628 seconds; current allocated memory: 208.016 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 209.320 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'generic_tanh<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 41, function 'generic_tanh<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 210.238 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 210.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln41_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'calculateLayer3_loop_row_Loop_col_loop'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_7', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 8). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-875] II = 9 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 10 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 11 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 12 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 13 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 14 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 15 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_15', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 16). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-875] II = 17 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 18 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 19 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 20 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 21 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 22 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 23 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_23', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 24). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-875] II = 25 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 26 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 27 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 28 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 29 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 30 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 31 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_31', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 32). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-875] II = 33 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 34 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 35 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 36 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 37 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 38 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-875] II = 39 is infeasible due to multiple pipeline iteration latency = 41 and incompatible II = 8 of 'call' operation 64 bit ('tmp', C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\tanhdouble.cpp:7->calculateLayer3.cpp:41) to 'generic_tanh<double>'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_147', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 148). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_148', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 149). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+WARNING: [HLS 200-885] The II Violation in module 'calculateLayer3' (loop 'calculateLayer3_loop_row_Loop_col_loop'): Unable to schedule 'load' operation 32 bit ('Layer2_Weights_CPU_load_149', calculateLayer3.cpp:24) on array 'Layer2_Weights_CPU' due to limited memory ports (II = 150). Please consider using a memory core with more ports or partitioning the array 'Layer2_Weights_CPU'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 8, Final II = 151, Depth = 506, loop 'calculateLayer3_loop_row_Loop_col_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 20 seconds. CPU system time: 0 seconds. Elapsed time: 24.993 seconds; current allocated memory: 228.664 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.574 seconds; current allocated memory: 230.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ROM_AUTO_1R' to 'exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'exp_generic_double_s' pipeline 'exp_generic<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_43ns_36ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_49ns_44ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_arbkb' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_exp_generic_double_s_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arradEe' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.133 seconds; current allocated memory: 234.055 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'generic_tanh_double_s' pipeline 'generic_tanh<double>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_14_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.053 seconds; current allocated memory: 238.309 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer2_Weights_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculateLayer3/Layer3_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'calculateLayer3' to 's_axilite & ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'calculateLayer3' pipeline 'calculateLayer3_loop_row_Loop_col_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL_bus.
+INFO: [RTGEN 206-100] Bundling port 'Layer2_Neurons_CPU', 'Layer3_Neurons_CPU' and 'Layer2_Weights_CPU' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] RTL name 'dmul_64ns_64ns_64_4_max_dsp_1' is changed to 'dmul_64ns_64ns_64_4_max_dsp_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_5ns_3ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_6ns_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_9ns_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.836 seconds; current allocated memory: 257.359 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 4 seconds. Elapsed time: 8.282 seconds; current allocated memory: 292.129 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.583 seconds; current allocated memory: 306.793 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for calculateLayer3.
+INFO: [VLOG 209-307] Generating Verilog RTL for calculateLayer3.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 45.96 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 29 seconds. CPU system time: 5 seconds. Elapsed time: 96.585 seconds; current allocated memory: 185.980 MB.

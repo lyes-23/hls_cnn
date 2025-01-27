@@ -161,13 +161,13 @@
                         					
                     </folderInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.12559632.826294433" name="calculateLayer3_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/calculateLayer3_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1627321700.713792540">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.12559632.675361292" name="calculateLayer4_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/calculateLayer4_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1627321700.1249871625">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1627321700.713792540" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1627321700">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1627321700.1249871625" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1627321700">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.1106987079" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1640955531" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.168143864" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1900475419" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/auto_cc/include"/>
                                 								
@@ -183,9 +183,9 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.1994237997" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            <option id="gnu.cpp.compiler.option.other.other.1847633896" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1961772879" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1640666849" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
@@ -195,7 +195,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding=".apc|.reference|.settings|solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding=".apc|.reference|.settings|solution1|solution2|solution3|solution4|solution5|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -345,13 +345,13 @@
                         					
                     </folderInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1011173515.1764234316" name="calculateLayer3_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/calculateLayer3_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1651476527.2116350461">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1011173515.1219648442" name="calculateLayer4_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/calculateLayer4_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1651476527.2108519740">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1651476527.2116350461" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1651476527">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1651476527.2108519740" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1651476527">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.1032419228" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.437544647" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.691446441" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1730571829" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/2023.2/Vitis_HLS/2023.2/win64/tools/auto_cc/include"/>
                                 								
@@ -367,9 +367,9 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.491503501" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            <option id="gnu.cpp.compiler.option.other.other.1550167700" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.922514599" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1377587279" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
@@ -379,7 +379,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding=".apc|.reference|.settings|solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding=".apc|.reference|.settings|solution1|solution2|solution3|solution4|solution5|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

@@ -1,0 +1,728 @@
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:6023:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:6023:7: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:6997:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:6997:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:7011:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:7011:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:7025:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:7025:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:8642:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:8642:7: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12778:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12779:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12780:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12781:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12782:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12812:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12813:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12814:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12815:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12816:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12817:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12818:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12819:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12820:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12821:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12871:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12872:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12873:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12900:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12901:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12902:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12903:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12904:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12905:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12941:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:12942:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13216:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_61_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13216:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13262:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_117_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13262:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13425:9: warning: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_289_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13425:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13577:9: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_449_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13577:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13757:5: warning: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_629_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13757:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13761:5: warning: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_633_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13761:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13871:5: warning: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_743_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13871:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13961:7: warning: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_840_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13961:7: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13980:7: warning: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_859_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:13980:7: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14270:5: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1173_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14270:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14353:5: warning: Added loop label VITIS_LOOP_1256_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1256_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14353:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14759:13: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_68_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14759:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14765:17: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_74_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14765:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14769:17: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_78_3: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14769:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14817:13: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_145_4: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14817:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14823:17: warning: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_151_5: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14823:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14827:17: warning: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_155_6: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14827:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14842:9: warning: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_170_7: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14842:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14850:17: warning: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_178_8: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14850:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14915:13: warning: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_243_9: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14915:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14921:17: warning: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_249_10: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14921:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14925:17: warning: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_253_11: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14925:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14940:9: warning: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_268_12: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14940:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14948:17: warning: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_276_13: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:14948:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15177:13: warning: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_505_14: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15177:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15183:17: warning: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_511_15: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15183:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15187:17: warning: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_515_16: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15187:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15197:9: warning: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_525_17: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15197:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15201:9: warning: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_529_18: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15201:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15211:9: warning: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_539_19: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15211:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15219:17: warning: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_547_20: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15219:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15580:13: warning: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_908_21: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15580:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15586:17: warning: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_914_22: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15586:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15590:17: warning: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_918_23: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15590:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15706:13: warning: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1034_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15706:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15712:17: warning: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1040_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15712:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15716:17: warning: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1044_3: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15716:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15803:13: warning: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1131_4: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15803:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15809:17: warning: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1137_5: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15809:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15813:17: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1141_6: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15813:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15832:9: warning: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1160_7: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15832:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15839:17: warning: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1167_8: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15839:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15955:13: warning: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1283_9: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15955:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15961:17: warning: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1289_10: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15961:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15965:17: warning: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1293_11: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15965:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15985:9: warning: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1313_12: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15985:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15992:17: warning: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1320_13: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:15992:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16254:13: warning: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1582_14: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16254:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16260:17: warning: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1588_15: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16260:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16264:17: warning: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1592_16: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16264:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16288:9: warning: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1616_17: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16288:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16295:17: warning: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1623_18: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16295:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16725:13: warning: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2053_19: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16725:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16731:17: warning: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2059_20: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16731:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16735:17: warning: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2063_21: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16735:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16865:13: warning: Added loop label VITIS_LOOP_2193_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2193_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16865:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16872:17: warning: Added loop label VITIS_LOOP_2200_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2200_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16872:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16876:17: warning: Added loop label VITIS_LOOP_2204_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2204_3: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16876:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16923:13: warning: Added loop label VITIS_LOOP_2251_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2251_4: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16923:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16930:17: warning: Added loop label VITIS_LOOP_2258_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2258_5: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16930:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16934:17: warning: Added loop label VITIS_LOOP_2262_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2262_6: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16934:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16952:9: warning: Added loop label VITIS_LOOP_2280_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2280_7: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:16952:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17007:13: warning: Added loop label VITIS_LOOP_2335_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2335_8: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17007:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17014:17: warning: Added loop label VITIS_LOOP_2342_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2342_9: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17014:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17018:17: warning: Added loop label VITIS_LOOP_2346_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2346_10: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17018:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17036:9: warning: Added loop label VITIS_LOOP_2364_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2364_11: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17036:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17125:13: warning: Added loop label VITIS_LOOP_2453_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2453_12: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17125:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17132:17: warning: Added loop label VITIS_LOOP_2460_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2460_13: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17132:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17136:17: warning: Added loop label VITIS_LOOP_2464_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2464_14: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17136:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17146:9: warning: Added loop label VITIS_LOOP_2474_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2474_15: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17146:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17150:9: warning: Added loop label VITIS_LOOP_2478_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2478_16: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17150:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17161:9: warning: Added loop label VITIS_LOOP_2489_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2489_17: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17161:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17169:17: warning: Added loop label VITIS_LOOP_2497_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2497_18: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17169:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17494:13: warning: Added loop label VITIS_LOOP_2822_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2822_19: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17494:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17501:17: warning: Added loop label VITIS_LOOP_2829_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2829_20: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17501:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17505:17: warning: Added loop label VITIS_LOOP_2833_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2833_21: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17505:17: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17593:4: warning: Added loop label VITIS_LOOP_2921_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2921_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17593:4: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17600:5: warning: Added loop label VITIS_LOOP_2928_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2928_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17600:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17604:5: warning: Added loop label VITIS_LOOP_2932_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2932_3: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17604:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17619:3: warning: Added loop label VITIS_LOOP_2947_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2947_4: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17619:3: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17651:4: warning: Added loop label VITIS_LOOP_2979_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_2979_5: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17651:4: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17658:5: warning: Added loop label VITIS_LOOP_2986_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_2986_6: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17658:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17662:5: warning: Added loop label VITIS_LOOP_2990_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2990_7: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17662:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17677:3: warning: Added loop label VITIS_LOOP_3005_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3005_8: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17677:3: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17727:4: warning: Added loop label VITIS_LOOP_3055_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3055_9: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17727:4: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17734:5: warning: Added loop label VITIS_LOOP_3062_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3062_10: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17734:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17738:5: warning: Added loop label VITIS_LOOP_3066_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3066_11: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17738:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17753:3: warning: Added loop label VITIS_LOOP_3081_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3081_12: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17753:3: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17890:4: warning: Added loop label VITIS_LOOP_3218_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3218_13: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17890:4: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17897:5: warning: Added loop label VITIS_LOOP_3225_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3225_14: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17897:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17901:5: warning: Added loop label VITIS_LOOP_3229_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3229_15: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17901:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17916:3: warning: Added loop label VITIS_LOOP_3244_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3244_16: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:17916:3: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:18076:4: warning: Added loop label VITIS_LOOP_3404_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3404_17: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:18076:4: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:18083:5: warning: Added loop label VITIS_LOOP_3411_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3411_18: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:18083:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:18087:5: warning: Added loop label VITIS_LOOP_3415_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3415_19: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:18087:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:18802:13: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_703_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:18802:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:19020:13: warning: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_921_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:19020:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:19437:13: warning: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1345_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:19437:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:19757:9: warning: Added loop label VITIS_LOOP_240_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_240_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:19757:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:19785:9: warning: Added loop label VITIS_LOOP_268_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_268_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:19785:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20487:13: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_48_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20487:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20540:5: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_109_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20540:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20554:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_123_3: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20554:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20584:13: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_153_4: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20584:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20669:12: warning: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_281_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20669:12: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20689:16: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_301_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20689:16: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20703:20: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_315_3: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20703:20: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20796:12: warning: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_433_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20796:12: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20810:15: warning: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_447_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20810:15: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20930:13: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_33_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:20930:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21054:13: warning: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_183_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21054:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21109:13: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_248_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21109:13: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21628:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_16_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21628:2: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21639:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_27_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21639:2: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21650:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_38_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21650:2: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21661:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_49_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21661:2: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21672:2: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_60_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21672:2: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21683:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_71_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21683:2: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21694:2: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_82_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21694:2: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21705:2: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_93_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:21705:2: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:24030:12: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_26_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:24030:12: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:24094:7: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_40_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:24094:7: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:24211:9: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_49_1: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:24211:9: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:24236:5: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_81_2: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:24236:5: note: FIX-IT applied suggested code changes
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:24306:8: warning: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_169_3: 
+C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution3\.autopilot\db\calculateLayer3.pp.0.cpp:24306:8: note: FIX-IT applied suggested code changes

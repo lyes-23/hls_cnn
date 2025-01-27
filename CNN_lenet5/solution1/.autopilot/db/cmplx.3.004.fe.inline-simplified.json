@@ -4,9 +4,15 @@
     "calls": "1",
     "file": "calculateLayer3.cpp",
     "fileloc": 5,
-    "instructions": 1273,
+    "instructions": 1277,
+    "loads": {
+      "T": 301
+    },
     "name": "calculateLayer3",
-    "total_instructions": 1537
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 1541
   },
   "1": {
     "basicblocks": 13,

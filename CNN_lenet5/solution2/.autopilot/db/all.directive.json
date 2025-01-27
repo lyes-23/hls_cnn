@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "calculateLayer3",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "calculateLayer3"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "calculateLayer3",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "calculateLayer3"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/csynth.tcl",
+    "sourceLine": 19,
+    "success": true
+  }
+]

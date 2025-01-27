@@ -7,7 +7,7 @@
     </downStreamTool>
     <synthesis askAgain="true"/>
     <config>
-        <config_cosim tool="xsim"/>
+        <config_cosim tool="xsim" trace_level="port"/>
     </config>
     <UIConfigurations>
         <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
@@ -50,27 +50,27 @@
         <Format formatName="xo"/>
     </ExportDesign>
     <Simulation>
-        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="none" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="XSim" waveDebug="false">
+        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="port" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="false">
             <Rtl active="false" name="systemc"/>
             <Rtl active="true" name="verilog"/>
             <Rtl active="false" name="vhdl"/>
         </SimFlow>
     </Simulation>
+    <flowTarget value="vivado"/>
+    <targetInfo>
+        <TargetInfo value="xc7z020:-clg484:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="default" default="false" period="10"/>
+    </clockList>
     <name>
         <value string="solution1"/>
     </name>
     <project>
         <value string="CNN_lenet5"/>
     </project>
-    <flowTarget value="vivado"/>
-    <targetInfo>
-        <TargetInfo value="xc7z010i:-clg225:-1L"/>
-    </targetInfo>
-    <libraryList>
-        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
-    </libraryList>
-    <clockList>
-        <clock default="false" name="default" period="20"/>
-    </clockList>
 </solution>
 
