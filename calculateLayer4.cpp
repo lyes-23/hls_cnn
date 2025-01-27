@@ -1,6 +1,7 @@
 
 #include <math.h>
 #include "calculateLayer4.h"
+#include "sigmoid.h"
 
 void calculateLayer4(
 			float Layer3_Neurons_CPU [50*5*5],
