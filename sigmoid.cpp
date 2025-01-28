@@ -7,15 +7,15 @@ float temp;
 
 float SIGMOID(float x) {
 
-//#pragma HLS BIND_STORAGE variable=sigmoidLUT type=RAM_1P impl=BRAM
+#pragma HLS BIND_STORAGE variable=sigmoidLUT type=RAM_1P impl=BRAM
 
 	if (x < 0)  temp = -x;
 	else  		temp =  x;
 
     if (temp > N)  temp = N;
 
-#pragma HLS PIPELINE II=4
-    int index = (int)(temp/N *(LUT_SIZE - 1));
+#pragma HLS PIPELINE II=1
+    int index = (int)(temp * 42.5);
     if(x>0) return  sigmoidLUT[index];
     else    return -sigmoidLUT[index];
 }

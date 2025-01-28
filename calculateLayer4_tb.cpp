@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "calculateLayer4.h"
 #include "input_data.h"
-#include "sigmoid.h"
+
 #include <math.h>
 
 
@@ -33,7 +33,7 @@ int main(int argc, char **argv) {
                         }
                     }
                 }
-                Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = (float)SIGMOID(somme);
+                Layer2_Neurons_CPU[13 * 13 * i + 13 * j + k] = (1.7159* tanh(0.66666667*(float)somme));
             }
         }
     }
@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
 						somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+5] * Layer2_Neurons_CPU[13*13*5+13*(2*j+m)+(2*k+n)];
 
 					}
-				Layer3_Neurons_CPU[5*5*i+5*j+k] = (float) SIGMOID(somme);
+				Layer3_Neurons_CPU[5*5*i+5*j+k] = (1.7159* tanh(0.66666667*(float)somme));
 			}
 
 	for( i=0;i<100;i++){
@@ -64,7 +64,7 @@ int main(int argc, char **argv) {
 				for ( m=0;m<5;m++)
 					somme += Layer3_Weights_CPU[i*(1+50*25)+1 + m + k*5 + j*25] * Layer3_Neurons_CPU[m+5*k+25*j];
 
-		expected_output[i] = (float) SIGMOID(somme);
+		expected_output[i] = (1.7159* tanh(0.66666667*(float)somme));
 	}
 
 
