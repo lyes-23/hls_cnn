@@ -1,34 +1,33 @@
 #include "sigmoid.h"
 #include <math.h>
 
+
 void cnn_lenet(
-    float Layer1_Neurons_CPU[29*29],      // Input layer neurons
-    float Layer1_Weights_CPU[156],         // Layer 1 weights
-
-    float Layer2_Weights_CPU[7800],        // Layer 2 weights
-
-    float Layer3_Weights_CPU[125100],      // Layer 3 weights
-    float Layer4_Neurons_CPU[100]          // Layer 4 neurons (output)
+    float Layer1_Neurons_CPU[29*29],
+	float Layer2_Neurons_CPU[6*13*13],
+	float Layer3_Neurons_CPU[50*5*5],
+    float Layer1_Weights_CPU[156],
+    float Layer2_Weights_CPU[7800],
+    float Layer3_Weights_CPU[125100],
+    float Layer4_Neurons_CPU[100]
 )
 {
-    // Interface pragmas for memory management
-    #pragma HLS INTERFACE mode=m_axi port=Layer1_Neurons_CPU
-    #pragma HLS INTERFACE mode=bram port=Layer1_Weights_CPU
-    #pragma HLS INTERFACE mode=bram port=Layer2_Weights_CPU
-    #pragma HLS INTERFACE mode=bram port=Layer3_Weights_CPU
-    #pragma HLS INTERFACE mode=m_axi port=Layer4_Neurons_CPU
+
+    #pragma HLS INTERFACE mode=m_axi port=Layer1_Neurons_CPU  offset=slave
+    #pragma HLS INTERFACE mode=bram  port=Layer1_Weights_CPU
+    #pragma HLS INTERFACE mode=bram  port=Layer2_Weights_CPU
+    #pragma HLS INTERFACE mode=bram  port=Layer3_Weights_CPU
+    #pragma HLS INTERFACE mode=m_axi port=Layer4_Neurons_CPU 
     #pragma HLS INTERFACE mode=s_axilite port=return bundle=CTRL_bus
 
 
-	float Layer2_Neurons_CPU[6*13*13];     // Layer 2 neurons
-	float Layer3_Neurons_CPU[50*5*5];      // Layer 3 neurons
 
 
-    // Variables for Layer 2
+
     float somme;
     int i, j, k, m, n;
 
-    // Calculate Layer 2
+
     calculateLayer2_loop: for (i = 0; i < 6; i++) {
         OutputRow_Loop: for (j = 0; j < 13; j++) {
             OutputColumn_Loop: for (k = 0; k < 13; k++) {
@@ -68,16 +67,18 @@ void cnn_lenet(
     }
 
     // Calculate Layer 4
-    calculateLayer4_loop: for( i = 0; i < 100; i++) {
-        #pragma HLS PIPELINE II=26
-        col_loop2: for( j = 0; j < 50; j++) {
-            somme = Layer3_Weights_CPU[i*(1 + 50*25)];
-            kernelRow_Loop2: for( k = 0; k < 5; k++) {
-                kernelCol_loop2: for ( m = 0; m < 5; m++) {
-                    somme += Layer3_Weights_CPU[i*(1 + 50*25) + 1 + m + k*5 + j*25] * Layer3_Neurons_CPU[m + 5*k + 25*j];
-                }
-            }
-            Layer4_Neurons_CPU[i] = SIGMOID(somme);
-        }
-    }
+calculateLayer4_loop: for( i=0;i<100;i++){
+	somme = Layer3_Weights_CPU[i*(1+50*25)];
+	 col_loop2:for( j=0;j<50;j++)
+		 kernelRow_Loop2: for( k=0;k<5;k++)
+
+#pragma HLS UNROLL factor=5
+			 kernelCol_loop2: for ( m=0;m<5;m++)
+#pragma HLS PIPELINE II=2
+				somme += Layer3_Weights_CPU[i*(1+50*25)+1 + m + k*5 + j*25] * Layer3_Neurons_CPU[m+5*k+25*j];
+
+	Layer4_Neurons_CPU[i] =  SIGMOID(somme);
+}
+
+
 }
