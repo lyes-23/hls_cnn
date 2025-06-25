@@ -1,3 +1,0 @@
-C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\CNN_lenet5\solution10\.autopilot\db\sigmoid.pp.0.cpp:3550:51: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
-#pragma HLS BIND_STORAGE variable=sigmoidLUT type=ram_1p impl=lutram
-                                                  ^

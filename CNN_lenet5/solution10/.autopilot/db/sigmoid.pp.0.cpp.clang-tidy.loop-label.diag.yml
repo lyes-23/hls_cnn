@@ -1,9 +1,0 @@
----
-MainSourceFile:  'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/.autopilot/db/sigmoid.pp.0.cpp'
-Diagnostics:     
-  - DiagnosticName:  clang-diagnostic-error
-    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      9
-    FilePath:        sigmoid.cpp
-    Replacements:    
-...
