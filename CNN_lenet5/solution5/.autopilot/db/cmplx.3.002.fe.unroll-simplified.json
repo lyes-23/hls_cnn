@@ -1,149 +1,75 @@
 {
   "0": {
-    "basicblocks": 5,
-    "calls": "4",
-    "file": "calculateLayer4.cpp",
-    "fileloc": 5,
-    "instructions": 302,
+    "basicblocks": 7,
+    "calls": "1",
+    "file": "calculateLayer2.cpp",
+    "fileloc": 4,
+    "instructions": 332,
     "loads": {
       "T": 51
     },
-    "name": "calculateLayer4",
+    "name": "calculateLayer2",
     "stores": {
       "T": 1
     },
-    "total_instructions": 833
+    "total_instructions": 419
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "5",
-    "file": "hls_isinf.h",
-    "fileloc": 16,
-    "instructions": 11,
-    "loads": {
-      "L": 2
-    },
-    "name": "generic_isinf<double>",
-    "total_instructions": 20
-  },
-  "10": {
-    "basicblocks": 1,
-    "calls": "12",
-    "file": "x_hls_utils.h",
-    "fileloc": 494,
-    "instructions": 5,
-    "loads": {
-      "L": 1
-    },
-    "name": "to_double",
-    "total_instructions": 13
-  },
-  "11": {
-    "basicblocks": 1,
+    "basicblocks": 9,
     "calls": "8",
-    "file": "hls_nan.h",
-    "fileloc": 10,
-    "instructions": 2,
-    "name": "generic_nan<double>",
-    "total_instructions": 17
-  },
-  "12": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 475,
-    "instructions": 8,
+    "file": "sigmoid.cpp",
+    "fileloc": 8,
+    "instructions": 29,
     "loads": {
-      "L": 3
+      "G": 2
     },
-    "name": "data",
+    "name": "SIGMOID",
     "stores": {
-      "L": 1
+      "G": 3
     },
-    "total_instructions": 8
+    "total_instructions": 87
   },
-  "13": {
+  "2": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<int, float>",
+    "total_instructions": 56
+  },
+  "3": {
     "basicblocks": 1,
     "calls": "",
     "file": "x_hls_utils.h",
-    "fileloc": 485,
+    "fileloc": 340,
     "instructions": 6,
     "loads": {
       "L": 1
     },
-    "name": "expv",
+    "name": "mantissa",
+    "stores": {
+      "L": 1
+    },
     "total_instructions": 6
-  },
-  "14": {
-    "basicblocks": 4,
-    "calls": "5 15",
-    "file": "hls_exp_double.cpp",
-    "fileloc": 7,
-    "instructions": 24,
-    "loads": {
-      "L": 2
-    },
-    "name": "expm1",
-    "total_instructions": 423
-  },
-  "15": {
-    "basicblocks": 20,
-    "calls": "5 7 1 8 8 8 13 2 8 8 8 8",
-    "file": "hls_exp_.h",
-    "fileloc": 156,
-    "instructions": 162,
-    "loads": {
-      "G": 1,
-      "L": 3
-    },
-    "name": "exp_generic<double>",
-    "stores": {
-      "L": 11
-    },
-    "total_instructions": 390
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "hls_exp_.h",
-    "fileloc": 90,
-    "instructions": 65,
-    "loads": {
-      "G": 3,
-      "L": 1
-    },
-    "name": "exp_Z1P_m_1",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 65
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "5 8",
-    "file": "hls_copysign.h",
-    "fileloc": 10,
-    "instructions": 7,
-    "name": "generic_copysign<double>",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 31
   },
   "4": {
     "basicblocks": 1,
-    "calls": "6",
-    "file": "tanhdouble.cpp",
-    "fileloc": 6,
-    "instructions": 2,
-    "name": "tanh",
-    "total_instructions": 531
+    "calls": "5 3 6 7",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 30,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, float>",
+    "total_instructions": 54
   },
   "5": {
     "basicblocks": 1,
     "calls": "",
     "file": "x_hls_utils.h",
-    "fileloc": 456,
+    "fileloc": 283,
     "instructions": 9,
     "name": "fp_struct",
     "stores": {
@@ -152,45 +78,36 @@
     "total_instructions": 9
   },
   "6": {
-    "basicblocks": 11,
-    "calls": "5 9 11 14",
-    "file": "hls_tanh.h",
-    "fileloc": 28,
-    "instructions": 47,
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 316,
+    "instructions": 6,
     "loads": {
-      "L": 4
+      "L": 1
     },
-    "name": "generic_tanh<double>",
-    "total_instructions": 529
+    "name": "expv",
+    "total_instructions": 6
   },
   "7": {
-    "basicblocks": 3,
-    "calls": "5",
-    "file": "hls_isnan.h",
-    "fileloc": 16,
-    "instructions": 14,
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 349,
+    "instructions": 3,
     "loads": {
-      "L": 2
+      "L": 1
     },
-    "name": "generic_isnan<double>",
-    "total_instructions": 23
+    "name": "__signbit",
+    "total_instructions": 3
   },
   "8": {
     "basicblocks": 1,
-    "calls": "10",
-    "file": "x_hls_utils.h",
-    "fileloc": 509,
+    "calls": "2",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 51,
     "instructions": 2,
-    "name": "to_ieee",
-    "total_instructions": 15
-  },
-  "9": {
-    "basicblocks": 1,
-    "calls": "3",
-    "file": "hls_fabs.h",
-    "fileloc": 12,
-    "instructions": 2,
-    "name": "generic_fabs<double>",
-    "total_instructions": 33
+    "name": "__hls_fptosi_float_i32",
+    "total_instructions": 58
   }
 }

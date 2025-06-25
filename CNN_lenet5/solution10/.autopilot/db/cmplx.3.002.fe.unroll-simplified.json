@@ -1,0 +1,113 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "2 2",
+    "file": "cnn_lenet.cpp",
+    "fileloc": 7,
+    "instructions": 1899,
+    "loads": {
+      "G": 177,
+      "L": 150,
+      "T": 25
+    },
+    "name": "cnn_lenet",
+    "stores": {
+      "L": 1,
+      "T": 1
+    },
+    "total_instructions": 2059
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 512,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "__signbit",
+    "total_instructions": 3
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "6",
+    "file": "sigmoid.cpp",
+    "fileloc": 8,
+    "instructions": 22,
+    "loads": {
+      "G": 2
+    },
+    "name": "SIGMOID",
+    "total_instructions": 80
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 485,
+    "instructions": 6,
+    "loads": {
+      "L": 1
+    },
+    "name": "expv",
+    "total_instructions": 6
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "7 5 3 1",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 30,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, double>",
+    "total_instructions": 54
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 503,
+    "instructions": 6,
+    "loads": {
+      "L": 1
+    },
+    "name": "mantissa",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 6
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "8",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "__hls_fptosi_double_i32",
+    "total_instructions": 58
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 456,
+    "instructions": 9,
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 9
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<int, double>",
+    "total_instructions": 56
+  }
+}

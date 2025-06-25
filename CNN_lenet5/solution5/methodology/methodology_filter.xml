@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<methodologyFilter name="All Categories" select="true">
+    <methodologyFilter name="DATAFLOW" select="true"/>
+    <methodologyFilter name="SCHEDULE" select="true"/>
+    <methodologyFilter name="TIMING" select="true"/>
+    <methodologyFilter name="RUNTIME" select="true"/>
+    <methodologyFilter name="COSIM" select="true"/>
+    <methodologyFilter name="LOOP" select="true"/>
+    <methodologyFilter name="THROUGHPUT" select="true"/>
+</methodologyFilter>

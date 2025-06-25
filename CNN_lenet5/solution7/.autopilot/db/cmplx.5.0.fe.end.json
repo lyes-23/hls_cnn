@@ -1,0 +1,82 @@
+{
+    "1": {
+        "name": "SIGMOID",
+        "file": "sigmoid.cpp",
+        "fileloc": "8",
+        "instructions": "56",
+        "total_instructions": "56",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "1"
+        }
+    },
+    "2": {
+        "name": "cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop",
+        "file": "cnn_lenet.cpp",
+        "fileloc": "27",
+        "instructions": "360",
+        "total_instructions": "416",
+        "calls": "1",
+        "basicblocks": "7",
+        "loads": {
+            "L": "6",
+            "T": "26"
+        },
+        "stores": {
+            "L": "11",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop",
+        "file": "cnn_lenet.cpp",
+        "fileloc": "27",
+        "instructions": "1957",
+        "total_instructions": "2013",
+        "calls": "1",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5",
+            "T": "301"
+        },
+        "stores": {
+            "L": "10",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "cnn_lenet",
+        "file": "cnn_lenet.cpp",
+        "fileloc": "5",
+        "instructions": "29",
+        "total_instructions": "2796",
+        "calls": "2 3 4",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "cnn_lenet_Pipeline_calculateLayer4_loop",
+        "file": "cnn_lenet.cpp",
+        "fileloc": "27",
+        "instructions": "282",
+        "total_instructions": "338",
+        "calls": "1",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2",
+            "T": "51"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

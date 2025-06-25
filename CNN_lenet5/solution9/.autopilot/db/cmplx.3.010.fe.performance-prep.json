@@ -1,0 +1,32 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "1 1",
+    "file": "cnn_lenet.cpp",
+    "fileloc": 7,
+    "instructions": 1528,
+    "loads": {
+      "G": 177,
+      "L": 150,
+      "T": 25
+    },
+    "name": "cnn_lenet",
+    "stores": {
+      "L": 1,
+      "T": 1
+    },
+    "total_instructions": 1614
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sigmoid.cpp",
+    "fileloc": 8,
+    "instructions": 43,
+    "loads": {
+      "G": 1
+    },
+    "name": "SIGMOID",
+    "total_instructions": 43
+  }
+}

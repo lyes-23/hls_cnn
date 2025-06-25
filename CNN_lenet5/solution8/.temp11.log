@@ -1,0 +1,200 @@
+Layer 3 Test Passed!
+Layer 3 Test Passed!
+Mismatch at index 0: Expected -1.715765, Got -0.134305
+Mismatch at index 2: Expected 1.701039, Got 0.663435
+Mismatch at index 3: Expected 1.675808, Got -0.053815
+Mismatch at index 4: Expected 0.914167, Got -0.161021
+Mismatch at index 5: Expected -1.715900, Got -0.134305
+Mismatch at index 6: Expected -1.006879, Got 0.319231
+Mismatch at index 7: Expected -1.674873, Got -0.370882
+Mismatch at index 8: Expected -1.552081, Got -0.954546
+Mismatch at index 9: Expected -1.715900, Got -0.837231
+Mismatch at index 10: Expected 0.692276, Got -0.187659
+Mismatch at index 11: Expected -1.715729, Got -1.092857
+Mismatch at index 13: Expected 1.715900, Got -0.293173
+Mismatch at index 14: Expected 1.668072, Got -0.187659
+Mismatch at index 15: Expected 1.715538, Got 0.730836
+Mismatch at index 16: Expected 0.395529, Got -0.240648
+Mismatch at index 18: Expected -1.657798, Got -0.319231
+Mismatch at index 19: Expected 1.116264, Got 0.370882
+Mismatch at index 21: Expected 0.971463, Got -0.053815
+Mismatch at index 23: Expected -1.534098, Got 0.187659
+Mismatch at index 25: Expected 1.715900, Got 0.991069
+Mismatch at index 26: Expected 0.759345, Got -0.370882
+Mismatch at index 27: Expected -1.715900, Got 0.447027
+Mismatch at index 28: Expected -1.706410, Got -0.496783
+Mismatch at index 29: Expected 1.683708, Got 0.396452
+Mismatch at index 30: Expected -0.699347, Got -0.187659
+Mismatch at index 31: Expected 1.710323, Got 0.345138
+Mismatch at index 32: Expected -1.456388, Got -0.026914
+Mismatch at index 33: Expected 1.715896, Got 0.708657
+Mismatch at index 35: Expected 1.715899, Got 0.593538
+Mismatch at index 36: Expected -1.715763, Got -0.521329
+Mismatch at index 38: Expected -1.239298, Got 0.545643
+Mismatch at index 39: Expected 1.669992, Got 0.837231
+Mismatch at index 40: Expected 1.709422, Got -0.026914
+Mismatch at index 41: Expected 1.518385, Got -0.214205
+Mismatch at index 43: Expected -0.745050, Got 0.161021
+Mismatch at index 44: Expected -1.448342, Got 0.187659
+Mismatch at index 46: Expected 1.691940, Got 0.161021
+Mismatch at index 47: Expected -1.687982, Got 0.161021
+Mismatch at index 48: Expected -1.162059, Got 0.053815
+Mismatch at index 50: Expected -0.978359, Got -0.214205
+Mismatch at index 51: Expected 0.854589, Got -0.000000
+Mismatch at index 52: Expected 1.715899, Got 0.053815
+Mismatch at index 53: Expected -0.813373, Got -0.053815
+Mismatch at index 54: Expected 1.701596, Got 0.795590
+Mismatch at index 55: Expected 1.715897, Got 0.319231
+Mismatch at index 56: Expected 1.662827, Got -0.214205
+Mismatch at index 57: Expected -1.715900, Got 0.214205
+Mismatch at index 58: Expected 1.387211, Got 0.187659
+Mismatch at index 59: Expected 1.501705, Got 0.000000
+Mismatch at index 60: Expected 1.253237, Got -0.214205
+Mismatch at index 61: Expected 1.715897, Got 0.370882
+Mismatch at index 62: Expected 1.492548, Got 0.134305
+Mismatch at index 64: Expected 0.635848, Got 0.080689
+Mismatch at index 65: Expected 0.978234, Got -0.545643
+Mismatch at index 66: Expected 0.597996, Got -0.293173
+Mismatch at index 67: Expected -0.354149, Got 0.396452
+Mismatch at index 70: Expected 1.715900, Got 0.954546
+Mismatch at index 71: Expected -1.406483, Got 0.161021
+Mismatch at index 75: Expected -1.715600, Got -1.043419
+Mismatch at index 76: Expected -1.616478, Got -0.617104
+Mismatch at index 77: Expected 1.715900, Got -0.161021
+Mismatch at index 78: Expected -1.715474, Got -0.370882
+Mismatch at index 79: Expected -1.709805, Got -0.080689
+Mismatch at index 80: Expected -1.715900, Got -0.053815
+Mismatch at index 83: Expected 1.714804, Got 1.043419
+Mismatch at index 84: Expected 0.701230, Got -0.293173
+Mismatch at index 85: Expected -1.239383, Got -0.107523
+Mismatch at index 86: Expected -0.615365, Got -0.026914
+Mismatch at index 87: Expected 1.715900, Got 1.043419
+Mismatch at index 88: Expected -0.909460, Got 0.026914
+Mismatch at index 89: Expected 0.661894, Got -0.107523
+Mismatch at index 90: Expected 1.300284, Got -0.266975
+Mismatch at index 91: Expected -0.512228, Got 0.107523
+Mismatch at index 92: Expected 1.447501, Got 0.053815
+Mismatch at index 94: Expected 1.568655, Got -0.187659
+Mismatch at index 95: Expected -1.715856, Got -0.240648
+Mismatch at index 96: Expected 1.715558, Got 0.730836
+Mismatch at index 98: Expected 0.372161, Got -0.161021
+Mismatch at index 99: Expected -1.715900, Got -0.161021
+Layer 4 Test Failed with 79 errors!
+0 : -1.623050
+1 : -1.068269
+2 : 1.033812
+3 : -1.010681
+4 : -1.042068
+5 : -1.025913
+6 : 1.715900
+7 : -0.040750
+8 : -0.210584
+9 : -0.028243
+Le resultat est : 6 
+Layer 2 Test Passed!
+Layer 3 Test Passed!
+Mismatch at index 0: Expected -1.715765, Got -0.134305
+Mismatch at index 2: Expected 1.701039, Got 0.663435
+Mismatch at index 3: Expected 1.675808, Got -0.053815
+Mismatch at index 4: Expected 0.914167, Got -0.161021
+Mismatch at index 5: Expected -1.715900, Got -0.134305
+Mismatch at index 6: Expected -1.006879, Got 0.319231
+Mismatch at index 7: Expected -1.674873, Got -0.370882
+Mismatch at index 8: Expected -1.552081, Got -0.954546
+Mismatch at index 9: Expected -1.715900, Got -0.837231
+Mismatch at index 10: Expected 0.692276, Got -0.187659
+Mismatch at index 11: Expected -1.715729, Got -1.092857
+Mismatch at index 13: Expected 1.715900, Got -0.293173
+Mismatch at index 14: Expected 1.668072, Got -0.187659
+Mismatch at index 15: Expected 1.715538, Got 0.730836
+Mismatch at index 16: Expected 0.395529, Got -0.240648
+Mismatch at index 18: Expected -1.657798, Got -0.319231
+Mismatch at index 19: Expected 1.116264, Got 0.370882
+Mismatch at index 21: Expected 0.971463, Got -0.053815
+Mismatch at index 23: Expected -1.534098, Got 0.187659
+Mismatch at index 25: Expected 1.715900, Got 0.991069
+Mismatch at index 26: Expected 0.759345, Got -0.370882
+Mismatch at index 27: Expected -1.715900, Got 0.447027
+Mismatch at index 28: Expected -1.706410, Got -0.496783
+Mismatch at index 29: Expected 1.683708, Got 0.396452
+Mismatch at index 30: Expected -0.699347, Got -0.187659
+Mismatch at index 31: Expected 1.710323, Got 0.345138
+Mismatch at index 32: Expected -1.456388, Got -0.026914
+Mismatch at index 33: Expected 1.715896, Got 0.708657
+Mismatch at index 35: Expected 1.715899, Got 0.593538
+Mismatch at index 36: Expected -1.715763, Got -0.521329
+Mismatch at index 38: Expected -1.239298, Got 0.545643
+Mismatch at index 39: Expected 1.669992, Got 0.837231
+Mismatch at index 40: Expected 1.709422, Got -0.026914
+Mismatch at index 41: Expected 1.518385, Got -0.214205
+Mismatch at index 43: Expected -0.745050, Got 0.161021
+Mismatch at index 44: Expected -1.448342, Got 0.187659
+Mismatch at index 46: Expected 1.691940, Got 0.161021
+Mismatch at index 47: Expected -1.687982, Got 0.161021
+Mismatch at index 48: Expected -1.162059, Got 0.053815
+Mismatch at index 50: Expected -0.978359, Got -0.214205
+Mismatch at index 51: Expected 0.854589, Got -0.000000
+Mismatch at index 52: Expected 1.715899, Got 0.053815
+Mismatch at index 53: Expected -0.813373, Got -0.053815
+Mismatch at index 54: Expected 1.701596, Got 0.795590
+Mismatch at index 55: Expected 1.715897, Got 0.319231
+Mismatch at index 56: Expected 1.662827, Got -0.214205
+Mismatch at index 57: Expected -1.715900, Got 0.214205
+Mismatch at index 58: Expected 1.387211, Got 0.187659
+Mismatch at index 59: Expected 1.501705, Got 0.000000
+Mismatch at index 60: Expected 1.253237, Got -0.214205
+Mismatch at index 61: Expected 1.715897, Got 0.370882
+Mismatch at index 62: Expected 1.492548, Got 0.134305
+Mismatch at index 64: Expected 0.635848, Got 0.080689
+Mismatch at index 65: Expected 0.978234, Got -0.545643
+Mismatch at index 66: Expected 0.597996, Got -0.293173
+Mismatch at index 67: Expected -0.354149, Got 0.396452
+Mismatch at index 70: Expected 1.715900, Got 0.954546
+Mismatch at index 71: Expected -1.406483, Got 0.161021
+Mismatch at index 75: Expected -1.715600, Got -1.043419
+Mismatch at index 76: Expected -1.616478, Got -0.617104
+Mismatch at index 77: Expected 1.715900, Got -0.161021
+Mismatch at index 78: Expected -1.715474, Got -0.370882
+Mismatch at index 79: Expected -1.709805, Got -0.080689
+Mismatch at index 80: Expected -1.715900, Got -0.053815
+Mismatch at index 83: Expected 1.714804, Got 1.043419
+Mismatch at index 84: Expected 0.701230, Got -0.293173
+Mismatch at index 85: Expected -1.239383, Got -0.107523
+Mismatch at index 86: Expected -0.615365, Got -0.026914
+Mismatch at index 87: Expected 1.715900, Got 1.043419
+Mismatch at index 88: Expected -0.909460, Got 0.026914
+Mismatch at index 89: Expected 0.661894, Got -0.107523
+Mismatch at index 90: Expected 1.300284, Got -0.266975
+Mismatch at index 91: Expected -0.512228, Got 0.107523
+Mismatch at index 92: Expected 1.447501, Got 0.053815
+Mismatch at index 94: Expected 1.568655, Got -0.187659
+Mismatch at index 95: Expected -1.715856, Got -0.240648
+Mismatch at index 96: Expected 1.715558, Got 0.730836
+Mismatch at index 98: Expected 0.372161, Got -0.161021
+Mismatch at index 99: Expected -1.715900, Got -0.161021
+Layer 4 Test Failed with 79 errors!
+0 : -1.623050
+1 : -1.068269
+2 : 1.033812
+3 : -1.010681
+4 : -1.042068
+5 : -1.025913
+6 : 1.715900
+7 : -0.040750
+8 : -0.210584
+9 : -0.028243
+Le resultat est : 6 
+Layer 2 Test Passed!
+Layer 3 Test Passed!
+Layer 4 Test Passed!
+0 : -0.976143
+1 : -0.997102
+2 : 0.932812
+3 : -0.991594
+4 : -1.099167
+5 : -0.985913
+6 : -0.982313
+7 : -0.967208
+8 : -1.013244
+9 : -0.988420
+Le resultat est : 2 

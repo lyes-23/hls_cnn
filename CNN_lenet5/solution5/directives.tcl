@@ -4,4 +4,4 @@
 ## Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ## Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ############################################################
-set_directive_top -name calculateLayer4 "calculateLayer4"
+set_directive_top -name calculateLayer2 "calculateLayer2"

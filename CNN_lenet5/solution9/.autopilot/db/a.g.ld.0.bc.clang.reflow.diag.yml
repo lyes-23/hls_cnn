@@ -1,0 +1,499 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 55, Column: 33 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 56, Column: 37 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 37, Column: 33 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        convolutionRow
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 38, Column: 40 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelRow_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:55:33'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:56:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:56:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:56:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:56:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:56:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:56:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:56:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:56:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:56:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        kernelCol_Loop
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:56:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        convolutionRow
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:37:33'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:38:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:38:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:38:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:38:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:38:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:38:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:38:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:38:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:38:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: cnn_lenet.cpp, Line: 11, Column: 0 }
+Function:        _Z9cnn_lenetPfS_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        convolutionColumn
+  - String:          ''' ('
+  - LoopLoc:         'cnn_lenet.cpp:38:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_lenet
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::mantissa() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 503, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::__signbit() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 512, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 116, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IidET_T0_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, double>(double, bool)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                   Line: 55, Column: 0 }
+Function:        __hls_fptosi_double_i32
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_cast_IEEE754<int, double>(double, bool)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          __hls_fptosi_double_i32
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                       Line: 55, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: sigmoid.cpp, Line: 8, Column: 0 }
+Function:        _Z7SIGMOIDf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          __hls_fptosi_double_i32
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                       Line: 55, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'SIGMOID(float)'
+    DebugLoc:        { File: sigmoid.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...

@@ -1,0 +1,37 @@
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution7/csynth.tcl:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=name=cnn_lenet_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=cnn_lenet
+        ^
+C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution7/directives.tcl:7:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=name=cnn_lenet_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=cnn_lenet
+        ^
+cnn_lenet.cpp:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=mode=m_axi port=Layer1_Neurons_CPU offset=slave_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=m_axi port=Layer1_Neurons_CPU offset=slave
+        ^
+cnn_lenet.cpp:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=mode=bram port=Layer1_Weights_CPU_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=bram port=Layer1_Weights_CPU
+        ^
+cnn_lenet.cpp:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=mode=bram port=Layer2_Weights_CPU_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=bram port=Layer2_Weights_CPU
+        ^
+cnn_lenet.cpp:19:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=mode=bram port=Layer3_Weights_CPU_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=bram port=Layer3_Weights_CPU
+        ^
+cnn_lenet.cpp:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=mode=m_axi port=Layer4_Neurons_CPU_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=m_axi port=Layer4_Neurons_CPU
+        ^
+cnn_lenet.cpp:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=mode=s_axilite port=return bundle=CTRL_bus_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=return bundle=CTRL_bus
+        ^
+cnn_lenet.cpp:34:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=II=25_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=25
+        ^
+cnn_lenet.cpp:37:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=factor=5_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL factor=5
+        ^
+cnn_lenet.cpp:52:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=II=152_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=152
+        ^
+cnn_lenet.cpp:71:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cnn_lenet_XLX_SEP_ PragmaOptions=II=26_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=26
+        ^
+12 warnings generated.

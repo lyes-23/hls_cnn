@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="calculateLayer2.h" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\calculateLayer2.h"/>
-    <originFiles name="calculateLayer3.cpp" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\calculateLayer3.cpp"/>
-    <originFiles name="calculateLayer3.h" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\calculateLayer3.h"/>
-    <originFiles name="calculateLayer4.cpp" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\calculateLayer4.cpp"/>
-    <originFiles name="calculateLayer4.h" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\calculateLayer4.h"/>
+    <originFiles name="cnn_lenet.cpp" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\cnn_lenet.cpp"/>
+    <originFiles name="cnn_lenet.h" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\cnn_lenet.h"/>
+    <originFiles name="input_data.h" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\input_data.h"/>
+    <originFiles name="layer_weights.h" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\layer_weights.h"/>
+    <originFiles name="sigmoid.cpp" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\sigmoid.cpp"/>
+    <originFiles name="sigmoid.h" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\sigmoid.h"/>
   </source>
   <testbench>
-    <originFiles name="calculateLayer4_tb.cpp" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\calculateLayer4_tb.cpp"/>
+    <originFiles name="cnn_lenet_tb.cpp" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\cnn_lenet_tb.cpp"/>
     <originFiles name="input_data.h" path="C:\Users\TRETEC\OneDrive\Documents\Master2\HLS-FPGA\cnn_hls\input_data.h"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

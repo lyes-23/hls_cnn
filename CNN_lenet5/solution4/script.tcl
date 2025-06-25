@@ -5,19 +5,20 @@
 ## Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ############################################################
 open_project CNN_lenet5
-set_top calculateLayer4
-add_files calculateLayer2.h
-add_files calculateLayer3.cpp
-add_files calculateLayer3.h
-add_files calculateLayer4.cpp
-add_files calculateLayer4.h
-add_files -tb calculateLayer4_tb.cpp
+set_top cnn_lenet
+add_files cnn_lenet.cpp
+add_files cnn_lenet.h
+add_files input_data.h
+add_files layer_weights.h
+add_files sigmoid.cpp
+add_files sigmoid.h
+add_files -tb cnn_lenet_tb.cpp -cflags "-Wno-unknown-pragmas"
 add_files -tb input_data.h -cflags "-Wno-unknown-pragmas"
 open_solution "solution4" -flow_target vivado
 set_part {xc7z020-clg484-1}
 create_clock -period 10 -name default
-#source "./CNN_lenet5/solution4/directives.tcl"
-csim_design
+source "./CNN_lenet5/solution4/directives.tcl"
+csim_design -clean
 csynth_design
 cosim_design
 export_design -format ip_catalog

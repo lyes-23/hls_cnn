@@ -1,7 +1,7 @@
 [
   {
     "functionLabel": "",
-    "functionName": "calculateLayer4",
+    "functionName": "calculateLayer2",
     "id": 0,
     "ifcond": "",
     "insert_position": "",
@@ -11,7 +11,7 @@
       "option": [
         {
           "name": "name",
-          "value": "calculateLayer4"
+          "value": "calculateLayer2"
         }
       ]
     },
@@ -22,7 +22,7 @@
   },
   {
     "functionLabel": "",
-    "functionName": "calculateLayer4",
+    "functionName": "calculateLayer2",
     "id": 1,
     "ifcond": "",
     "insert_position": "",
@@ -32,13 +32,13 @@
       "option": [
         {
           "name": "name",
-          "value": "calculateLayer4"
+          "value": "calculateLayer2"
         }
       ]
     },
     "slx": false,
     "sourceFile": "C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/csynth.tcl",
-    "sourceLine": 22,
+    "sourceLine": 21,
     "success": true
   }
 ]

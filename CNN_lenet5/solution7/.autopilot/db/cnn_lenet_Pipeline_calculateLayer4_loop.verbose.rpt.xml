@@ -1,0 +1,335 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'cnn_lenet_Pipeline_calculateLayer4_loop'" level="0">
+<item name = "Date">Thu Jan 30 14:34:34 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">CNN_lenet5</item>
+<item name = "Solution">solution7 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">20.00 ns, 14.600 ns, 5.40 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2691, 2691, 53.820 us, 53.820 us, 2691, 2691, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_SIGMOID_fu_639">SIGMOID, 9, 9, 0.180 us, 0.180 us, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- calculateLayer4_loop">2689, 2689, 116, 26, 26, 100, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 656, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 957, -</column>
+<column name="Register">-, -, 2702, 320, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 2, 3, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln70_fu_765_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln76_10_fu_941_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_11_fu_961_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_12_fu_971_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_13_fu_991_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_14_fu_1001_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_15_fu_1021_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_16_fu_1031_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_17_fu_1051_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_18_fu_1061_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_19_fu_1081_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_1_fu_806_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_20_fu_1091_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_21_fu_1111_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_22_fu_1121_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_23_fu_1141_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_24_fu_1151_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_2_fu_816_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_3_fu_836_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_4_fu_846_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_5_fu_866_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_6_fu_876_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_7_fu_901_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_8_fu_911_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_9_fu_931_p2">+, 0, 0, 24, 17, 11</column>
+<column name="add_ln76_fu_785_p2">+, 0, 0, 24, 17, 11</column>
+<column name="next_mul_fu_774_p2">+, 0, 0, 24, 17, 11</column>
+<column name="ap_block_pp0_stage11_11001">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln70_fu_759_p2">icmp, 0, 0, 14, 7, 6</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="Layer3_Neurons_CPU_address0">65, 14, 11, 154</column>
+<column name="Layer3_Neurons_CPU_address1">65, 13, 11, 143</column>
+<column name="Layer3_Weights_CPU_Addr_A_orig">65, 14, 32, 448</column>
+<column name="Layer3_Weights_CPU_Addr_B_orig">65, 14, 32, 448</column>
+<column name="ap_NS_fsm">121, 27, 1, 27</column>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter4">9, 2, 1, 2</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">9, 2, 1, 2</column>
+<column name="ap_loop_exit_ready_pp0_iter2_reg">9, 2, 1, 2</column>
+<column name="ap_loop_exit_ready_pp0_iter3_reg">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_i_1">9, 2, 7, 14</column>
+<column name="ap_sig_allocacmp_phi_mul_load">9, 2, 17, 34</column>
+<column name="gmem_blk_n_W">9, 2, 1, 2</column>
+<column name="grp_fu_646_p0">31, 6, 32, 192</column>
+<column name="grp_fu_646_p1">113, 25, 32, 800</column>
+<column name="grp_fu_650_p0">117, 26, 32, 832</column>
+<column name="grp_fu_650_p1">117, 26, 32, 832</column>
+<column name="i_fu_170">9, 2, 7, 14</column>
+<column name="phi_mul_fu_166">9, 2, 17, 34</column>
+<column name="reg_658">9, 2, 32, 64</column>
+<column name="reg_667">9, 2, 32, 64</column>
+<column name="reg_672">9, 2, 32, 64</column>
+<column name="reg_677">9, 2, 32, 64</column>
+<column name="reg_687">9, 2, 32, 64</column>
+<column name="reg_692">9, 2, 32, 64</column>
+<column name="reg_697">9, 2, 32, 64</column>
+<column name="reg_702">9, 2, 32, 64</column>
+<column name="reg_707">9, 2, 32, 64</column>
+<column name="reg_712">9, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="Layer3_Neurons_CPU_load_13_reg_1589">32, 0, 32, 0</column>
+<column name="Layer3_Neurons_CPU_load_15_reg_1634">32, 0, 32, 0</column>
+<column name="Layer3_Neurons_CPU_load_17_reg_1679">32, 0, 32, 0</column>
+<column name="Layer3_Neurons_CPU_load_19_reg_1724">32, 0, 32, 0</column>
+<column name="Layer3_Neurons_CPU_load_21_reg_1769">32, 0, 32, 0</column>
+<column name="Layer3_Neurons_CPU_load_23_reg_1809">32, 0, 32, 0</column>
+<column name="Layer3_Weights_CPU_load_13_reg_1579">32, 0, 32, 0</column>
+<column name="Layer3_Weights_CPU_load_15_reg_1624">32, 0, 32, 0</column>
+<column name="Layer3_Weights_CPU_load_17_reg_1669">32, 0, 32, 0</column>
+<column name="Layer3_Weights_CPU_load_19_reg_1714">32, 0, 32, 0</column>
+<column name="Layer3_Weights_CPU_load_21_reg_1759">32, 0, 32, 0</column>
+<column name="Layer3_Weights_CPU_load_23_reg_1799">32, 0, 32, 0</column>
+<column name="Layer3_Weights_CPU_load_25_reg_1834">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">26, 0, 26, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter2_reg">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter3_reg">1, 0, 1, 0</column>
+<column name="grp_SIGMOID_fu_639_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_fu_170">7, 0, 7, 0</column>
+<column name="icmp_ln70_reg_1317">1, 0, 1, 0</column>
+<column name="mul236_49_1_1_reg_1654">32, 0, 32, 0</column>
+<column name="mul236_49_1_2_reg_1699">32, 0, 32, 0</column>
+<column name="mul236_49_1_3_reg_1744">32, 0, 32, 0</column>
+<column name="mul236_49_1_4_reg_1784">32, 0, 32, 0</column>
+<column name="mul236_49_1_4_reg_1784_pp0_iter1_reg">32, 0, 32, 0</column>
+<column name="mul236_49_1_reg_1609">32, 0, 32, 0</column>
+<column name="mul236_49_2_1_reg_1839">32, 0, 32, 0</column>
+<column name="mul236_49_2_1_reg_1839_pp0_iter1_reg">32, 0, 32, 0</column>
+<column name="mul236_49_2_2_reg_1854">32, 0, 32, 0</column>
+<column name="mul236_49_2_2_reg_1854_pp0_iter1_reg">32, 0, 32, 0</column>
+<column name="mul236_49_2_3_reg_1869">32, 0, 32, 0</column>
+<column name="mul236_49_2_3_reg_1869_pp0_iter1_reg">32, 0, 32, 0</column>
+<column name="mul236_49_2_4_reg_1884">32, 0, 32, 0</column>
+<column name="mul236_49_2_4_reg_1884_pp0_iter1_reg">32, 0, 32, 0</column>
+<column name="mul236_49_2_reg_1819">32, 0, 32, 0</column>
+<column name="mul236_49_2_reg_1819_pp0_iter1_reg">32, 0, 32, 0</column>
+<column name="mul236_49_3_1_reg_1914">32, 0, 32, 0</column>
+<column name="mul236_49_3_2_reg_1929">32, 0, 32, 0</column>
+<column name="mul236_49_3_3_reg_1944">32, 0, 32, 0</column>
+<column name="mul236_49_3_4_reg_1959">32, 0, 32, 0</column>
+<column name="mul236_49_3_reg_1899">32, 0, 32, 0</column>
+<column name="mul236_49_3_reg_1899_pp0_iter1_reg">32, 0, 32, 0</column>
+<column name="mul236_49_4_1_reg_1989">32, 0, 32, 0</column>
+<column name="mul236_49_4_2_reg_2004">32, 0, 32, 0</column>
+<column name="mul236_49_4_3_reg_2019">32, 0, 32, 0</column>
+<column name="mul236_49_4_4_reg_2034">32, 0, 32, 0</column>
+<column name="mul236_49_4_reg_1974">32, 0, 32, 0</column>
+<column name="mul236_49_5_reg_1499">32, 0, 32, 0</column>
+<column name="mul236_49_6_reg_1534">32, 0, 32, 0</column>
+<column name="mul236_49_s_reg_1464">32, 0, 32, 0</column>
+<column name="phi_mul_fu_166">17, 0, 17, 0</column>
+<column name="phi_mul_load_reg_1321">17, 0, 17, 0</column>
+<column name="reg_654">32, 0, 32, 0</column>
+<column name="reg_658">32, 0, 32, 0</column>
+<column name="reg_663">32, 0, 32, 0</column>
+<column name="reg_667">32, 0, 32, 0</column>
+<column name="reg_672">32, 0, 32, 0</column>
+<column name="reg_677">32, 0, 32, 0</column>
+<column name="reg_682">32, 0, 32, 0</column>
+<column name="reg_687">32, 0, 32, 0</column>
+<column name="reg_692">32, 0, 32, 0</column>
+<column name="reg_697">32, 0, 32, 0</column>
+<column name="reg_702">32, 0, 32, 0</column>
+<column name="reg_707">32, 0, 32, 0</column>
+<column name="reg_712">32, 0, 32, 0</column>
+<column name="reg_717">32, 0, 32, 0</column>
+<column name="reg_721">32, 0, 32, 0</column>
+<column name="reg_726">32, 0, 32, 0</column>
+<column name="reg_731">32, 0, 32, 0</column>
+<column name="reg_736">32, 0, 32, 0</column>
+<column name="tmp_reg_2039">32, 0, 32, 0</column>
+<column name="icmp_ln70_reg_1317">64, 32, 1, 0</column>
+<column name="mul236_49_3_1_reg_1914">64, 32, 32, 0</column>
+<column name="mul236_49_3_2_reg_1929">64, 32, 32, 0</column>
+<column name="mul236_49_3_3_reg_1944">64, 32, 32, 0</column>
+<column name="mul236_49_3_4_reg_1959">64, 32, 32, 0</column>
+<column name="mul236_49_4_1_reg_1989">64, 32, 32, 0</column>
+<column name="mul236_49_4_2_reg_2004">64, 32, 32, 0</column>
+<column name="mul236_49_4_3_reg_2019">64, 32, 32, 0</column>
+<column name="mul236_49_4_4_reg_2034">64, 32, 32, 0</column>
+<column name="mul236_49_4_reg_1974">64, 32, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_SIGMOID_fu_171_p_din1">out, 32, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_SIGMOID_fu_171_p_dout0">in, 32, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_SIGMOID_fu_171_p_ce">out, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_SIGMOID_fu_171_p_start">out, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_SIGMOID_fu_171_p_ready">in, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_SIGMOID_fu_171_p_done">in, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_SIGMOID_fu_171_p_idle">in, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_fu_176_p_din0">out, 32, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_fu_176_p_din1">out, 32, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_fu_176_p_opcode">out, 2, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_fu_176_p_dout0">in, 32, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_fu_176_p_ce">out, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_fu_180_p_din0">out, 32, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_fu_180_p_din1">out, 32, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_fu_180_p_dout0">in, 32, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="grp_fu_180_p_ce">out, 1, ap_ctrl_hs, cnn_lenet_Pipeline_calculateLayer4_loop, return value</column>
+<column name="m_axi_gmem_AWVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWADDR">out, 64, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWLEN">out, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWSIZE">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWBURST">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWLOCK">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWCACHE">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWPROT">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWQOS">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWREGION">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WDATA">out, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WSTRB">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WLAST">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARADDR">out, 64, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARLEN">out, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARSIZE">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARBURST">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARLOCK">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARCACHE">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARPROT">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARQOS">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARREGION">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RVALID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RREADY">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RDATA">in, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RLAST">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RFIFONUM">in, 9, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RUSER">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RRESP">in, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BVALID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BREADY">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BRESP">in, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BUSER">in, 1, m_axi, gmem, pointer</column>
+<column name="Layer3_Neurons_CPU_address0">out, 11, ap_memory, Layer3_Neurons_CPU, array</column>
+<column name="Layer3_Neurons_CPU_ce0">out, 1, ap_memory, Layer3_Neurons_CPU, array</column>
+<column name="Layer3_Neurons_CPU_q0">in, 32, ap_memory, Layer3_Neurons_CPU, array</column>
+<column name="Layer3_Neurons_CPU_address1">out, 11, ap_memory, Layer3_Neurons_CPU, array</column>
+<column name="Layer3_Neurons_CPU_ce1">out, 1, ap_memory, Layer3_Neurons_CPU, array</column>
+<column name="Layer3_Neurons_CPU_q1">in, 32, ap_memory, Layer3_Neurons_CPU, array</column>
+<column name="sext_ln70">in, 62, ap_none, sext_ln70, scalar</column>
+<column name="Layer3_Weights_CPU_Addr_A">out, 32, bram, Layer3_Weights_CPU, array</column>
+<column name="Layer3_Weights_CPU_EN_A">out, 1, bram, Layer3_Weights_CPU, array</column>
+<column name="Layer3_Weights_CPU_WEN_A">out, 4, bram, Layer3_Weights_CPU, array</column>
+<column name="Layer3_Weights_CPU_Din_A">out, 32, bram, Layer3_Weights_CPU, array</column>
+<column name="Layer3_Weights_CPU_Dout_A">in, 32, bram, Layer3_Weights_CPU, array</column>
+<column name="Layer3_Weights_CPU_Addr_B">out, 32, bram, Layer3_Weights_CPU, array</column>
+<column name="Layer3_Weights_CPU_EN_B">out, 1, bram, Layer3_Weights_CPU, array</column>
+<column name="Layer3_Weights_CPU_WEN_B">out, 4, bram, Layer3_Weights_CPU, array</column>
+<column name="Layer3_Weights_CPU_Din_B">out, 32, bram, Layer3_Weights_CPU, array</column>
+<column name="Layer3_Weights_CPU_Dout_B">in, 32, bram, Layer3_Weights_CPU, array</column>
+</table>
+</item>
+</section>
+</profile>

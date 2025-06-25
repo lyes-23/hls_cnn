@@ -1,7 +1,7 @@
    Build using "C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
-   Compiling calculateLayer3.cpp_pre.cpp.tb.cpp
-   Compiling calculateLayer4.cpp_pre.cpp.tb.cpp
-   Compiling apatb_calculateLayer4.cpp
-   Compiling calculateLayer4_tb.cpp_pre.cpp.tb.cpp
-   Compiling apatb_calculateLayer4_ir.ll
+   Compiling calculateLayer2_tb.cpp_pre.cpp.tb.cpp
+   Compiling calculateLayer2.cpp_pre.cpp.tb.cpp
+   Compiling apatb_calculateLayer2.cpp
+   Compiling sigmoid.cpp_pre.cpp.tb.cpp
+   Compiling apatb_calculateLayer2_ir.ll
    Generating cosim.tv.exe

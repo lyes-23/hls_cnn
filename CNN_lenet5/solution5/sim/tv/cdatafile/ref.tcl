@@ -1,7 +1,7 @@
 set depth_list {
-  {Layer3_Neurons_CPU 1}
-  {Layer3_Weights_CPU 1}
-  {Layer4_Neurons_CPU 1}
-  {gmem 126450}
+  {Layer1_Neurons_CPU 1}
+  {Layer1_Weights_CPU 156}
+  {Layer2_Neurons_CPU 1}
+  {gmem 1855}
 }
 set trans_num 1

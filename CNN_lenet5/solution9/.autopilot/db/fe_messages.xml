@@ -1,0 +1,87 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution9/csynth.tcl:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn_lenet" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn_lenet" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution9/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn_lenet" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn_lenet" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_lenet.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_lenet" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=Layer1_Neurons_CPU bundle=Layer_Neurons" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_lenet.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_lenet" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=Layer3_Neurons_CPU bundle=Layer_Neurons" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_lenet.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_lenet" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return bundle=CTRL_bus" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_lenet.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_lenet" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=26" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_lenet.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_lenet" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_lenet.cpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_lenet" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=152" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_lenet.cpp:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_lenet" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sigmoid.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SIGMOID" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sigmoidLUT type=RAM_1P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sigmoid.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SIGMOID" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="cnn_lenet.cpp:55:33" msg_body="Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="kernelRow_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="cnn_lenet.cpp:56:37" msg_body="Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="kernelCol_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="cnn_lenet.cpp:37:33" msg_body="Loop 'convolutionRow' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="convolutionRow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="cnn_lenet.cpp:38:40" msg_body="Loop 'convolutionColumn' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="convolutionColumn"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cnn_lenet.cpp:11:0" msg_body="Unrolling loop 'kernelRow_Loop' (cnn_lenet.cpp:55:33) in function 'cnn_lenet' completely with a factor of 5">
+        <args Factor="5" LoopLoc="cnn_lenet.cpp:55:33" LoopName="kernelRow_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cnn_lenet.cpp:11:0" msg_body="Unrolling loop 'kernelCol_Loop' (cnn_lenet.cpp:56:37) in function 'cnn_lenet' completely with a factor of 5">
+        <args Factor="5" LoopLoc="cnn_lenet.cpp:56:37" LoopName="kernelCol_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="cnn_lenet.cpp:11:0" msg_body="Pipeline directive for loop 'kernelCol_Loop' (cnn_lenet.cpp:56:37) in function 'cnn_lenet' has been removed because the loop is unrolled completely">
+        <args LoopLoc="cnn_lenet.cpp:56:37" LoopName="kernelCol_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cnn_lenet.cpp:11:0" msg_body="Unrolling loop 'convolutionRow' (cnn_lenet.cpp:37:33) in function 'cnn_lenet' completely with a factor of 5">
+        <args Factor="5" LoopLoc="cnn_lenet.cpp:37:33" LoopName="convolutionRow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cnn_lenet.cpp:11:0" msg_body="Unrolling loop 'convolutionColumn' (cnn_lenet.cpp:38:40) in function 'cnn_lenet' completely with a factor of 5">
+        <args Factor="5" LoopLoc="cnn_lenet.cpp:38:40" LoopName="convolutionColumn"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="cnn_lenet.cpp:11:0" msg_body="Pipeline directive for loop 'convolutionColumn' (cnn_lenet.cpp:38:40) in function 'cnn_lenet' has been removed because the loop is unrolled completely">
+        <args LoopLoc="cnn_lenet.cpp:38:40" LoopName="convolutionColumn"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 456 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::mantissa() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;double&gt;::mantissa() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 503 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::expv() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;double&gt;::expv() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 485 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::__signbit() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;double&gt;::__signbit() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 512 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)' into 'int generic_cast_IEEE754&lt;int, double&gt;(double, bool)'">
+        <args Callee="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 12 Column 0" Caller="int generic_cast_IEEE754&lt;int, double&gt;(double, bool)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp:55:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, double&gt;(double, bool)' into '__hls_fptosi_double_i32'">
+        <args Callee="int generic_cast_IEEE754&lt;int, double&gt;(double, bool)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 116 Column 0" Caller="__hls_fptosi_double_i32" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp} Line 55 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="sigmoid.cpp:8:0" msg_body="Inlining function '__hls_fptosi_double_i32' into 'SIGMOID(float)'">
+        <args Callee="__hls_fptosi_double_i32" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp} Line 55 Column 0" Caller="SIGMOID(float)" Caller-DebugLoc="File sigmoid.cpp Line 8 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -2,15 +2,12 @@
 #define CALCULATELAYER2_H
 
 #include <math.h>
-#include <hls_math.h>
-
-
+#include "sigmoid.h"
 
 
 #define HW_COSIM
 
 
-#define  SIGMOID(x) (1.7159* hls::tanh(0.66666667*x))
 
 void calculateLayer2(
 		   float Layer1_Neurons_CPU[29*29],

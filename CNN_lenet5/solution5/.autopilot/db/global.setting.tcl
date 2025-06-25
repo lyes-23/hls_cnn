@@ -1,6 +1,6 @@
 
-set TopModule "calculateLayer4"
-set ClockPeriod 20
+set TopModule "calculateLayer2"
+set ClockPeriod 10
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
@@ -13,7 +13,7 @@ set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
-set HasDSPModule 1
+set HasDSPModule 0
 set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
@@ -23,7 +23,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix calculateLayer4_
+set RtlSubPrefix calculateLayer2_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -42,10 +42,10 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
-set SourceFiles {sc {} c {../../calculateLayer3.cpp ../../calculateLayer4.cpp}}
+set SourceFiles {sc {} c {../../calculateLayer2.cpp ../../sigmoid.cpp}}
 set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile {}
-set TBFiles {verilog {../../calculateLayer4_tb.cpp ../../input_data.h} bc {../../calculateLayer4_tb.cpp ../../input_data.h} sc {../../calculateLayer4_tb.cpp ../../input_data.h} vhdl {../../calculateLayer4_tb.cpp ../../input_data.h} c {} cas {../../calculateLayer4_tb.cpp ../../input_data.h}}
+set TBFiles {verilog {../../calculateLayer2_tb.cpp ../../input_data.h} bc {../../calculateLayer2_tb.cpp ../../input_data.h} sc {../../calculateLayer2_tb.cpp ../../input_data.h} vhdl {../../calculateLayer2_tb.cpp ../../input_data.h} c {} cas {../../calculateLayer2_tb.cpp ../../input_data.h}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

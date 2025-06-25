@@ -1,0 +1,297 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'cnn_lenet'" level="0">
+<item name = "Date">Thu Jan 30 18:34:55 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">CNN_lenet5</item>
+<item name = "Solution">solution8 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">20.00 ns, 15.327 ns, 5.40 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">595147, 595147, 11.903 ms, 11.903 ms, 595148, 595148, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_207">cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop, 26463, 26463, 0.529 ms, 0.529 ms, 26463, 26463, no</column>
+<column name="grp_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_fu_223">cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop, 190475, 190475, 3.809 ms, 3.809 ms, 190475, 190475, no</column>
+<column name="grp_cnn_lenet_Pipeline_col_loop2_kernelRow_Loop2_kernelCol_loop2_fu_234">cnn_lenet_Pipeline_col_loop2_kernelRow_Loop2_kernelCol_loop2, 3759, 3759, 75.180 us, 75.180 us, 3759, 3759, no</column>
+<column name="grp_SIGMOID_fu_244">SIGMOID, 9, 9, 0.180 us, 0.180 us, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- calculateLayer4_loop">378200, 378200, 3782, -, -, 100, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 222, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">9, 21, 19308, 16288, -</column>
+<column name="Memory">6, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 591, -</column>
+<column name="Register">-, -, 604, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">5, 9, 18, 32, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="CTRL_bus_s_axi_U">CTRL_bus_s_axi, 0, 0, 36, 40, 0</column>
+<column name="Layer_Neurons_m_axi_U">Layer_Neurons_m_axi, 4, 0, 830, 734, 0</column>
+<column name="Layer_Weights_m_axi_U">Layer_Weights_m_axi, 4, 0, 830, 734, 0</column>
+<column name="grp_SIGMOID_fu_244">SIGMOID, 1, 11, 778, 2001, 0</column>
+<column name="grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_207">cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop, 0, 2, 2624, 2053, 0</column>
+<column name="grp_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_fu_223">cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop, 0, 2, 13241, 8963, 0</column>
+<column name="grp_cnn_lenet_Pipeline_col_loop2_kernelRow_Loop2_kernelCol_loop2_fu_234">cnn_lenet_Pipeline_col_loop2_kernelRow_Loop2_kernelCol_loop2, 0, 1, 234, 360, 0</column>
+<column name="control_s_axi_U">control_s_axi, 0, 0, 380, 680, 0</column>
+<column name="fadd_32ns_32ns_32_4_full_dsp_1_U46">fadd_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 403, 0</column>
+<column name="fmul_32ns_32ns_32_2_max_dsp_1_U47">fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 320, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="Layer2_Neurons_CPU_U">Layer2_Neurons_CPU_RAM_1WNR_AUTO_1R1W, 2, 0, 0, 0, 1014, 32, 1, 32448</column>
+<column name="Layer3_Neurons_CPU_U">Layer3_Neurons_CPU_RAM_AUTO_1R1W, 4, 0, 0, 0, 1250, 32, 1, 40000</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln73_1_fu_287_p2">+, 0, 0, 26, 19, 13</column>
+<column name="add_ln73_fu_299_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln74_1_fu_319_p2">+, 0, 0, 71, 64, 64</column>
+<column name="add_ln74_2_fu_324_p2">+, 0, 0, 71, 64, 64</column>
+<column name="add_ln74_fu_309_p2">+, 0, 0, 26, 19, 3</column>
+<column name="icmp_ln73_fu_293_p2">icmp, 0, 0, 14, 7, 6</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="Layer2_Neurons_CPU_address0">14, 3, 10, 30</column>
+<column name="Layer2_Neurons_CPU_ce0">14, 3, 1, 3</column>
+<column name="Layer2_Neurons_CPU_ce1">9, 2, 1, 2</column>
+<column name="Layer2_Neurons_CPU_we0">9, 2, 1, 2</column>
+<column name="Layer3_Neurons_CPU_address0">14, 3, 11, 33</column>
+<column name="Layer3_Neurons_CPU_ce0">14, 3, 1, 3</column>
+<column name="Layer3_Neurons_CPU_we0">9, 2, 1, 2</column>
+<column name="Layer_Neurons_ARVALID">9, 2, 1, 2</column>
+<column name="Layer_Neurons_RREADY">9, 2, 1, 2</column>
+<column name="Layer_Neurons_blk_n_AW">9, 2, 1, 2</column>
+<column name="Layer_Neurons_blk_n_B">9, 2, 1, 2</column>
+<column name="Layer_Neurons_blk_n_W">9, 2, 1, 2</column>
+<column name="Layer_Weights_ARADDR">31, 6, 64, 384</column>
+<column name="Layer_Weights_ARLEN">31, 6, 32, 192</column>
+<column name="Layer_Weights_ARVALID">25, 5, 1, 5</column>
+<column name="Layer_Weights_RREADY">25, 5, 1, 5</column>
+<column name="Layer_Weights_blk_n_AR">9, 2, 1, 2</column>
+<column name="Layer_Weights_blk_n_R">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">147, 33, 1, 33</column>
+<column name="grp_SIGMOID_fu_244_ap_ce">14, 3, 1, 3</column>
+<column name="grp_SIGMOID_fu_244_ap_start">14, 3, 1, 3</column>
+<column name="grp_SIGMOID_fu_244_x">20, 4, 32, 128</column>
+<column name="grp_fu_473_ce">20, 4, 1, 4</column>
+<column name="grp_fu_473_p0">20, 4, 32, 128</column>
+<column name="grp_fu_473_p1">20, 4, 32, 128</column>
+<column name="grp_fu_477_ce">20, 4, 1, 4</column>
+<column name="grp_fu_477_p0">20, 4, 32, 128</column>
+<column name="grp_fu_477_p1">20, 4, 32, 128</column>
+<column name="i_fu_126">9, 2, 7, 14</column>
+<column name="phi_mul_fu_122">9, 2, 19, 38</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="Layer1_Neurons_CPU_read_reg_421">64, 0, 64, 0</column>
+<column name="Layer1_Weights_CPU_read_reg_416">64, 0, 64, 0</column>
+<column name="Layer2_Weights_CPU_read_reg_411">64, 0, 64, 0</column>
+<column name="Layer3_Weights_CPU_read_reg_405">64, 0, 64, 0</column>
+<column name="Layer_Neurons_addr_reg_432">64, 0, 64, 0</column>
+<column name="Layer_Weights_addr_2_read_reg_458">32, 0, 32, 0</column>
+<column name="Layer_Weights_addr_2_reg_441">64, 0, 64, 0</column>
+<column name="ap_CS_fsm">32, 0, 32, 0</column>
+<column name="grp_SIGMOID_fu_244_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_207_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_fu_223_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cnn_lenet_Pipeline_col_loop2_kernelRow_Loop2_kernelCol_loop2_fu_234_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_fu_126">7, 0, 7, 0</column>
+<column name="phi_mul_fu_122">19, 0, 19, 0</column>
+<column name="somme_reg_463">32, 0, 32, 0</column>
+<column name="tmp_1_reg_468">32, 0, 32, 0</column>
+<column name="trunc_ln4_reg_447">62, 0, 62, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CTRL_bus_AWVALID">in, 1, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_AWREADY">out, 1, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_AWADDR">in, 4, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_WVALID">in, 1, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_WREADY">out, 1, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_WDATA">in, 32, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_WSTRB">in, 4, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_ARVALID">in, 1, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_ARREADY">out, 1, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_ARADDR">in, 4, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_RVALID">out, 1, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_RREADY">in, 1, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_RDATA">out, 32, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_RRESP">out, 2, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_BVALID">out, 1, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_BREADY">in, 1, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_CTRL_bus_BRESP">out, 2, s_axi, CTRL_bus, return void</column>
+<column name="s_axi_control_AWVALID">in, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_AWREADY">out, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_AWADDR">in, 7, s_axi, control, scalar</column>
+<column name="s_axi_control_WVALID">in, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_WREADY">out, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_WDATA">in, 32, s_axi, control, scalar</column>
+<column name="s_axi_control_WSTRB">in, 4, s_axi, control, scalar</column>
+<column name="s_axi_control_ARVALID">in, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_ARREADY">out, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_ARADDR">in, 7, s_axi, control, scalar</column>
+<column name="s_axi_control_RVALID">out, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_RREADY">in, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_RDATA">out, 32, s_axi, control, scalar</column>
+<column name="s_axi_control_RRESP">out, 2, s_axi, control, scalar</column>
+<column name="s_axi_control_BVALID">out, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_BREADY">in, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_BRESP">out, 2, s_axi, control, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, cnn_lenet, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, cnn_lenet, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, cnn_lenet, return value</column>
+<column name="m_axi_Layer_Neurons_AWVALID">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWREADY">in, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWADDR">out, 64, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWID">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWLEN">out, 8, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWSIZE">out, 3, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWBURST">out, 2, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWLOCK">out, 2, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWCACHE">out, 4, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWPROT">out, 3, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWQOS">out, 4, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWREGION">out, 4, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_AWUSER">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_WVALID">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_WREADY">in, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_WDATA">out, 32, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_WSTRB">out, 4, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_WLAST">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_WID">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_WUSER">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARVALID">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARREADY">in, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARADDR">out, 64, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARID">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARLEN">out, 8, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARSIZE">out, 3, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARBURST">out, 2, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARLOCK">out, 2, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARCACHE">out, 4, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARPROT">out, 3, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARQOS">out, 4, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARREGION">out, 4, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_ARUSER">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_RVALID">in, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_RREADY">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_RDATA">in, 32, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_RLAST">in, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_RID">in, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_RUSER">in, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_RRESP">in, 2, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_BVALID">in, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_BREADY">out, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_BRESP">in, 2, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_BID">in, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Neurons_BUSER">in, 1, m_axi, Layer_Neurons, pointer</column>
+<column name="m_axi_Layer_Weights_AWVALID">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWREADY">in, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWADDR">out, 64, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWID">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWLEN">out, 8, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWSIZE">out, 3, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWBURST">out, 2, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWLOCK">out, 2, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWCACHE">out, 4, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWPROT">out, 3, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWQOS">out, 4, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWREGION">out, 4, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_AWUSER">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_WVALID">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_WREADY">in, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_WDATA">out, 32, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_WSTRB">out, 4, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_WLAST">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_WID">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_WUSER">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARVALID">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARREADY">in, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARADDR">out, 64, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARID">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARLEN">out, 8, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARSIZE">out, 3, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARBURST">out, 2, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARLOCK">out, 2, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARCACHE">out, 4, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARPROT">out, 3, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARQOS">out, 4, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARREGION">out, 4, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_ARUSER">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_RVALID">in, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_RREADY">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_RDATA">in, 32, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_RLAST">in, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_RID">in, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_RUSER">in, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_RRESP">in, 2, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_BVALID">in, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_BREADY">out, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_BRESP">in, 2, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_BID">in, 1, m_axi, Layer_Weights, pointer</column>
+<column name="m_axi_Layer_Weights_BUSER">in, 1, m_axi, Layer_Weights, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -73,14 +73,14 @@ $(ObjDir)/$(CPPWRAPPER).o: $(CPPWRAPPER).cpp
 	$(Echo) "   Compiling $<" $(AVE_DIR_DLOG)
 	$(Verb) $(CXX) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(WFLAG) $< -o $@
 
-$(ObjDir)/calculateLayer4_tb.cpp_pre.cpp.tb.o : calculateLayer4_tb.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling calculateLayer4_tb.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/calculateLayer2_tb.cpp_pre.cpp.tb.o : calculateLayer2_tb.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling calculateLayer2_tb.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c -Wno-unknown-pragmas -Wno-unknown-pragmas $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/calculateLayer3.cpp_pre.cpp.tb.o : calculateLayer3.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling calculateLayer3.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/calculateLayer2.cpp_pre.cpp.tb.o : calculateLayer2.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling calculateLayer2.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c  $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/calculateLayer4.cpp_pre.cpp.tb.o : calculateLayer4.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling calculateLayer4.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/sigmoid.cpp_pre.cpp.tb.o : sigmoid.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling sigmoid.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c  $(IFLAG) $(DFLAG) $< -o $@; \

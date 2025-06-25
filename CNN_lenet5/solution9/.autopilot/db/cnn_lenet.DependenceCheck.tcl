@@ -1,0 +1,30 @@
+
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Layer2_Neurons_CPU_U"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_54"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_54.Layer1_Weights_CPU_U"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_54.mul_3ns_6ns_8_1_1_U13"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_54.mul_4ns_7ns_10_1_1_U14"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_54.mac_muladd_3ns_8ns_4ns_10_4_1_U15"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_54.mac_muladd_4ns_4ns_10ns_10_4_1_U16"},
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_54.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_fu_66"},
+	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_fu_66.Layer2_Weights_CPU_U"},
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_fu_66.mul_6ns_9ns_14_1_1_U26"},
+	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_fu_66.mul_3ns_6ns_8_1_1_U27"},
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_fu_66.mac_muladd_6ns_5ns_3ns_11_4_1_U28"},
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_fu_66.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_SIGMOID_fu_77"},
+	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SIGMOID_fu_77.sigmoidLUT_1_U"},
+	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SIGMOID_fu_77.fpext_32ns_64_2_no_dsp_1_U1"},
+	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SIGMOID_fu_77.fcmp_32ns_32ns_1_2_no_dsp_1_U2"},
+	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SIGMOID_fu_77.fcmp_32ns_32ns_1_2_no_dsp_1_U3"},
+	{"ID" : "20", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SIGMOID_fu_77.fcmp_32ns_32ns_1_2_no_dsp_1_U4"},
+	{"ID" : "21", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SIGMOID_fu_77.dmul_64ns_64ns_64_4_max_dsp_1_U5"},
+	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.CTRL_bus_s_axi_U"},
+	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Layer_Neurons_s_axi_U"},
+	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_4_full_dsp_1_U34"},
+	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_2_max_dsp_1_U35"}]}
+set DependenceCheckSize 0

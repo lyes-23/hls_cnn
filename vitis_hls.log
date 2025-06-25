@@ -1,107 +1,259 @@
 Commande ECHO d‚sactiv‚e.
 Commande ECHO d‚sactiv‚e.
 INFO: [HLS 200-10] Running 'C:/Xilinx/2023.2/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'TRETEC' on host 'desktop-fh4mgcp' (Windows NT_amd64 version 6.2) on Thu Jan 16 14:32:20 +0100 2025
+INFO: [HLS 200-10] For user 'TRETEC' on host 'desktop-fh4mgcp' (Windows NT_amd64 version 6.2) on Thu Feb 06 10:23:48 +0100 2025
 INFO: [HLS 200-10] In directory 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls'
 INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
-Sourcing Tcl script 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/export.tcl'
-INFO: [HLS 200-1510] Running: source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/export.tcl
+Sourcing Tcl script 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/csynth.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/csynth.tcl
 INFO: [HLS 200-1510] Running: open_project CNN_lenet5 
 INFO: [HLS 200-10] Opening project 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5'.
-INFO: [HLS 200-1510] Running: set_top calculateLayer4 
-INFO: [HLS 200-1510] Running: add_files calculateLayer2.h 
-INFO: [HLS 200-10] Adding design file 'calculateLayer2.h' to the project
-INFO: [HLS 200-1510] Running: add_files calculateLayer3.cpp 
-INFO: [HLS 200-10] Adding design file 'calculateLayer3.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files calculateLayer3.h 
-INFO: [HLS 200-10] Adding design file 'calculateLayer3.h' to the project
-INFO: [HLS 200-1510] Running: add_files calculateLayer4.cpp 
-INFO: [HLS 200-10] Adding design file 'calculateLayer4.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files calculateLayer4.h 
-INFO: [HLS 200-10] Adding design file 'calculateLayer4.h' to the project
-INFO: [HLS 200-1510] Running: add_files -tb calculateLayer4_tb.cpp -cflags -Wno-unknown-pragmas 
-INFO: [HLS 200-10] Adding test bench file 'calculateLayer4_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: set_top cnn_lenet 
+INFO: [HLS 200-1510] Running: add_files cnn_lenet.cpp 
+INFO: [HLS 200-10] Adding design file 'cnn_lenet.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files cnn_lenet.h 
+INFO: [HLS 200-10] Adding design file 'cnn_lenet.h' to the project
+INFO: [HLS 200-1510] Running: add_files input_data.h 
+INFO: [HLS 200-10] Adding design file 'input_data.h' to the project
+INFO: [HLS 200-1510] Running: add_files layer_weights.h 
+INFO: [HLS 200-10] Adding design file 'layer_weights.h' to the project
+INFO: [HLS 200-1510] Running: add_files sigmoid.cpp 
+INFO: [HLS 200-10] Adding design file 'sigmoid.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files sigmoid.h 
+INFO: [HLS 200-10] Adding design file 'sigmoid.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb cnn_lenet_tb.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'cnn_lenet_tb.cpp' to the project
 INFO: [HLS 200-1510] Running: add_files -tb input_data.h -cflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'input_data.h' to the project
-INFO: [HLS 200-1510] Running: open_solution solution5 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5'.
+INFO: [HLS 200-1510] Running: open_solution solution10 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
 INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
 INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
-INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
 INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
 INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
-INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
-INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution5/directives.tcl
-INFO: [HLS 200-1510] Running: set_directive_top -name calculateLayer4 calculateLayer4 
-INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-Commande ECHO d‚sactiv‚e.
-Commande ECHO d‚sactiv‚e.
-
-****** Vivado v2023.2 (64-bit)
-  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
-  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
-  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-
-source run_ippack.tcl -notrace
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/impl/ip'
-create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 463.543 ; gain = 184.816
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2023.2/Vivado/2023.2/data/ip'.
-WARNING: [IP_Flow 19-4832] The IP name 'calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 484.430 ; gain = 20.887
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calculateLayer4_dadd_64ns_64ns_64_5_full_dsp_1_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 495.219 ; gain = 0.047
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calculateLayer4_dcmp_64ns_64ns_1_2_no_dsp_1_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 500.145 ; gain = 4.926
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calculateLayer4_ddiv_64ns_64ns_64_22_no_dsp_1_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 506.086 ; gain = 5.941
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 511.094 ; gain = 5.008
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calculateLayer4_dmul_64ns_64ns_64_4_max_dsp_1_x_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 516.953 ; gain = 5.859
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calculateLayer4_dsub_64ns_64ns_64_5_full_dsp_1_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 522.914 ; gain = 5.961
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calculateLayer4_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 528.891 ; gain = 5.977
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calculateLayer4_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'calculateLayer4_fpext_32ns_64_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 534.879 ; gain = 5.988
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calculateLayer4_fpext_32ns_64_2_no_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calculateLayer4_fpext_32ns_64_2_no_dsp_1_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'calculateLayer4_fptrunc_64ns_32_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 540.883 ; gain = 6.004
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calculateLayer4_fptrunc_64ns_32_2_no_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calculateLayer4_fptrunc_64ns_32_2_no_dsp_1_ip'...
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2023.2/Vivado/2023.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Jan 16 14:34:22 2025...
-INFO: [HLS 200-802] Generated output file CNN_lenet5/solution5/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 120.164 seconds; current allocated memory: 8.102 MB.
-INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 124.047 seconds; peak allocated memory: 129.836 MB.
+INFO: [HLS 200-1510] Running: source ./CNN_lenet5/solution10/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cnn_lenet cnn_lenet 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.209 seconds; current allocated memory: 121.406 MB.
+INFO: [HLS 200-10] Analyzing design file 'cnn_lenet.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'sigmoid.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.676 seconds; current allocated memory: 123.508 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,521 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,615 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,059 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,699 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,612 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,614 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,614 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,614 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,614 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,614 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,614 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,614 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,803 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,787 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,817 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,832 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'kernelRow_Loop' is marked as complete unroll implied by the pipeline pragma (cnn_lenet.cpp:54:33)
+INFO: [HLS 214-291] Loop 'kernelCol_Loop' is marked as complete unroll implied by the pipeline pragma (cnn_lenet.cpp:56:18)
+INFO: [HLS 214-291] Loop 'convolutionRow' is marked as complete unroll implied by the pipeline pragma (cnn_lenet.cpp:34:33)
+INFO: [HLS 214-291] Loop 'convolutionColumn' is marked as complete unroll implied by the pipeline pragma (cnn_lenet.cpp:35:40)
+INFO: [HLS 214-186] Unrolling loop 'kernelRow_Loop' (cnn_lenet.cpp:54:33) in function 'cnn_lenet' completely with a factor of 5 (cnn_lenet.cpp:11:0)
+INFO: [HLS 214-186] Unrolling loop 'kernelCol_Loop' (cnn_lenet.cpp:56:18) in function 'cnn_lenet' completely with a factor of 5 (cnn_lenet.cpp:11:0)
+INFO: [HLS 214-186] Unrolling loop 'convolutionRow' (cnn_lenet.cpp:34:33) in function 'cnn_lenet' completely with a factor of 5 (cnn_lenet.cpp:11:0)
+INFO: [HLS 214-186] Unrolling loop 'convolutionColumn' (cnn_lenet.cpp:35:40) in function 'cnn_lenet' completely with a factor of 5 (cnn_lenet.cpp:11:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'convolutionColumn' (cnn_lenet.cpp:35:40) in function 'cnn_lenet' has been removed because the loop is unrolled completely (cnn_lenet.cpp:11:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'SIGMOID(float)' (sigmoid.cpp:8:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=7 dim=1' for array 'Layer2_Neurons_CPU' due to pipeline pragma (cnn_lenet.cpp:52:9)
+INFO: [HLS 214-248] Applying array_partition to 'Layer2_Neurons_CPU': Cyclic partitioning with factor 7 on dimension 1. (cnn_lenet.cpp:19:7)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 19.686 seconds; current allocated memory: 126.016 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 126.016 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.378 seconds; current allocated memory: 141.496 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.306 seconds; current allocated memory: 144.355 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'cnn_lenet' (cnn_lenet.cpp:7:32)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.12 seconds; current allocated memory: 171.660 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'OutputRow_Loop'(cnn_lenet.cpp:30:25) and 'OutputColumn_Loop'(cnn_lenet.cpp:31:32) in function 'cnn_lenet' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'calculateLayer2_loop'(cnn_lenet.cpp:29:27) and 'OutputRow_Loop'(cnn_lenet.cpp:30:25) in function 'cnn_lenet' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'row_Loop'(cnn_lenet.cpp:49:19) and 'col_loop'(cnn_lenet.cpp:51:23) in function 'cnn_lenet' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'calculateLayer3_loop'(cnn_lenet.cpp:48:27) and 'row_Loop'(cnn_lenet.cpp:49:19) in function 'cnn_lenet' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'OutputRow_Loop' (cnn_lenet.cpp:30:25) in function 'cnn_lenet'.
+INFO: [XFORM 203-541] Flattening a loop nest 'calculateLayer2_loop' (cnn_lenet.cpp:29:27) in function 'cnn_lenet'.
+INFO: [XFORM 203-541] Flattening a loop nest 'row_Loop' (cnn_lenet.cpp:49:19) in function 'cnn_lenet'.
+INFO: [XFORM 203-541] Flattening a loop nest 'calculateLayer3_loop' (cnn_lenet.cpp:48:27) in function 'cnn_lenet'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.006 seconds; current allocated memory: 214.715 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cnn_lenet' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'SIGMOID' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'SIGMOID'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 15, Final II = 1, Depth = 10, function 'SIGMOID'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.738 seconds; current allocated memory: 219.539 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.137 seconds; current allocated memory: 221.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln41_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_6'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_1'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_2'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_3'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_4'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_5'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 26, Final II = 26, Depth = 116, loop 'calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.743 seconds; current allocated memory: 225.750 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.222 seconds; current allocated memory: 226.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln66_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln58_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln58_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln58_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_6'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_5'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_4'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_3'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_2'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU_1'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'Layer2_Neurons_CPU'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'calculateLayer3_loop_row_Loop_col_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 15, Final II = 15, Depth = 624, loop 'calculateLayer3_loop_row_Loop_col_loop'
+WARNING: [HLS 200-871] Estimated clock period (15.973 ns) exceeds the target (target clock period: 20.000 ns, clock uncertainty: 5.400 ns, effective delay budget: 14.600 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop' consists of the following:
+	'store' operation 0 bit ('indvar_flatten19_write_ln0') of constant 0 on local variable 'indvar_flatten19' [20]  (1.588 ns)
+	'load' operation 6 bit ('indvar_flatten19_load', cnn_lenet.cpp:49) on local variable 'indvar_flatten19' [32]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln49', cnn_lenet.cpp:49) [36]  (1.825 ns)
+	'select' operation 3 bit ('select_ln26', cnn_lenet.cpp:26) [37]  (0.980 ns)
+	'add' operation 3 bit ('add_ln49', cnn_lenet.cpp:49) [43]  (1.650 ns)
+	'select' operation 3 bit ('select_ln49', cnn_lenet.cpp:49) [46]  (0.980 ns)
+	'mul' operation 8 bit ('empty_176', cnn_lenet.cpp:49) [658]  (3.780 ns)
+	'add' operation 7 bit ('empty_183', cnn_lenet.cpp:49) [667]  (1.870 ns)
+	'add' operation 8 bit of DSP[1521] ('add_ln58_9', cnn_lenet.cpp:58) [1519]  (2.250 ns)
+	'mul' operation 17 bit of DSP[1521] ('mul_ln58_6', cnn_lenet.cpp:58) [1521]  (1.050 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 22 seconds. CPU system time: 0 seconds. Elapsed time: 24.182 seconds; current allocated memory: 270.512 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 5.316 seconds; current allocated memory: 270.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_lenet' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.645 seconds; current allocated memory: 270.512 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.182 seconds; current allocated memory: 270.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'SIGMOID' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'SIGMOID' pipeline 'SIGMOID' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'SIGMOID'.
+INFO: [RTMG 210-279] Implementing memory 'cnn_lenet_SIGMOID_sigmoidLUT_1_RAM_1P_LUTRAM_1R1W' using distributed ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.358 seconds; current allocated memory: 270.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_Layer1_Weights_CPU_ROM_AUTO_1R' to 'cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_Layebkb' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop' pipeline 'calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_3ns_8ns_4ns_10_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_4ns_4ns_10ns_10_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_12ns_21_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_6ns_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_7ns_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_10ns_4ns_3_14_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop'.
+INFO: [RTMG 210-279] Implementing memory 'cnn_lenet_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_Layebkb' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.792 seconds; current allocated memory: 274.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_Layer2_Weights_CPU_ROM_AUTO_1R' to 'cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_Layer2_Weights_CPU_cud' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop' pipeline 'calculateLayer3_loop_row_Loop_col_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop' is 14266 from HDL expression: ((1'b1 == ap_CS_fsm_pp0_stage11) & (1'b0 == ap_block_pp0_stage11_11001))
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_4ns_7ns_9ns_17_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_5ns_3ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_12ns_21_1_1': 75 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_6ns_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_9ns_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_10ns_17_1_1': 15 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_11ns_19_1_1': 50 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_15_3_32_1_1': 134 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_4ns_3_11_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop'.
+INFO: [RTMG 210-279] Implementing memory 'cnn_lenet_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_Layer2_Weights_CPU_cud' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 4.054 seconds; current allocated memory: 329.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_lenet' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_lenet/Layer1_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_lenet/Layer3_Neurons_CPU' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'cnn_lenet' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL_bus.
+INFO: [RTGEN 206-100] Bundling port 'Layer1_Neurons_CPU' and 'Layer3_Neurons_CPU' to AXI-Lite port Layer_Neurons.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_lenet'.
+INFO: [RTMG 210-278] Implementing memory 'cnn_lenet_Layer2_Neurons_CPU_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4 seconds. CPU system time: 9 seconds. Elapsed time: 14.917 seconds; current allocated memory: 394.926 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.243 seconds; current allocated memory: 394.926 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.345 seconds; current allocated memory: 409.828 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cnn_lenet.
+INFO: [VLOG 209-307] Generating Verilog RTL for cnn_lenet.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 62.61 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 46 seconds. CPU system time: 10 seconds. Elapsed time: 94.579 seconds; current allocated memory: 288.516 MB.
+INFO: [HLS 200-112] Total CPU user time: 48 seconds. Total CPU system time: 11 seconds. Total elapsed time: 97.3 seconds; peak allocated memory: 409.930 MB.

@@ -1,0 +1,33 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "1",
+    "file": "calculateLayer3.cpp",
+    "fileloc": 6,
+    "instructions": 1270,
+    "loads": {
+      "T": 301
+    },
+    "name": "calculateLayer3",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 1347
+  },
+  "1": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "sigmoid.cpp",
+    "fileloc": 8,
+    "instructions": 77,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "name": "SIGMOID",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 77
+  }
+}

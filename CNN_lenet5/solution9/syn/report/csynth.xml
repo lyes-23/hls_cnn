@@ -1,0 +1,1370 @@
+<profile>
+    <ReportVersion>
+        <Version>2023.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg484-1</Part>
+        <TopModelName>cnn_lenet</TopModelName>
+        <TargetClockPeriod>20.00</TargetClockPeriod>
+        <ClockUncertainty>5.40</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>15.327</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>216925</Best-caseLatency>
+            <Average-caseLatency>216925</Average-caseLatency>
+            <Worst-caseLatency>216925</Worst-caseLatency>
+            <Best-caseRealTimeLatency>4.338 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>4.338 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>4.338 ms</Worst-caseRealTimeLatency>
+            <Interval-min>216926</Interval-min>
+            <Interval-max>216926</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>cnn_lenet.cpp:7</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>26</BRAM_18K>
+            <DSP>19</DSP>
+            <FF>16311</FF>
+            <LUT>15993</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_AWVALID</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_AWREADY</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_AWADDR</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_WVALID</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_WREADY</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_WDATA</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_WSTRB</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_ARVALID</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_ARREADY</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_ARADDR</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_RVALID</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_RREADY</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_RDATA</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_RRESP</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_BVALID</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_BREADY</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_bus_BRESP</name>
+            <Object>CTRL_bus</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_AWVALID</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_AWREADY</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_AWADDR</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>14</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_WVALID</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_WREADY</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_WDATA</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_WSTRB</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_ARVALID</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_ARREADY</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_ARADDR</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>14</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_RVALID</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_RREADY</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_RDATA</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_RRESP</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_BVALID</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_BREADY</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_Layer_Neurons_BRESP</name>
+            <Object>Layer_Neurons</Object>
+            <Type>array</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>cnn_lenet</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>cnn_lenet</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>cnn_lenet</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="4">
+            <ModuleName>cnn_lenet</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop_fu_54</InstName>
+                    <ModuleName>cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>54</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_SIGMOID_fu_625</InstName>
+                            <ModuleName>SIGMOID</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>625</ID>
+                            <BindInstances>dmul_64ns_64ns_64_4_max_dsp_1_U5 add_ln486_fu_269_p2 sub_ln18_fu_283_p2 result_2_fu_349_p2 sigmoidLUT_1_U</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>add_ln32_fu_721_p2 add_ln32_1_fu_739_p2 add_ln33_fu_837_p2 mul_3ns_6ns_8_1_1_U13 mac_muladd_3ns_8ns_4ns_10_4_1_U15 empty_200_fu_1581_p2 empty_202_fu_921_p2 empty_203_fu_949_p2 empty_204_fu_983_p2 empty_205_fu_1017_p2 empty_206_fu_1051_p2 empty_207_fu_1089_p2 empty_208_fu_1123_p2 empty_209_fu_1157_p2 empty_210_fu_1195_p2 empty_211_fu_1237_p2 empty_212_fu_1275_p2 empty_213_fu_1309_p2 empty_214_fu_1343_p2 empty_215_fu_1377_p2 empty_216_fu_1411_p2 empty_217_fu_1445_p2 empty_218_fu_1479_p2 empty_219_fu_1513_p2 empty_220_fu_1547_p2 empty_221_fu_1619_p2 empty_222_fu_1653_p2 empty_223_fu_1687_p2 empty_224_fu_1735_p2 mac_muladd_4ns_4ns_10ns_10_4_1_U16 mul_4ns_7ns_10_1_1_U14 add_ln41_fu_894_p2 add_ln41_1_fu_939_p2 add_ln41_25_fu_964_p2 add_ln41_2_fu_973_p2 add_ln41_26_fu_998_p2 add_ln41_3_fu_1007_p2 add_ln41_27_fu_1032_p2 add_ln41_4_fu_1041_p2 add_ln41_28_fu_1069_p2 add_ln41_5_fu_1079_p2 add_ln41_29_fu_1104_p2 add_ln41_6_fu_1113_p2 add_ln41_30_fu_1138_p2 add_ln41_7_fu_1147_p2 add_ln41_8_fu_1185_p2 add_ln41_9_fu_1227_p2 add_ln41_31_fu_1255_p2 add_ln41_10_fu_1265_p2 add_ln41_32_fu_1290_p2 add_ln41_11_fu_1299_p2 add_ln41_33_fu_1324_p2 add_ln41_12_fu_1333_p2 add_ln41_34_fu_1358_p2 add_ln41_13_fu_1367_p2 add_ln41_35_fu_1392_p2 add_ln41_14_fu_1401_p2 add_ln41_36_fu_1426_p2 add_ln41_15_fu_1435_p2 add_ln41_37_fu_1460_p2 add_ln41_16_fu_1469_p2 add_ln41_38_fu_1494_p2 add_ln41_17_fu_1503_p2 add_ln41_39_fu_1528_p2 add_ln41_18_fu_1537_p2 add_ln41_40_fu_1562_p2 add_ln41_19_fu_1571_p2 add_ln41_41_fu_1599_p2 add_ln41_20_fu_1609_p2 add_ln41_42_fu_1634_p2 add_ln41_21_fu_1643_p2 add_ln41_43_fu_1668_p2 add_ln41_22_fu_1677_p2 add_ln41_44_fu_1702_p2 add_ln41_23_fu_1711_p2 add_ln41_45_fu_1721_p2 add_ln41_24_fu_1730_p2 mac_muladd_3ns_8ns_4ns_10_4_1_U15 mac_muladd_4ns_4ns_10ns_10_4_1_U16 add_ln34_fu_905_p2 add_ln33_1_fu_778_p2 Layer1_Weights_CPU_U</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop_fu_66</InstName>
+                    <ModuleName>cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>66</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_SIGMOID_fu_2897</InstName>
+                            <ModuleName>SIGMOID</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>2897</ID>
+                            <BindInstances>dmul_64ns_64ns_64_4_max_dsp_1_U5 add_ln486_fu_269_p2 sub_ln18_fu_283_p2 result_2_fu_349_p2 sigmoidLUT_1_U</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>add_ln50_fu_3244_p2 add_ln50_1_fu_3262_p2 add_ln51_fu_3364_p2 mul_6ns_9ns_14_1_1_U26 mac_muladd_6ns_5ns_3ns_11_4_1_U28 empty_19_fu_6407_p2 empty_22_fu_3593_p2 empty_23_fu_3636_p2 empty_24_fu_3668_p2 empty_25_fu_3700_p2 empty_26_fu_3743_p2 empty_27_fu_3775_p2 empty_28_fu_3807_p2 empty_29_fu_3850_p2 empty_30_fu_3882_p2 empty_31_fu_3914_p2 empty_32_fu_3957_p2 empty_33_fu_3989_p2 empty_34_fu_4021_p2 empty_35_fu_4061_p2 empty_36_fu_4101_p2 empty_37_fu_4145_p2 empty_38_fu_4185_p2 empty_39_fu_4213_p2 empty_40_fu_4245_p2 empty_41_fu_4268_p2 empty_42_fu_4296_p2 empty_43_fu_4328_p2 empty_44_fu_4360_p2 empty_45_fu_4388_p2 empty_46_fu_4420_p2 empty_47_fu_4452_p2 empty_48_fu_4480_p2 empty_49_fu_4512_p2 empty_50_fu_4556_p2 empty_51_fu_4596_p2 empty_52_fu_4640_p2 empty_53_fu_4668_p2 empty_54_fu_4696_p2 empty_55_fu_4728_p2 empty_56_fu_4760_p2 empty_57_fu_4788_p2 empty_58_fu_4820_p2 empty_59_fu_4848_p2 empty_60_fu_4876_p2 empty_61_fu_4908_p2 empty_62_fu_4936_p2 empty_63_fu_4964_p2 empty_64_fu_4996_p2 empty_65_fu_5036_p2 empty_66_fu_5076_p2 empty_67_fu_5120_p2 empty_68_fu_5148_p2 empty_69_fu_5176_p2 empty_70_fu_5208_p2 empty_71_fu_5236_p2 empty_72_fu_5264_p2 empty_73_fu_5296_p2 empty_74_fu_5324_p2 empty_75_fu_5352_p2 empty_76_fu_5426_p2 empty_77_fu_5449_p2 empty_78_fu_5472_p2 empty_79_fu_5499_p2 empty_80_fu_5528_p2 empty_81_fu_5572_p2 empty_82_fu_5616_p2 empty_83_fu_5639_p2 empty_84_fu_5671_p2 empty_85_fu_5703_p2 empty_86_fu_5726_p2 empty_87_fu_5758_p2 empty_88_fu_5790_p2 empty_89_fu_5813_p2 empty_90_fu_5873_p2 empty_91_fu_5895_p2 empty_92_fu_5913_p2 empty_93_fu_5935_p2 empty_94_fu_5957_p2 empty_95_fu_5967_p2 empty_96_fu_5977_p2 empty_97_fu_5987_p2 empty_98_fu_5997_p2 empty_99_fu_6007_p2 empty_100_fu_6017_p2 empty_101_fu_6027_p2 empty_102_fu_6037_p2 empty_103_fu_6047_p2 empty_104_fu_6057_p2 empty_105_fu_6067_p2 empty_106_fu_6077_p2 empty_107_fu_6087_p2 empty_108_fu_6097_p2 empty_109_fu_6107_p2 empty_110_fu_6117_p2 empty_111_fu_6127_p2 empty_112_fu_6137_p2 empty_113_fu_6147_p2 empty_114_fu_6157_p2 empty_115_fu_6167_p2 empty_116_fu_6177_p2 empty_117_fu_6187_p2 empty_118_fu_6197_p2 empty_119_fu_6207_p2 empty_120_fu_6217_p2 empty_121_fu_6227_p2 empty_122_fu_6237_p2 empty_123_fu_6247_p2 empty_124_fu_6257_p2 empty_125_fu_6267_p2 empty_126_fu_6277_p2 empty_127_fu_6287_p2 empty_128_fu_6297_p2 empty_129_fu_6307_p2 empty_130_fu_6317_p2 empty_131_fu_6327_p2 empty_132_fu_6337_p2 empty_133_fu_6347_p2 empty_134_fu_6357_p2 empty_135_fu_6367_p2 empty_136_fu_6377_p2 empty_137_fu_6387_p2 empty_138_fu_6397_p2 empty_139_fu_6417_p2 empty_140_fu_6427_p2 empty_141_fu_6437_p2 empty_142_fu_6447_p2 empty_143_fu_6457_p2 empty_144_fu_6467_p2 empty_145_fu_6477_p2 empty_146_fu_6487_p2 empty_147_fu_6497_p2 empty_148_fu_6507_p2 empty_149_fu_6517_p2 empty_150_fu_6527_p2 empty_151_fu_6537_p2 empty_152_fu_6547_p2 empty_153_fu_6557_p2 empty_154_fu_6567_p2 empty_155_fu_6577_p2 empty_156_fu_6587_p2 empty_157_fu_6597_p2 empty_158_fu_6607_p2 empty_159_fu_6617_p2 empty_160_fu_6627_p2 empty_161_fu_6637_p2 empty_162_fu_6647_p2 empty_163_fu_6657_p2 empty_164_fu_6667_p2 empty_165_fu_6677_p2 empty_166_fu_6687_p2 empty_167_fu_6697_p2 mul_3ns_6ns_8_1_1_U27 empty_170_fu_3413_p2 empty_171_fu_3486_p2 empty_172_fu_3491_p2 empty_173_fu_3544_p2 empty_174_fu_3549_p2 empty_175_fu_4031_p2 empty_176_fu_4036_p2 empty_177_fu_4071_p2 empty_178_fu_4076_p2 empty_179_fu_4111_p2 empty_180_fu_4116_p2 empty_181_fu_4522_p2 empty_182_fu_4527_p2 empty_183_fu_4566_p2 empty_184_fu_4571_p2 empty_185_fu_4606_p2 empty_186_fu_4611_p2 empty_187_fu_5006_p2 empty_188_fu_5011_p2 empty_189_fu_5046_p2 empty_190_fu_5051_p2 empty_191_fu_5086_p2 empty_192_fu_5091_p2 empty_193_fu_5509_p2 empty_194_fu_5362_p2 empty_195_fu_5538_p2 empty_196_fu_5543_p2 empty_197_fu_5582_p2 empty_198_fu_5587_p2 add_ln58_fu_3435_p2 add_ln59_fu_3446_p2 add_ln60_fu_3503_p2 add_ln61_fu_3513_p2 add_ln62_fu_3554_p2 add_ln63_fu_3564_p2 add_ln58_1_fu_3616_p2 add_ln59_1_fu_3626_p2 add_ln60_1_fu_3649_p2 add_ln61_1_fu_3658_p2 add_ln62_1_fu_3678_p2 add_ln63_1_fu_3687_p2 add_ln58_2_fu_3710_p2 add_ln58_3_fu_3723_p2 add_ln59_2_fu_3733_p2 add_ln60_2_fu_3756_p2 add_ln61_2_fu_3765_p2 add_ln62_2_fu_3785_p2 add_ln63_2_fu_3794_p2 add_ln58_4_fu_3817_p2 add_ln58_5_fu_3830_p2 add_ln59_3_fu_3840_p2 add_ln60_3_fu_3863_p2 add_ln61_3_fu_3872_p2 add_ln62_3_fu_3892_p2 add_ln63_3_fu_3901_p2 add_ln58_6_fu_3924_p2 add_ln58_7_fu_3937_p2 add_ln59_4_fu_3947_p2 add_ln60_4_fu_3970_p2 add_ln61_4_fu_3979_p2 add_ln62_4_fu_3999_p2 add_ln63_4_fu_4008_p2 add_ln58_8_fu_4041_p2 add_ln59_5_fu_4051_p2 add_ln60_5_fu_4081_p2 add_ln61_5_fu_4091_p2 add_ln62_5_fu_4121_p2 add_ln63_5_fu_4131_p2 add_ln58_9_fu_4161_p2 add_ln59_6_fu_4172_p2 add_ln60_6_fu_4195_p2 add_ln61_6_fu_4204_p2 add_ln62_6_fu_4223_p2 add_ln63_6_fu_4232_p2 add_ln58_10_fu_4181_p2 add_ln59_7_fu_4259_p2 add_ln60_7_fu_4278_p2 add_ln61_7_fu_4287_p2 add_ln62_7_fu_4306_p2 add_ln63_7_fu_4315_p2 add_ln58_11_fu_4341_p2 add_ln59_8_fu_4351_p2 add_ln60_8_fu_4370_p2 add_ln61_8_fu_4379_p2 add_ln62_8_fu_4398_p2 add_ln63_8_fu_4407_p2 add_ln58_12_fu_4433_p2 add_ln59_9_fu_4443_p2 add_ln60_9_fu_4462_p2 add_ln61_9_fu_4471_p2 add_ln62_9_fu_4490_p2 add_ln63_9_fu_4499_p2 add_ln58_13_fu_4535_p2 add_ln59_10_fu_4546_p2 add_ln60_10_fu_4576_p2 add_ln61_10_fu_4586_p2 add_ln62_10_fu_4616_p2 add_ln63_10_fu_4626_p2 add_ln58_14_fu_4650_p2 add_ln59_11_fu_4659_p2 add_ln60_11_fu_4678_p2 add_ln61_11_fu_4687_p2 add_ln62_11_fu_4706_p2 add_ln63_11_fu_4715_p2 add_ln58_15_fu_4741_p2 add_ln59_12_fu_4751_p2 add_ln60_12_fu_4770_p2 add_ln61_12_fu_4779_p2 add_ln62_12_fu_4798_p2 add_ln63_12_fu_4807_p2 add_ln58_16_fu_4830_p2 add_ln59_13_fu_4839_p2 add_ln60_13_fu_4858_p2 add_ln61_13_fu_4867_p2 add_ln62_13_fu_4886_p2 add_ln63_13_fu_4895_p2 add_ln58_17_fu_4918_p2 add_ln59_14_fu_4927_p2 add_ln60_14_fu_4946_p2 add_ln61_14_fu_4955_p2 add_ln62_14_fu_4974_p2 add_ln63_14_fu_4983_p2 add_ln58_18_fu_5016_p2 add_ln59_15_fu_5026_p2 add_ln60_15_fu_5056_p2 add_ln61_15_fu_5066_p2 add_ln62_15_fu_5096_p2 add_ln63_15_fu_5106_p2 add_ln58_19_fu_5130_p2 add_ln59_16_fu_5139_p2 add_ln60_16_fu_5158_p2 add_ln61_16_fu_5167_p2 add_ln62_16_fu_5186_p2 add_ln63_16_fu_5195_p2 add_ln58_20_fu_5218_p2 add_ln59_17_fu_5227_p2 add_ln60_17_fu_5246_p2 add_ln61_17_fu_5255_p2 add_ln62_17_fu_5274_p2 add_ln63_17_fu_5283_p2 add_ln58_21_fu_5306_p2 add_ln59_18_fu_5315_p2 add_ln60_18_fu_5334_p2 add_ln61_18_fu_5343_p2 add_ln62_18_fu_5367_p2 add_ln63_18_fu_5376_p2 add_ln58_22_fu_5436_p2 add_ln59_19_fu_5389_p2 add_ln60_19_fu_5393_p2 add_ln61_19_fu_5463_p2 add_ln62_19_fu_5482_p2 add_ln63_19_fu_5397_p2 add_ln58_23_fu_5514_p2 add_ln59_20_fu_5401_p2 add_ln60_20_fu_5548_p2 add_ln61_20_fu_5562_p2 add_ln62_20_fu_5592_p2 add_ln63_20_fu_5602_p2 add_ln58_24_fu_5626_p2 add_ln59_21_fu_5406_p2 add_ln60_21_fu_5649_p2 add_ln61_21_fu_5662_p2 add_ln62_21_fu_5681_p2 add_ln63_21_fu_5690_p2 add_ln58_25_fu_5713_p2 add_ln59_22_fu_5411_p2 add_ln60_22_fu_5736_p2 add_ln61_22_fu_5749_p2 add_ln62_22_fu_5768_p2 add_ln63_22_fu_5777_p2 add_ln58_26_fu_5800_p2 add_ln59_23_fu_5416_p2 add_ln60_23_fu_5823_p2 add_ln61_23_fu_5836_p2 add_ln62_23_fu_5845_p2 add_ln63_23_fu_5849_p2 add_ln58_27_fu_5853_p2 add_ln59_24_fu_5421_p2 add_ln60_24_fu_5857_p2 add_ln61_24_fu_5861_p2 add_ln62_24_fu_5865_p2 add_ln63_24_fu_5869_p2 add_ln66_1_fu_3578_p2 mac_muladd_6ns_5ns_3ns_11_4_1_U28 add_ln66_fu_3588_p2 add_ln52_fu_3457_p2 add_ln51_1_fu_3305_p2 Layer2_Weights_CPU_U</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>Layer2_Neurons_CPU_U CTRL_bus_s_axi_U Layer_Neurons_s_axi_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>SIGMOID</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>20.00</TargetClockPeriod>
+                    <ClockUncertainty>5.40</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>13.966</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>9</Best-caseLatency>
+                    <Average-caseLatency>9</Average-caseLatency>
+                    <Worst-caseLatency>9</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.180 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.180 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.180 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>10</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>sigmoid.cpp:17</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>1</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <DSP>11</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>5</UTIL_DSP>
+                    <FF>778</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>2001</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="3" LOOP="" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_4_max_dsp_1_U5" SOURCE="sigmoid.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="p_op"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln486_fu_269_p2" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:486" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln486"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln18_fu_283_p2" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="result_2_fu_349_p2" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59" STORAGESUBTYPE="" URAM="0" VARIABLE="result_2"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="sigmoidLUT_1_U" SOURCE="" STORAGESIZE="32 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="sigmoidLUT_1"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>cnn_lenet_Pipeline_calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop</Name>
+            <Loops>
+                <calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>20.00</TargetClockPeriod>
+                    <ClockUncertainty>5.40</ClockUncertainty>
+                    <EstimatedClockPeriod>13.966</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>26455</Best-caseLatency>
+                    <Average-caseLatency>26455</Average-caseLatency>
+                    <Worst-caseLatency>26455</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.529 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.529 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.529 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>26455</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop>
+                        <Name>calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop</Name>
+                        <Slack>14.60</Slack>
+                        <TripCount>1014</TripCount>
+                        <Latency>26453</Latency>
+                        <AbsoluteTimeLatency>0.529 ms</AbsoluteTimeLatency>
+                        <PipelineII>26</PipelineII>
+                        <PipelineDepth>116</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList>
+                            <Instance>grp_SIGMOID_fu_625</Instance>
+                        </InstanceList>
+                    </calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>cnn_lenet.cpp:29</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop>
+                            <Name>calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>cnn_lenet.cpp:32</SourceLocation>
+                        </calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>1</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <DSP>2</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>2081</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>2327</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>4</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_fu_721_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln32"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_1_fu_739_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln32_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_fu_837_p2" SOURCE="cnn_lenet.cpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln33"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_3ns_6ns_8_1_1_U13" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_3ns_8ns_4ns_10_4_1_U15" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_199"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_200_fu_1581_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_200"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_202_fu_921_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_202"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_203_fu_949_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_203"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_204_fu_983_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_204"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_205_fu_1017_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_205"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_206_fu_1051_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_206"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_207_fu_1089_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_207"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_208_fu_1123_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_208"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_209_fu_1157_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_209"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_210_fu_1195_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_210"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_211_fu_1237_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_211"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_212_fu_1275_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_212"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_213_fu_1309_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_213"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_214_fu_1343_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_214"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_215_fu_1377_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_215"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_216_fu_1411_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_216"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_217_fu_1445_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_217"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_218_fu_1479_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_218"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_219_fu_1513_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_219"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_220_fu_1547_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_220"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_221_fu_1619_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_221"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_222_fu_1653_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_222"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_223_fu_1687_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_223"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_224_fu_1735_p2" SOURCE="cnn_lenet.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_224"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_4ns_4ns_10ns_10_4_1_U16" SOURCE="cnn_lenet.cpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_225"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_4ns_7ns_10_1_1_U14" SOURCE="cnn_lenet.cpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_226"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_fu_894_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_1_fu_939_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_25_fu_964_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_25"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_2_fu_973_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_26_fu_998_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_26"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_3_fu_1007_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_27_fu_1032_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_27"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_4_fu_1041_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_28_fu_1069_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_5_fu_1079_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_29_fu_1104_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_29"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_6_fu_1113_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_30_fu_1138_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_30"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_7_fu_1147_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_8_fu_1185_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_9_fu_1227_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_31_fu_1255_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_31"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_10_fu_1265_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_32_fu_1290_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_32"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_11_fu_1299_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_33_fu_1324_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_33"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_12_fu_1333_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_34_fu_1358_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_34"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_13_fu_1367_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_35_fu_1392_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_35"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_14_fu_1401_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_36_fu_1426_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_36"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_15_fu_1435_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_37_fu_1460_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_37"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_16_fu_1469_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_38_fu_1494_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_38"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_17_fu_1503_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_39_fu_1528_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_39"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_18_fu_1537_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_40_fu_1562_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_40"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_19_fu_1571_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_41_fu_1599_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_41"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_20_fu_1609_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_42_fu_1634_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_42"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_21_fu_1643_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_43_fu_1668_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_43"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_22_fu_1677_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_44_fu_1702_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_44"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_23_fu_1711_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_45_fu_1721_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_45"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_24_fu_1730_p2" SOURCE="cnn_lenet.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_3ns_8ns_4ns_10_4_1_U15" SOURCE="cnn_lenet.cpp:44" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln44_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_4ns_4ns_10ns_10_4_1_U16" SOURCE="cnn_lenet.cpp:44" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln44"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln34_fu_905_p2" SOURCE="cnn_lenet.cpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln34"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer2_loop_OutputRow_Loop_OutputColumn_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_1_fu_778_p2" SOURCE="cnn_lenet.cpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln33_1"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="Layer1_Weights_CPU_U" SOURCE="" STORAGESIZE="32 156 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="Layer1_Weights_CPU"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>cnn_lenet_Pipeline_calculateLayer3_loop_row_Loop_col_loop</Name>
+            <Loops>
+                <calculateLayer3_loop_row_Loop_col_loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>20.00</TargetClockPeriod>
+                    <ClockUncertainty>5.40</ClockUncertainty>
+                    <EstimatedClockPeriod>15.327</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>190467</Best-caseLatency>
+                    <Average-caseLatency>190467</Average-caseLatency>
+                    <Worst-caseLatency>190467</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>3.809 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>3.809 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>3.809 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>190467</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <calculateLayer3_loop_row_Loop_col_loop>
+                        <Name>calculateLayer3_loop_row_Loop_col_loop</Name>
+                        <Slack>14.60</Slack>
+                        <TripCount>1250</TripCount>
+                        <Latency>190465</Latency>
+                        <AbsoluteTimeLatency>3.809 ms</AbsoluteTimeLatency>
+                        <PipelineII>152</PipelineII>
+                        <PipelineDepth>618</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList>
+                            <Instance>grp_SIGMOID_fu_2897</Instance>
+                        </InstanceList>
+                    </calculateLayer3_loop_row_Loop_col_loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>cnn_lenet.cpp:29</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <calculateLayer3_loop_row_Loop_col_loop>
+                            <Name>calculateLayer3_loop_row_Loop_col_loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>cnn_lenet.cpp:50</SourceLocation>
+                        </calculateLayer3_loop_row_Loop_col_loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>16</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>5</UTIL_BRAM>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>12865</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>12</UTIL_FF>
+                    <LUT>10539</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>19</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_fu_3244_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln50"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_1_fu_3262_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln50_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln51_fu_3364_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln51"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_9ns_14_1_1_U26" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_6ns_5ns_3ns_11_4_1_U28" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_19_fu_6407_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_22_fu_3593_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_23_fu_3636_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_24_fu_3668_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_25_fu_3700_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_25"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_26_fu_3743_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_26"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_27_fu_3775_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_27"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_28_fu_3807_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_29_fu_3850_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_29"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_30_fu_3882_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_30"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_31_fu_3914_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_31"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_32_fu_3957_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_32"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_33_fu_3989_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_33"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_34_fu_4021_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_34"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_35_fu_4061_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_35"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_36_fu_4101_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_36"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_37_fu_4145_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_37"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_38_fu_4185_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_38"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_39_fu_4213_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_39"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_40_fu_4245_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_40"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_41_fu_4268_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_41"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_42_fu_4296_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_42"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_43_fu_4328_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_43"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_44_fu_4360_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_44"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_45_fu_4388_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_45"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_46_fu_4420_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_46"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_47_fu_4452_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_47"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_48_fu_4480_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_48"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_49_fu_4512_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_50_fu_4556_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_50"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_51_fu_4596_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_51"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_52_fu_4640_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_52"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_53_fu_4668_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_53"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_54_fu_4696_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_54"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_55_fu_4728_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_55"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_56_fu_4760_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_56"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_57_fu_4788_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_57"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_58_fu_4820_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_58"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_59_fu_4848_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_59"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_60_fu_4876_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_60"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_61_fu_4908_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_61"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_62_fu_4936_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_62"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_63_fu_4964_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_63"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_64_fu_4996_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_64"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_65_fu_5036_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_65"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_66_fu_5076_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_66"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_67_fu_5120_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_67"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_68_fu_5148_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_68"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_69_fu_5176_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_69"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_70_fu_5208_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_70"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_71_fu_5236_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_71"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_72_fu_5264_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_72"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_73_fu_5296_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_73"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_74_fu_5324_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_74"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_75_fu_5352_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_75"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_76_fu_5426_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_76"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_77_fu_5449_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_77"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_78_fu_5472_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_78"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_79_fu_5499_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_79"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_80_fu_5528_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_80"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_81_fu_5572_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_81"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_82_fu_5616_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_82"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_83_fu_5639_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_83"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_84_fu_5671_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_84"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_85_fu_5703_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_85"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_86_fu_5726_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_86"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_87_fu_5758_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_87"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_88_fu_5790_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_88"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_89_fu_5813_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_89"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_90_fu_5873_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_90"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_91_fu_5895_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_91"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_92_fu_5913_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_92"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_93_fu_5935_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_93"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_94_fu_5957_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_94"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_95_fu_5967_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_95"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_96_fu_5977_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_96"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_97_fu_5987_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_97"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_98_fu_5997_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_98"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_99_fu_6007_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_99"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_100_fu_6017_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_100"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_101_fu_6027_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_101"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_102_fu_6037_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_102"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_103_fu_6047_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_103"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_104_fu_6057_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_104"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_105_fu_6067_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_105"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_106_fu_6077_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_106"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_107_fu_6087_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_107"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_108_fu_6097_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_108"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_109_fu_6107_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_109"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_110_fu_6117_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_110"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_111_fu_6127_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_111"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_112_fu_6137_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_112"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_113_fu_6147_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_113"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_114_fu_6157_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_114"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_115_fu_6167_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_115"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_116_fu_6177_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_116"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_117_fu_6187_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_117"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_118_fu_6197_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_118"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_119_fu_6207_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_119"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_120_fu_6217_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_120"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_121_fu_6227_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_121"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_122_fu_6237_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_122"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_123_fu_6247_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_123"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_124_fu_6257_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_124"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_125_fu_6267_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_125"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_126_fu_6277_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_126"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_127_fu_6287_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_127"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_128_fu_6297_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_128"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_129_fu_6307_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_129"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_130_fu_6317_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_130"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_131_fu_6327_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_131"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_132_fu_6337_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_132"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_133_fu_6347_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_133"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_134_fu_6357_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_134"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_135_fu_6367_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_135"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_136_fu_6377_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_136"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_137_fu_6387_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_137"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_138_fu_6397_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_138"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_139_fu_6417_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_139"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_140_fu_6427_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_140"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_141_fu_6437_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_141"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_142_fu_6447_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_142"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_143_fu_6457_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_143"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_144_fu_6467_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_144"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_145_fu_6477_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_145"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_146_fu_6487_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_146"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_147_fu_6497_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_147"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_148_fu_6507_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_148"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_149_fu_6517_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_149"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_150_fu_6527_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_150"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_151_fu_6537_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_151"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_152_fu_6547_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_152"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_153_fu_6557_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_153"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_154_fu_6567_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_154"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_155_fu_6577_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_155"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_156_fu_6587_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_156"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_157_fu_6597_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_157"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_158_fu_6607_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_158"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_159_fu_6617_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_159"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_160_fu_6627_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_160"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_161_fu_6637_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_161"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_162_fu_6647_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_162"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_163_fu_6657_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_163"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_164_fu_6667_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_164"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_165_fu_6677_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_165"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_166_fu_6687_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_166"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_167_fu_6697_p2" SOURCE="cnn_lenet.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_167"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_3ns_6ns_8_1_1_U27" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_168"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_170_fu_3413_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_170"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_171_fu_3486_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_171"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_172_fu_3491_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_172"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_173_fu_3544_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_173"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_174_fu_3549_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_174"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_175_fu_4031_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_175"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_176_fu_4036_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_176"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_177_fu_4071_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_177"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_178_fu_4076_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_178"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_179_fu_4111_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_179"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_180_fu_4116_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_180"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_181_fu_4522_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_181"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_182_fu_4527_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_182"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_183_fu_4566_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_183"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_184_fu_4571_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_184"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_185_fu_4606_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_185"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_186_fu_4611_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_186"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_187_fu_5006_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_187"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_188_fu_5011_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_188"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_189_fu_5046_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_189"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_190_fu_5051_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_190"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_191_fu_5086_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_191"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_192_fu_5091_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_192"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_193_fu_5509_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_193"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_194_fu_5362_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_194"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_195_fu_5538_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_195"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_196_fu_5543_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_196"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_197_fu_5582_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_197"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="empty_198_fu_5587_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_198"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_fu_3435_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_fu_3446_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_fu_3503_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_fu_3513_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_fu_3554_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_fu_3564_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_1_fu_3616_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_1_fu_3626_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_1_fu_3649_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_1_fu_3658_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_1_fu_3678_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_1_fu_3687_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_2_fu_3710_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_3_fu_3723_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_2_fu_3733_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_2_fu_3756_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_2_fu_3765_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_2_fu_3785_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_2_fu_3794_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_4_fu_3817_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_5_fu_3830_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_3_fu_3840_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_3_fu_3863_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_3_fu_3872_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_3_fu_3892_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_3_fu_3901_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_6_fu_3924_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_7_fu_3937_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_4_fu_3947_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_4_fu_3970_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_4_fu_3979_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_4_fu_3999_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_4_fu_4008_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_8_fu_4041_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_5_fu_4051_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_5_fu_4081_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_5_fu_4091_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_5_fu_4121_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_5_fu_4131_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_9_fu_4161_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_6_fu_4172_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_6_fu_4195_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_6_fu_4204_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_6_fu_4223_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_6_fu_4232_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_10_fu_4181_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_7_fu_4259_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_7_fu_4278_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_7_fu_4287_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_7_fu_4306_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_7_fu_4315_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_11_fu_4341_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_8_fu_4351_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_8_fu_4370_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_8_fu_4379_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_8_fu_4398_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_8_fu_4407_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_12_fu_4433_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_9_fu_4443_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_9_fu_4462_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_9_fu_4471_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_9_fu_4490_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_9_fu_4499_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_13_fu_4535_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_10_fu_4546_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_10_fu_4576_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_10_fu_4586_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_10_fu_4616_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_10_fu_4626_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_14_fu_4650_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_11_fu_4659_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_11_fu_4678_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_11_fu_4687_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_11_fu_4706_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_11_fu_4715_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_15_fu_4741_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_12_fu_4751_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_12_fu_4770_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_12_fu_4779_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_12_fu_4798_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_12_fu_4807_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_16_fu_4830_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_13_fu_4839_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_13_fu_4858_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_13_fu_4867_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_13_fu_4886_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_13_fu_4895_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_17_fu_4918_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_14_fu_4927_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_14_fu_4946_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_14_fu_4955_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_14_fu_4974_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_14_fu_4983_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_18_fu_5016_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_15_fu_5026_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_15_fu_5056_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_15_fu_5066_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_15_fu_5096_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_15_fu_5106_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_19_fu_5130_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_16_fu_5139_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_16_fu_5158_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_16_fu_5167_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_16_fu_5186_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_16_fu_5195_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_20_fu_5218_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_17_fu_5227_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_17_fu_5246_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_17_fu_5255_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_17_fu_5274_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_17_fu_5283_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_21_fu_5306_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_18_fu_5315_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_18_fu_5334_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_18_fu_5343_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_18_fu_5367_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_18_fu_5376_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_22_fu_5436_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_19_fu_5389_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_19_fu_5393_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_19_fu_5463_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_19_fu_5482_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_19_fu_5397_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_23_fu_5514_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_20_fu_5401_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_20_fu_5548_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_20_fu_5562_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_20_fu_5592_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_20_fu_5602_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_24_fu_5626_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_21_fu_5406_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_21_fu_5649_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_21_fu_5662_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_21_fu_5681_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_21_fu_5690_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_25_fu_5713_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_25"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_22_fu_5411_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_22_fu_5736_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_22_fu_5749_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_22_fu_5768_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_22_fu_5777_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_26_fu_5800_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_26"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_23_fu_5416_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_23_fu_5823_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_23_fu_5836_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_23_fu_5845_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_23_fu_5849_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_27_fu_5853_p2" SOURCE="cnn_lenet.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58_27"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_24_fu_5421_p2" SOURCE="cnn_lenet.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_24_fu_5857_p2" SOURCE="cnn_lenet.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_24_fu_5861_p2" SOURCE="cnn_lenet.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_24_fu_5865_p2" SOURCE="cnn_lenet.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln62_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_24_fu_5869_p2" SOURCE="cnn_lenet.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln66_1_fu_3578_p2" SOURCE="cnn_lenet.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln66_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_6ns_5ns_3ns_11_4_1_U28" SOURCE="cnn_lenet.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln66_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln66_fu_3588_p2" SOURCE="cnn_lenet.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln66"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_fu_3457_p2" SOURCE="cnn_lenet.cpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln52"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="calculateLayer3_loop_row_Loop_col_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln51_1_fu_3305_p2" SOURCE="cnn_lenet.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln51_1"/>
+                <BindNode BINDTYPE="storage" BRAM="16" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="Layer2_Weights_CPU_U" SOURCE="" STORAGESIZE="32 7800 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="Layer2_Weights_CPU"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>cnn_lenet</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>20.00</TargetClockPeriod>
+                    <ClockUncertainty>5.40</ClockUncertainty>
+                    <EstimatedClockPeriod>15.327</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>216925</Best-caseLatency>
+                    <Average-caseLatency>216925</Average-caseLatency>
+                    <Worst-caseLatency>216925</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>4.338 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>4.338 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>4.338 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>216926</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>cnn_lenet.cpp:7</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>26</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>9</UTIL_BRAM>
+                    <DSP>19</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>8</UTIL_DSP>
+                    <FF>16311</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>15</UTIL_FF>
+                    <LUT>15993</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>30</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="Layer2_Neurons_CPU_U" SOURCE="cnn_lenet.cpp:19" STORAGESIZE="32 1014 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="Layer2_Neurons_CPU"/>
+                <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL_bus" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_bus_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+                <BindNode BINDTYPE="adapter" BRAM="6" BUNDLEDNAME="Layer_Neurons" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="Layer_Neurons_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_cosim trace_level="port"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="Layer1_Neurons_CPU" index="0" direction="in" srcType="float*" srcSize="32">
+            <hwRefs>
+                <hwRef type="memory" interface="s_axi_Layer_Neurons" name="Layer1_Neurons_CPU" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="Layer3_Neurons_CPU" index="1" direction="out" srcType="float*" srcSize="32">
+            <hwRefs>
+                <hwRef type="memory" interface="s_axi_Layer_Neurons" name="Layer3_Neurons_CPU" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_CTRL_bus" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="4" portPrefix="s_axi_CTRL_bus_" paramPrefix="C_S_AXI_CTRL_BUS_">
+            <ports>
+                <port>s_axi_CTRL_bus_ARADDR</port>
+                <port>s_axi_CTRL_bus_ARREADY</port>
+                <port>s_axi_CTRL_bus_ARVALID</port>
+                <port>s_axi_CTRL_bus_AWADDR</port>
+                <port>s_axi_CTRL_bus_AWREADY</port>
+                <port>s_axi_CTRL_bus_AWVALID</port>
+                <port>s_axi_CTRL_bus_BREADY</port>
+                <port>s_axi_CTRL_bus_BRESP</port>
+                <port>s_axi_CTRL_bus_BVALID</port>
+                <port>s_axi_CTRL_bus_RDATA</port>
+                <port>s_axi_CTRL_bus_RREADY</port>
+                <port>s_axi_CTRL_bus_RRESP</port>
+                <port>s_axi_CTRL_bus_RVALID</port>
+                <port>s_axi_CTRL_bus_WDATA</port>
+                <port>s_axi_CTRL_bus_WREADY</port>
+                <port>s_axi_CTRL_bus_WSTRB</port>
+                <port>s_axi_CTRL_bus_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+        </Interface>
+        <Interface InterfaceName="s_axi_Layer_Neurons" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="14" portPrefix="s_axi_Layer_Neurons_" paramPrefix="C_S_AXI_LAYER_NEURONS_">
+            <ports>
+                <port>s_axi_Layer_Neurons_ARADDR</port>
+                <port>s_axi_Layer_Neurons_ARREADY</port>
+                <port>s_axi_Layer_Neurons_ARVALID</port>
+                <port>s_axi_Layer_Neurons_AWADDR</port>
+                <port>s_axi_Layer_Neurons_AWREADY</port>
+                <port>s_axi_Layer_Neurons_AWVALID</port>
+                <port>s_axi_Layer_Neurons_BREADY</port>
+                <port>s_axi_Layer_Neurons_BRESP</port>
+                <port>s_axi_Layer_Neurons_BVALID</port>
+                <port>s_axi_Layer_Neurons_RDATA</port>
+                <port>s_axi_Layer_Neurons_RREADY</port>
+                <port>s_axi_Layer_Neurons_RRESP</port>
+                <port>s_axi_Layer_Neurons_RVALID</port>
+                <port>s_axi_Layer_Neurons_WDATA</port>
+                <port>s_axi_Layer_Neurons_WREADY</port>
+                <port>s_axi_Layer_Neurons_WSTRB</port>
+                <port>s_axi_Layer_Neurons_WVALID</port>
+            </ports>
+            <memories>
+                <memorie memorieName="Layer1_Neurons_CPU" offset="4096" range="4096"/>
+                <memorie memorieName="Layer3_Neurons_CPU" offset="8192" range="8192"/>
+            </memories>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="4096" argName="Layer1_Neurons_CPU"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="8192" argName="Layer3_Neurons_CPU"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_CTRL_bus:s_axi_Layer_Neurons</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table>
+                    <keys size="6">Interface, Data Width, Address Width, Offset, Register, Resource Estimate</keys>
+                    <column name="s_axi_CTRL_bus">32, 4, , , </column>
+                    <column name="s_axi_Layer_Neurons">32, 14, 4096, 0, BRAM=6</column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table>
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_CTRL_bus">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_CTRL_bus">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_CTRL_bus">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_CTRL_bus">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="interrupt">interrupt, interrupt</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="Layer1_Neurons_CPU">in, float*</column>
+                    <column name="Layer3_Neurons_CPU">out, float*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
+                    <column name="Layer1_Neurons_CPU">s_axi_Layer_Neurons, memory, name=Layer1_Neurons_CPU offset=4096 range=4096</column>
+                    <column name="Layer3_Neurons_CPU">s_axi_Layer_Neurons, memory, name=Layer3_Neurons_CPU offset=8192 range=8192</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="cnn_lenet.cpp:13" status="valid" parentFunction="cnn_lenet" variable="Layer1_Neurons_CPU" isDirective="0" options="mode=s_axilite port=Layer1_Neurons_CPU bundle=Layer_Neurons"/>
+        <Pragma type="interface" location="cnn_lenet.cpp:14" status="valid" parentFunction="cnn_lenet" variable="Layer3_Neurons_CPU" isDirective="0" options="mode=s_axilite port=Layer3_Neurons_CPU bundle=Layer_Neurons"/>
+        <Pragma type="interface" location="cnn_lenet.cpp:16" status="valid" parentFunction="cnn_lenet" variable="return" isDirective="0" options="mode=s_axilite port=return bundle=CTRL_bus"/>
+        <Pragma type="pipeline" location="cnn_lenet.cpp:35" status="valid" parentFunction="cnn_lenet" variable="" isDirective="0" options="II=26"/>
+        <Pragma type="pipeline" location="cnn_lenet.cpp:39" status="valid" parentFunction="cnn_lenet" variable="" isDirective="0" options="II=2"/>
+        <Pragma type="pipeline" location="cnn_lenet.cpp:53" status="valid" parentFunction="cnn_lenet" variable="" isDirective="0" options="II=152"/>
+        <Pragma type="pipeline" location="cnn_lenet.cpp:57" status="valid" parentFunction="cnn_lenet" variable="" isDirective="0" options="II=2"/>
+        <Pragma type="bind_storage" location="sigmoid.cpp:10" status="valid" parentFunction="sigmoid" variable="sigmoidLUT" isDirective="0" options="variable=sigmoidLUT type=RAM_1P impl=BRAM"/>
+        <Pragma type="pipeline" location="sigmoid.cpp:17" status="valid" parentFunction="sigmoid" variable="" isDirective="0" options="II=1"/>
+    </PragmaReport>
+</profile>
+

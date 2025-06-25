@@ -1,38 +1,29 @@
 {
   "0": {
-    "basicblocks": 3,
+    "basicblocks": 7,
     "calls": "1",
-    "file": "calculateLayer4.cpp",
-    "fileloc": 5,
-    "instructions": 198,
+    "file": "calculateLayer2.cpp",
+    "fileloc": 4,
+    "instructions": 266,
     "loads": {
       "T": 51
     },
-    "name": "calculateLayer4",
+    "name": "calculateLayer2",
     "stores": {
       "T": 1
     },
-    "total_instructions": 459
+    "total_instructions": 308
   },
   "1": {
-    "basicblocks": 13,
-    "calls": "2",
-    "file": "hls_tanh.h",
-    "fileloc": 28,
-    "instructions": 63,
-    "name": "generic_tanh<double>",
-    "total_instructions": 261
-  },
-  "2": {
-    "basicblocks": 11,
+    "basicblocks": 1,
     "calls": "",
-    "file": "hls_exp_.h",
-    "fileloc": 156,
-    "instructions": 198,
+    "file": "sigmoid.cpp",
+    "fileloc": 8,
+    "instructions": 42,
     "loads": {
-      "G": 4
+      "G": 1
     },
-    "name": "exp_generic<double>",
-    "total_instructions": 198
+    "name": "SIGMOID",
+    "total_instructions": 42
   }
 }

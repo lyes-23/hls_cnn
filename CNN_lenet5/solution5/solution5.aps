@@ -5,15 +5,24 @@
     <downStreamTool>
         <DownStreamTool name=""/>
     </downStreamTool>
+    <targetInfo>
+        <TargetInfo value="xc7z020:-clg484:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library name="DefaultPlatform" value="xilinx/zynq/zynq"/>
+    </libraryList>
+    <flowTarget value="vivado"/>
     <synthesis askAgain="true"/>
+    <clockList>
+        <clock default="false" name="default" period="10"/>
+    </clockList>
     <config>
         <config_cosim tool="xsim" trace_level="port"/>
         <config_export format="ip_catalog" rtl="verilog"/>
     </config>
     <UIConfigurations>
-        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
+        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/zynq/zynq</Platform>
-            <Platform>xilinx/zynq/zynq_fpv6</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -51,7 +60,7 @@
         <Format formatName="xo"/>
     </ExportDesign>
     <Simulation>
-        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="port" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="false">
+        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="port" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="XSim" waveDebug="false">
             <Rtl active="false" name="systemc"/>
             <Rtl active="true" name="verilog"/>
             <Rtl active="false" name="vhdl"/>
@@ -63,15 +72,5 @@
     <project>
         <value string="CNN_lenet5"/>
     </project>
-    <flowTarget value="vivado"/>
-    <targetInfo>
-        <TargetInfo value="xc7z020:-clg484:-1"/>
-    </targetInfo>
-    <libraryList>
-        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
-    </libraryList>
-    <clockList>
-        <clock name="default" default="false" period="20"/>
-    </clockList>
 </solution>
 

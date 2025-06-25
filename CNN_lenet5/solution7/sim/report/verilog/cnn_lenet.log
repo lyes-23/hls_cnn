@@ -1,0 +1,12 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/2023.2/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling sigmoid.cpp_pre.cpp.tb.cpp
+   Compiling cnn_lenet_tb.cpp_pre.cpp.tb.cpp
+cosim.tv.mk:77: recipe for target 'obj/cnn_lenet_tb.cpp_pre.cpp.tb.o' failed
+ERROR: [COSIM-317] C++ compile error.
+ERROR: [COSIM-321] EXE file generate failed.
+ERROR: [COSIM-321] EXE file generate failed.
+ERROR: [COSIM-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM-4] *** C/RTL co-simulation finished: FAIL ***

@@ -42,6 +42,11 @@
 			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>solution10/constraints</name>
+			<type>2</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/.tcls</location>
+		</link>
+		<link>
 			<name>solution2/constraints</name>
 			<type>2</type>
 			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution2/.tcls</location>
@@ -62,34 +67,59 @@
 			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/.tcls</location>
 		</link>
 		<link>
-			<name>source/calculateLayer2.h</name>
-			<type>1</type>
-			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer2.h</location>
+			<name>solution6/constraints</name>
+			<type>2</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution6/.tcls</location>
 		</link>
 		<link>
-			<name>source/calculateLayer3.cpp</name>
-			<type>1</type>
-			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer3.cpp</location>
+			<name>solution7/constraints</name>
+			<type>2</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution7/.tcls</location>
 		</link>
 		<link>
-			<name>source/calculateLayer3.h</name>
-			<type>1</type>
-			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer3.h</location>
+			<name>solution8/constraints</name>
+			<type>2</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution8/.tcls</location>
 		</link>
 		<link>
-			<name>source/calculateLayer4.cpp</name>
-			<type>1</type>
-			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer4.cpp</location>
+			<name>solution9/constraints</name>
+			<type>2</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution9/.tcls</location>
 		</link>
 		<link>
-			<name>source/calculateLayer4.h</name>
+			<name>source/cnn_lenet.cpp</name>
 			<type>1</type>
-			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer4.h</location>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/cnn_lenet.cpp</location>
 		</link>
 		<link>
-			<name>testbench/calculateLayer4_tb.cpp</name>
+			<name>source/cnn_lenet.h</name>
 			<type>1</type>
-			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/calculateLayer4_tb.cpp</location>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/cnn_lenet.h</location>
+		</link>
+		<link>
+			<name>source/input_data.h</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/input_data.h</location>
+		</link>
+		<link>
+			<name>source/layer_weights.h</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/layer_weights.h</location>
+		</link>
+		<link>
+			<name>source/sigmoid.cpp</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/sigmoid.cpp</location>
+		</link>
+		<link>
+			<name>source/sigmoid.h</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/sigmoid.h</location>
+		</link>
+		<link>
+			<name>testbench/cnn_lenet_tb.cpp</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/cnn_lenet_tb.cpp</location>
 		</link>
 		<link>
 			<name>testbench/input_data.h</name>
@@ -110,6 +140,21 @@
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
 			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution1/script.tcl</location>
+		</link>
+		<link>
+			<name>solution10/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/solution10.directive</location>
+		</link>
+		<link>
+			<name>solution10/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution10/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution10/script.tcl</location>
 		</link>
 		<link>
 			<name>solution2/constraints/.xml.directive</name>
@@ -170,6 +215,66 @@
 			<name>solution5/constraints/script.tcl</name>
 			<type>1</type>
 			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution5/script.tcl</location>
+		</link>
+		<link>
+			<name>solution6/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution6/solution6.directive</location>
+		</link>
+		<link>
+			<name>solution6/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution6/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution6/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution6/script.tcl</location>
+		</link>
+		<link>
+			<name>solution7/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution7/solution7.directive</location>
+		</link>
+		<link>
+			<name>solution7/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution7/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution7/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution7/script.tcl</location>
+		</link>
+		<link>
+			<name>solution8/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution8/solution8.directive</location>
+		</link>
+		<link>
+			<name>solution8/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution8/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution8/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution8/script.tcl</location>
+		</link>
+		<link>
+			<name>solution9/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution9/solution9.directive</location>
+		</link>
+		<link>
+			<name>solution9/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution9/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution9/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/TRETEC/OneDrive/Documents/Master2/HLS-FPGA/cnn_hls/CNN_lenet5/solution9/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
